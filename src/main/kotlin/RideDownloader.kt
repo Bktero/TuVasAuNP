@@ -6,14 +6,18 @@ import java.time.LocalDate
 class RideDownloader {
     private val baseUrl = "https://www.prendslaroue.fr/api/teams/n-peloton/rides"
 
-    fun today(): Ride {
+    fun today(): List<Ride> {
         return this.day(LocalDate.now())
     }
 
-    fun day(date: LocalDate): Ride {
+    fun day(date: LocalDate): List<Ride> {
         val array = download("$baseUrl?from=$date&to=$date")
-        assert(array.length() == 1)
-        return Ride.from(array.getJSONObject(0))
+        val rides = mutableListOf<Ride>();
+        for (i in 0 until array.length()) {
+            rides.add(Ride.from(array.getJSONObject(i)))
+        }
+        rides.size
+        return rides
     }
 
     private fun download(url: String): JSONArray {
