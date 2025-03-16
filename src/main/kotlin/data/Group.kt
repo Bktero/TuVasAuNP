@@ -1,12 +1,13 @@
 package data
 
 import org.json.JSONObject
+import java.time.LocalTime
 
 // data.Group class (representing a ride group)
 data class Group(
     val id: String,
     val name: String,
-    val meetingTime: String, // FIXME convert to LocalDate
+    val meetingTime: LocalTime,
     val averageSpeed: Int,
     val map: Map,
     val participants: List<Participant>
@@ -25,7 +26,7 @@ data class Group(
             return Group(
                 id = json.getString("id"),
                 name = json.getString("name"),
-                meetingTime = json.getString("meetingTime"),
+                meetingTime = LocalTime.parse(json.getString("meetingTime")),
                 averageSpeed = json.getInt("averageSpeed"),
                 map = Map.from(json.getJSONObject("map")),
                 participants = participants

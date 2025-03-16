@@ -15,6 +15,7 @@ fun processRide(ride: Ride) {
         if (guessedGroup in desiredGroups) {
             val file = MapDownloader(DOWNLOAD_DIRECTORY).download(group.map)
             println("Map for group ${group.name} is here: $file")
+            println("Meeting time is ${group.meetingTime}")
         }
     }
 }
