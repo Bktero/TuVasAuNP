@@ -4,6 +4,11 @@ import java.net.URI
 
 class MapDownloader(private val directory: File) {
 
+    init {
+        // Make sure the directory exists; otherwise, creating files will fail
+        directory.mkdirs()
+    }
+
     fun download(map: Map): File {
         val url = URI("https://www.prendslaroue.fr/n-peloton/maps/${map.id}/gpx").toURL()
         val file = File.createTempFile("${map.name}-", ".gpx", directory)

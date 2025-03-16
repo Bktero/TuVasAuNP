@@ -4,7 +4,7 @@ import org.telegram.telegrambots.meta.api.methods.send.SendMessage
 import org.telegram.telegrambots.meta.exceptions.TelegramApiException
 
 fun main() {
-    val configuration = Configuration.getFromEnv();
+    val configuration = Configuration.getFromEnv()
     val telegramClient = OkHttpTelegramClient(configuration.token)
 
     // Send initial message
@@ -17,6 +17,7 @@ fun main() {
     }
 
     // Run the bot
-    val app = TelegramBotsLongPollingApplication();
-    app.registerBot(configuration.token, MyBot(telegramClient))
+    val app = TelegramBotsLongPollingApplication()
+    val bot = Bot(telegramClient, configuration.userId)
+    app.registerBot(configuration.token, bot)
 }
