@@ -8,7 +8,7 @@ fun main() {
     val telegramClient = OkHttpTelegramClient(configuration.token)
 
     // Send initial message
-    val message = SendMessage(configuration.userId, "I'm back!")
+    val message = SendMessage(configuration.userId, "Let's go riding!")
     try {
         telegramClient.execute(message)
     } catch (e: TelegramApiException) {

@@ -6,7 +6,7 @@ import org.json.JSONObject
 data class Group(
     val id: String,
     val name: String,
-    val meetingTime: String,
+    val meetingTime: String, // FIXME convert to LocalDate
     val averageSpeed: Int,
     val map: Map,
     val participants: List<Participant>
