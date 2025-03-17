@@ -8,6 +8,39 @@ import org.telegram.telegrambots.meta.generics.TelegramClient
 import java.io.File
 import java.time.DayOfWeek
 import java.time.LocalDate
+import java.time.Period
+
+fun DayOfWeek.toFrench(): String {
+    when (this) {
+        DayOfWeek.MONDAY -> {
+            return "lundi"
+        }
+
+        DayOfWeek.TUESDAY -> {
+            return "mardi"
+        }
+
+        DayOfWeek.WEDNESDAY -> {
+            return "mercredi"
+        }
+
+        DayOfWeek.THURSDAY -> {
+            return "jeudi"
+        }
+
+        DayOfWeek.FRIDAY -> {
+            return "vendredi"
+        }
+
+        DayOfWeek.SATURDAY -> {
+            return "samedi"
+        }
+
+        DayOfWeek.SUNDAY -> {
+            return "dimanche"
+        }
+    }
+}
 
 class Bot(private val telegramClient: TelegramClient, private val userId: String) :
     LongPollingSingleThreadUpdateConsumer {
@@ -25,17 +58,24 @@ class Bot(private val telegramClient: TelegramClient, private val userId: String
 
         if (canAccept(update)) {
             when (update.message.text) {
+                "/quand" -> {
+                    quand()
+                }
 
                 "/start" -> {
                     // No action
                 }
 
-                "/ride", "ride", "r", "R" -> {
+                "/statut" -> {
+                    sendText("Toujours debout :)")
+                }
+
+                "/ride" -> {
                     ride()
                 }
 
                 else -> {
-                    sendText("Sorry, I don't know what to say...")
+                    sendText("Désolé, je ne sais pas quoi dire")
                 }
             }
         }
@@ -49,16 +89,21 @@ class Bot(private val telegramClient: TelegramClient, private val userId: String
                     // This is why there is a toString() here
                     return true
                 } else {
-                    println("This message is not from our user")
+                    sendAdminText("This message is not from our user => $update")
                 }
             } else {
-                println("This message is not from a user")
+                sendAdminText("This message is not from a user => $update")
             }
         } else {
-            println("Update has no message")
+            sendAdminText("Update has no message => $update")
         }
 
         return false
+    }
+
+    private fun sendAdminText(text: String) {
+        assert(text.isNotEmpty()) { "Cannot send an empty text" }
+        sendText("ADMIN: $text")
     }
 
     private fun sendText(text: String) {
@@ -82,25 +127,41 @@ class Bot(private val telegramClient: TelegramClient, private val userId: String
     }
 
     //------------------------------------------------------------------------------------------------------------------
-    // The 'ride' command
+    // The 'quand' command
+    private fun quand() {
+        val today = LocalDate.now()
 
+        if (today.dayOfWeek == DayOfWeek.WEDNESDAY) {
+            sendText("Mais on est mercredi : c'est aujourd'hui qu'on roule !")
+        } else {
+            var nextRideDay = today.plusDays(1)
+            while (nextRideDay.dayOfWeek != DayOfWeek.THURSDAY) {
+                nextRideDay = nextRideDay.plusDays(1)
+            }
+            val delta = Period.between(today, nextRideDay.plusDays(1))
+            sendText("On est ${today.dayOfWeek.toFrench()}. La prochaine sortie devrait être dans ${delta.days} jours, le $nextRideDay.")
+        }
+    }
+
+    //------------------------------------------------------------------------------------------------------------------
+    // The 'ride' command
     private fun ride() {
         val today = LocalDate.now()
 
         when (today.dayOfWeek) {
             DayOfWeek.TUESDAY -> {
-                sendText("It's Tuesday, the ride is tomorrow. Maybe the maps are already available, let me check.")
+                sendText("On est mardi : le prochain ride, c'est demain. Peut-être que les maps sont déjà en ligne, je vais regarder...")
                 val tomorrow = today.plusDays(1)
                 processDate(tomorrow)
             }
 
             DayOfWeek.WEDNESDAY -> {
-                sendText("It's ride day! Let me get the maps for you!")
+                sendText("C'est jour de ride ! Je vais récupérer les maps!")
                 processDate(today)
             }
 
             else -> {
-                sendText("Sorry, it's only ${today.dayOfWeek}... You have to wait a little more for the next ride.")
+                sendText("Désolé, on est encore que ${today.dayOfWeek.toFrench()}... Il faut attendre un peu plus pour la prochaine sortie !")
             }
         }
     }
@@ -110,7 +171,7 @@ class Bot(private val telegramClient: TelegramClient, private val userId: String
 
         when (rides.size) {
             0 -> {
-                sendText("I'm sorry but there is not ride today...")
+                sendText("Désolé, aucune sortie prévue aujourd'hui.")
             }
 
             1 -> {
@@ -118,7 +179,7 @@ class Bot(private val telegramClient: TelegramClient, private val userId: String
             }
 
             else -> {
-                sendText("There are several (${rides.size}) rides today, I don't know what to do.")
+                sendText("Il y a plusieurs sorties aujourd'hui (${rides.size}), je ne sais pas quoi faire.")
             }
         }
     }
@@ -126,14 +187,14 @@ class Bot(private val telegramClient: TelegramClient, private val userId: String
     private fun processRide(ride: Ride) {
         val desiredGroups = setOf(WednesdayGroups.C3, WednesdayGroups.SuperChillGravel)
 
-        sendText("Getting the maps of groups $desiredGroups of ride ${ride.title}")
+        sendText("Récupération des maps pour les groupes $desiredGroups pour la sortie ${ride.title}")
 
         for (group in ride.groups) {
             val guessedGroup = WednesdayGroups.guess(group.name)
             if (guessedGroup in desiredGroups) {
                 val file = mapDownloader.download(group.map)
                 println("Map for group ${group.name} is here: $file")
-                val caption = "This is the map for ${group.name}. Meeting time is ${group.meetingTime}"
+                val caption = "Voici la la map pour ${group.name}. RDV à ${group.meetingTime}"
                 sendFile(file, caption)
             }
         }

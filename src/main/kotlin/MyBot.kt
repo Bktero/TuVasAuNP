@@ -6,6 +6,8 @@ import org.telegram.telegrambots.meta.api.objects.Update
 import org.telegram.telegrambots.meta.generics.TelegramClient
 import java.io.File
 
+// TODO remove this class
+
 class MyBot(private val telegramClient: TelegramClient) : LongPollingSingleThreadUpdateConsumer {
 
 
