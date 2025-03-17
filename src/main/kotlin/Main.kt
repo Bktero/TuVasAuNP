@@ -8,7 +8,7 @@ fun main() {
     val telegramClient = OkHttpTelegramClient(configuration.token)
 
     // Send initial message
-    val message = SendMessage(configuration.userId, "Back dans les bacs!")
+    val message = SendMessage(configuration.adminId, "Back dans les bacs!")
     try {
         telegramClient.execute(message)
     } catch (e: TelegramApiException) {
@@ -18,6 +18,6 @@ fun main() {
 
     // Run the bot
     val app = TelegramBotsLongPollingApplication()
-    val bot = Bot(telegramClient, configuration.userId)
+    val bot = Bot(telegramClient, configuration.adminId, configuration.userIds)
     app.registerBot(configuration.token, bot)
 }

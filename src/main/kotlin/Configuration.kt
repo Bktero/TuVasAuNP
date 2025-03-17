@@ -5,12 +5,13 @@ private fun getEnv(name: String): String {
     return value
 }
 
-data class Configuration(val token: String, val userId: String) {
+data class Configuration(val token: String, val adminId: String, val userIds: List<String>) {
     companion object {
         fun getFromEnv(): Configuration {
             return Configuration(
                 getEnv("TU_VAS_AU_NP_BOT_TOKEN"),
-                getEnv("TU_VAS_AU_NP_BOT_USER_ID")
+                getEnv("TU_VAS_AU_NP_BOT_ADMIN_ID"),
+                getEnv("TU_VAS_AU_NP_BOT_USER_IDS").split(';').toList()
             )
         }
     }
