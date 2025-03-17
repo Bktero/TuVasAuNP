@@ -144,11 +144,15 @@ class Bot(private val telegramClient: TelegramClient, private val adminId: Strin
             while (nextRideDay.dayOfWeek != DayOfWeek.THURSDAY) {
                 nextRideDay = nextRideDay.plusDays(1)
             }
-            val delta = Period.between(today, nextRideDay.plusDays(1))
-            sendText(
-                "On est ${today.dayOfWeek.toFrench()}. La prochaine sortie devrait être dans ${delta.days} jours, le $nextRideDay.",
-                userId
-            )
+            val delta = Period.between(today, nextRideDay).days - 1
+            if (delta == 1) {
+                sendText("Demain :)", userId)
+            } else {
+                sendText(
+                    "On est ${today.dayOfWeek.toFrench()}. La prochaine sortie devrait être dans ${delta} jours, le $nextRideDay.",
+                    userId
+                )
+            }
         }
     }
 
