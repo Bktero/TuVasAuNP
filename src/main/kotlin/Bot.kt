@@ -10,7 +10,7 @@ import java.time.DayOfWeek
 import java.time.LocalDate
 import java.time.Period
 
-fun DayOfWeek.toFrench(): String {
+private fun DayOfWeek.toFrench(): String {
     when (this) {
         DayOfWeek.MONDAY -> {
             return "lundi"
@@ -66,7 +66,7 @@ class Bot(private val telegramClient: TelegramClient, private val userId: String
                     // No action
                 }
 
-                "/statut" -> {
+                "/cava" -> {
                     sendText("Toujours debout :)")
                 }
 
@@ -75,7 +75,7 @@ class Bot(private val telegramClient: TelegramClient, private val userId: String
                 }
 
                 else -> {
-                    sendText("Désolé, je ne sais pas quoi dire")
+                    sendText("'${update.message.text}' ? Désolé, je ne sais pas quoi dire")
                 }
             }
         }
