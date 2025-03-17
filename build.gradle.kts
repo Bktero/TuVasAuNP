@@ -1,13 +1,19 @@
 plugins {
     kotlin("jvm") version "2.1.10"
+    application
 //    kotlin("plugin.serialization") version "2.1.10"
 }
 
 group = "dev.gradot"
 version = "1.0-SNAPSHOT"
 
-repositories {
-    mavenCentral()
+application {
+    // https://docs.gradle.org/current/userguide/application_plugin.html
+
+    mainClass = "MainKt"
+    // The file is Main.kt, but because our main() function is defined at top-level,
+    // we must use MainKt (because Kotlin creates an implicit companion object).
+    // We could have used Main and @JvmStatic, but it's noisier
 }
 
 dependencies {
@@ -18,9 +24,14 @@ dependencies {
     implementation("org.telegram:telegrambots-longpolling:8.2.0")
 }
 
-tasks.test {
-    useJUnitPlatform()
-}
 kotlin {
     jvmToolchain(23)
+}
+
+repositories {
+    mavenCentral()
+}
+
+tasks.test {
+    useJUnitPlatform()
 }
