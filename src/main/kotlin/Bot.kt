@@ -190,7 +190,7 @@ class Bot(private val telegramClient: TelegramClient, private val adminId: Strin
 
         when (rides.size) {
             0 -> {
-                sendText("Désolé, aucune sortie prévue aujourd'hui.", userId)
+                sendText("Désolé, aucune sortie prévue le ${date}.", userId)
             }
 
             1 -> {
@@ -198,7 +198,7 @@ class Bot(private val telegramClient: TelegramClient, private val adminId: Strin
             }
 
             else -> {
-                sendText("Il y a plusieurs sorties aujourd'hui (${rides.size}), je ne sais pas quoi faire.", userId)
+                sendText("Il y a plusieurs sorties (${rides.size}) le ${date}, je ne sais pas quoi faire.", userId)
             }
         }
     }
