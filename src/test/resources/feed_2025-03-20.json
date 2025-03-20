@@ -1,0 +1,1076 @@
+[
+  {
+    "feedType": "RIDE",
+    "id": "19e2daaf-881f-41ed-8e7c-60985c7c7d36",
+    "teamId": "n-peloton",
+    "permalink": "N-Peloton_596",
+    "publishedStatus": "PUBLISHED",
+    "type": "REGULAR",
+    "date": "2025-03-19",
+    "startPlace": {
+      "id": "7b45bb02-8927-436d-9314-978f18799900rt",
+      "teamId": "n-peloton",
+      "name": "Fonderies",
+      "address": "Place des Fonderies 44200 Nantes",
+      "link": null,
+      "point": {
+        "lat": 47.20587797222379,
+        "lng": -1.545577968361348
+      },
+      "startPlace": true,
+      "endPlace": false
+    },
+    "endPlace": {
+      "id": "89706cb0-e699-4d0f-a50f-58de10ffc9bb",
+      "teamId": "n-peloton",
+      "name": "Bar Île",
+      "address": "9 Boulevard Gustave Roch 44200 Nantes",
+      "link": "https://www.facebook.com/lebarilenantes",
+      "point": {
+        "lat": 47.20476900972131,
+        "lng": -1.5484670016655318
+      },
+      "startPlace": false,
+      "endPlace": true
+    },
+    "meetingTime": "19:30:00",
+    "publishedAt": "2025-03-18T11:00:00Z",
+    "title": "N-Peloton #596",
+    "description": "ATTENTION : il est fortement conseillé de prendre la map\r\nAppli Android : https://n-peloton.fr/app-android\r\nAppli Garmin : https://n-peloton.fr/app-garmin\r\nAttention : Ride interdit aux mineur·e·s\r\n\r\nRappel sécurité : LUMIERES PUISSANTES/GILET & PERRUQUE ROSE/CASQUE/caa/outils/EAU/€/Coupe mulet conseillée\r\n\r\nRespect des bonnes pratiques nécessaire pour la sécurité\r\net le plaisir de chacun·e : https://www.prendslaroue.fr/n-peloton/faq\r\n\r\nÀ demain en pleine forme!",
+    "imaged": true,
+    "numberOfGroups": 12
+  },
+  {
+    "feedType": "RIDE",
+    "id": "80c4882f-4f50-41bd-8ebf-0e2d3deeff04",
+    "teamId": "n-peloton",
+    "permalink": "Raymond_Ride_221",
+    "publishedStatus": "PUBLISHED",
+    "type": "REGULAR",
+    "date": "2025-03-16",
+    "startPlace": {
+      "id": "7b45bb02-8927-436d-9314-978f18799900rt",
+      "teamId": "n-peloton",
+      "name": "Fonderies",
+      "address": "Place des Fonderies 44200 Nantes",
+      "link": null,
+      "point": {
+        "lat": 47.20587797222379,
+        "lng": -1.545577968361348
+      },
+      "startPlace": true,
+      "endPlace": false
+    },
+    "endPlace": null,
+    "meetingTime": "08:30:00",
+    "publishedAt": "2025-03-14T11:00:00Z",
+    "title": "Raymond Ride #221",
+    "description": "ATTENTION : il est fortement conseillé de prendre la map\r\n\r\nMerci de respecter le code de la route, et de faire preuve de vigilance, notamment dans les agglomérations.\r\n\r\nAppli Android : https://n-peloton.fr/app-android\r\nAppli Garmin : https://n-peloton.fr/app-garmin\r\nAttention : Ride interdit aux mineur⋅e⋅s\r\nRappel sécurité : CASQUE/CAA/OUTILS/EAU/€",
+    "imaged": false,
+    "numberOfGroups": 3
+  },
+  {
+    "feedType": "RIDE",
+    "id": "db797f6f-af7f-4d94-8d21-3a73d487596a",
+    "teamId": "n-peloton",
+    "permalink": "N-Peloton_595",
+    "publishedStatus": "PUBLISHED",
+    "type": "REGULAR",
+    "date": "2025-03-12",
+    "startPlace": {
+      "id": "7b45bb02-8927-436d-9314-978f18799900rt",
+      "teamId": "n-peloton",
+      "name": "Fonderies",
+      "address": "Place des Fonderies 44200 Nantes",
+      "link": null,
+      "point": {
+        "lat": 47.20587797222379,
+        "lng": -1.545577968361348
+      },
+      "startPlace": true,
+      "endPlace": false
+    },
+    "endPlace": {
+      "id": "90660c3d-fb56-446a-ab4c-b074f0f57bc7",
+      "teamId": "n-peloton",
+      "name": "Réser'Bar Dog",
+      "address": "7 Place de la Bourse 44000 Nantes",
+      "link": null,
+      "point": {
+        "lat": 47.21264799607898,
+        "lng": -1.559261976211763
+      },
+      "startPlace": false,
+      "endPlace": true
+    },
+    "meetingTime": "19:30:00",
+    "publishedAt": "2025-03-11T11:00:00Z",
+    "title": "N-Peloton #595",
+    "description": "ATTENTION : il est fortement conseillé de prendre la map\r\nAppli Android : https://n-peloton.fr/app-android\r\nAppli Garmin : https://n-peloton.fr/app-garmin\r\nAttention : Ride interdit aux mineur·e·s\r\n\r\nRappel sécurité : LUMIERES PUISSANTES/GILET & PERRUQUE ROSE/CASQUE/caa/outils/EAU/€/Coupe mulet conseillée\r\n\r\nRespect des bonnes pratiques nécessaire pour la sécurité\r\net le plaisir de chacun·e : https://www.prendslaroue.fr/n-peloton/faq\r\n\r\nÀ demain en pleine forme!",
+    "imaged": true,
+    "numberOfGroups": 13
+  },
+  {
+    "feedType": "RIDE",
+    "id": "a7556b68-35c2-434e-bf01-1c87ed219045",
+    "teamId": "n-peloton",
+    "permalink": "Raymond_Ride_220",
+    "publishedStatus": "PUBLISHED",
+    "type": "REGULAR",
+    "date": "2025-03-09",
+    "startPlace": {
+      "id": "7b45bb02-8927-436d-9314-978f18799900rt",
+      "teamId": "n-peloton",
+      "name": "Fonderies",
+      "address": "Place des Fonderies 44200 Nantes",
+      "link": null,
+      "point": {
+        "lat": 47.20587797222379,
+        "lng": -1.545577968361348
+      },
+      "startPlace": true,
+      "endPlace": false
+    },
+    "endPlace": null,
+    "meetingTime": "08:30:00",
+    "publishedAt": "2025-03-07T11:00:00Z",
+    "title": "Raymond Ride #220",
+    "description": "ATTENTION : il est fortement conseillé de prendre la map\r\n\r\nMerci de respecter le code de la route, et de faire preuve de vigilance, notamment dans les agglomérations.\r\n\r\nAppli Android : https://n-peloton.fr/app-android\r\nAppli Garmin : https://n-peloton.fr/app-garmin\r\nAttention : Ride interdit aux mineur⋅e⋅s\r\nRappel sécurité : CASQUE/CAA/OUTILS/EAU/€",
+    "imaged": true,
+    "numberOfGroups": 3
+  },
+  {
+    "feedType": "RIDE",
+    "id": "8c8025b9-3d8a-43a4-bf9b-d232743c5beb",
+    "teamId": "n-peloton",
+    "permalink": "N-Peloton_594",
+    "publishedStatus": "PUBLISHED",
+    "type": "REGULAR",
+    "date": "2025-03-05",
+    "startPlace": {
+      "id": "7b45bb02-8927-436d-9314-978f18799900rt",
+      "teamId": "n-peloton",
+      "name": "Fonderies",
+      "address": "Place des Fonderies 44200 Nantes",
+      "link": null,
+      "point": {
+        "lat": 47.20587797222379,
+        "lng": -1.545577968361348
+      },
+      "startPlace": true,
+      "endPlace": false
+    },
+    "endPlace": {
+      "id": "657a1e4f-2238-42d5-a711-fa0fc1ff3aa4",
+      "teamId": "n-peloton",
+      "name": "Live bar",
+      "address": "7 Rue des Etats 44000 Nantes",
+      "link": "https://www.lelivebar.fr/",
+      "point": {
+        "lat": 47.21557796601447,
+        "lng": -1.5505250541889675
+      },
+      "startPlace": false,
+      "endPlace": true
+    },
+    "meetingTime": "19:30:00",
+    "publishedAt": "2025-03-04T11:00:00Z",
+    "title": "N-Peloton #594",
+    "description": "ATTENTION : il est fortement conseillé de prendre la map\r\nAppli Android : https://n-peloton.fr/app-android\r\nAppli Garmin : https://n-peloton.fr/app-garmin\r\nAttention : Ride interdit aux mineur·e·s\r\n\r\nRappel sécurité : LUMIERES PUISSANTES/GILET & PERRUQUE ROSE/CASQUE/caa/outils/EAU/€/Coupe mulet conseillée\r\n\r\nRespect des bonnes pratiques nécessaire pour la sécurité\r\net le plaisir de chacun·e : https://www.prendslaroue.fr/n-peloton/faq\r\n\r\nÀ demain en pleine forme!",
+    "imaged": true,
+    "numberOfGroups": 12
+  },
+  {
+    "feedType": "RIDE",
+    "id": "24f0effc-f6da-4bc7-9a0a-b9e8e8f8ffa0",
+    "teamId": "n-peloton",
+    "permalink": "Ridus_Nantes",
+    "publishedStatus": "PUBLISHED",
+    "type": "SPECIAL",
+    "date": "2025-03-15",
+    "startPlace": {
+      "id": "7b45bb02-8927-436d-9314-978f18799900rt",
+      "teamId": "n-peloton",
+      "name": "Fonderies",
+      "address": "Place des Fonderies 44200 Nantes",
+      "link": null,
+      "point": {
+        "lat": 47.20587797222379,
+        "lng": -1.545577968361348
+      },
+      "startPlace": true,
+      "endPlace": false
+    },
+    "endPlace": {
+      "id": "28bfe279-c55f-4e6f-9c63-29ff907360ef",
+      "teamId": "n-peloton",
+      "name": "Les Filles du Marronnier",
+      "address": "3 Boulevard Gabriel Lauriol 44300 Nantes",
+      "link": "https://www.instagram.com/lesfillesdumarronnier",
+      "point": {
+        "lat": 47.23467699754691,
+        "lng": -1.563506065359822
+      },
+      "startPlace": false,
+      "endPlace": true
+    },
+    "meetingTime": "08:00:00",
+    "publishedAt": "2025-03-01T09:00:00Z",
+    "title": "Ridus Nantes",
+    "description": "Prenez part à l'évènement cycliste co-organisé avec la Desertus Bikus !\r\n\r\nLe principe ? Un départ simultané (ou presque) dans différentes villes, avec des femmes et minorités de genre en tête de peloton. Cette grande sortie s'appuie sur des valeurs telles que la mixité et la tolérance, merci de venir si vous partagez et respectez les valeurs décrites ci-dessous.\r\n\r\nA Nantes, un départ collectif est prévu dès 8h depuis les Fonderies, peu importe la distance et l'allure. Si vous êtes OK nous pourrons prendre une photo de groupe avant de commencer.\r\n\r\n3 distances sont proposées pour ouvrir l'évènement à toutes et tous :\r\n- un 50 km\r\n- un 100 km\r\n- un 200 km\r\n\r\nIl s'agit de traces roulantes, de préférence par les petites routes.\r\n\r\nL'évènement est ouvert à tous·tes, gratuit, et sans inscription préalable. Néanmoins, pour avoir une idée du nombre de personnes à attendre, n'hésitez pas indiquer si vous comptez venir en vous cochant \"participant·e\" sur cette page.\r\n\r\nLes allures annoncées sont indicatives. Des groupes pourront se former spontanément sur les premiers kilomètres, mais on ne laisse personne seul·e ...\r\n\r\nFinish commun dès 17h30 aux Filles du Marronnier.\r\n\r\nGardez un peu d'énergie pour la fin de journée, un Goldsprint nous attend pour mettre à rude épreuve nos cuissots et nos émotions !\r\n\r\nATTENTION : il est fortement recommandé de prendre la map.\r\n\r\nRappel sécurité : MASQUE/ PERRUQUE ROSE/CASQUE/caa/outils/EAU/€/Coupe mulet conseillée\r\n\r\nPlusieurs points de ravito sont possibles sur la trace, et il est bien prévu de s'y arrêter. Néanmoins nous vous conseillons de prévoir le nécessaire pour s'alimenter \r\n/  s'hydrater en conséquence et selon vos besoins.\r\n\r\nBonne humeur\r\nMême dans la difficulté, garde le sourire avec les autres participant·e·s.\r\n\r\nRespect de l'humain\r\nOn ne laisse pas les stéréotypes influencer nos interactions avec autrui. On ne discrimine pas une personne sur des critères basés sur ses origines, sa couleur de peau, son genre ou identité de genre, son orientation sexuelle, son âge, son handicap, son origine sociale, son physique...\r\n\r\nEntraide\r\nCe n'est pas une course, sauf envers soi-même selon ses propres envies et défis personnels. L'individualité n'est pas de mise, on s’attend et on se rend service en cas de pépin.\r\n\r\nINFORMATIONS CONCERNANT LES TRACES :\r\n-\tPOUR LE 50 KM : départ et arrivée aux Fonderies, RDV au finish à partir de 17h30. Vous partirez sud Loire par les petites routes du Vignoble nantais. Vous découvrirez le point de vue de Pont-Caffino. Ravito possible à La Haie-Fouassière (boulangerie, café) et à la Chapelle-Heulin (boulangerie). Gare à La Haie-Fouassière en cas de souci. Retour par les marais de Goulaine.\r\n-\tPOUR LE 100 KM : départ et arrivée aux Fonderies, RDV au finish à partir de 17h30. Vous partirez sud Loire par les petites routes près du Lac de Grand-Lieu et de L’Achenau. Ravito possible à mi-parcours à Bourgneuf-en-Retz (boulangerie) et Saint-Cyr (épicerie), vous passerez par le point de vue de Saint-Cyr pour admirer le Marais Breton. Gares à Saint-Hilaire-de-Chaléons, Bourgneuf-en-Retz et Bouaye.\r\n-\tPOUR LE 200KM : Départ des Fonderies, arrivée directe au finish. Vous partirez nord Loire vers l'ouest, direction l'océan et Pénestin. Vous traverserez deux fois la Vilaine et passerez par le joli pont de La Roche-Bernard. Nombreux ravito possibles sur la route dont Savenay, Pontchâteau, Pénestin, Missilac, Sainte-Anne-sur-Brivet, et Bouvron. Gares à Savenay, Pontchâteau et Drefféac. \r\n\r\nLes Filles du Marronnier nous font le plaisir de nous recevoir. Une grande cour permettra de déposer vos vélos. Cependant, n'hésitez pas à ramener un petit lock pour le finish si vous en avez un. Il y aura de quoi boire et manger !\r\n\r\nHâte de toustes vous voir pour rouler et trinquer ensemble !",
+    "imaged": true,
+    "numberOfGroups": 4
+  },
+  {
+    "feedType": "RIDE",
+    "id": "20eac95b-dfe1-4955-8f4b-9cb494b7343d",
+    "teamId": "n-peloton",
+    "permalink": "Raymond_Ride_219",
+    "publishedStatus": "PUBLISHED",
+    "type": "REGULAR",
+    "date": "2025-03-02",
+    "startPlace": {
+      "id": "7b45bb02-8927-436d-9314-978f18799900rt",
+      "teamId": "n-peloton",
+      "name": "Fonderies",
+      "address": "Place des Fonderies 44200 Nantes",
+      "link": null,
+      "point": {
+        "lat": 47.20587797222379,
+        "lng": -1.545577968361348
+      },
+      "startPlace": true,
+      "endPlace": false
+    },
+    "endPlace": null,
+    "meetingTime": "08:30:00",
+    "publishedAt": "2025-02-28T11:00:00Z",
+    "title": "Raymond Ride #219",
+    "description": "ATTENTION AU CHANGEMENT D'HORAIRE DE DÉPART\r\n\r\nIl est fortement conseillé de prendre la map.\r\nMerci de respecter le code de la route, et de faire preuve de vigilance, notamment dans les agglomérations.\r\n\r\nAppli Android : https://n-peloton.fr/app-android\r\nAppli Garmin : https://n-peloton.fr/app-garmin\r\nAttention : Ride interdit aux mineur⋅e⋅s\r\nRappel sécurité : CASQUE/CAA/OUTILS/EAU/€",
+    "imaged": true,
+    "numberOfGroups": 3
+  },
+  {
+    "feedType": "RIDE",
+    "id": "21f0390e-c9c6-467d-b9e0-0d2255d3046c",
+    "teamId": "n-peloton",
+    "permalink": "N-Peloton_593",
+    "publishedStatus": "PUBLISHED",
+    "type": "REGULAR",
+    "date": "2025-02-26",
+    "startPlace": {
+      "id": "7b45bb02-8927-436d-9314-978f18799900rt",
+      "teamId": "n-peloton",
+      "name": "Fonderies",
+      "address": "Place des Fonderies 44200 Nantes",
+      "link": null,
+      "point": {
+        "lat": 47.20587797222379,
+        "lng": -1.545577968361348
+      },
+      "startPlace": true,
+      "endPlace": false
+    },
+    "endPlace": {
+      "id": "77522112-5182-44d0-9739-5cab5b5bb148",
+      "teamId": "n-peloton",
+      "name": "CafK",
+      "address": "2 Rue Bossuet 44000 Nantes",
+      "link": "https://www.facebook.com/cafKnantes",
+      "point": {
+        "lat": 47.21691803778663,
+        "lng": -1.5550249646443237
+      },
+      "startPlace": true,
+      "endPlace": true
+    },
+    "meetingTime": "19:30:00",
+    "publishedAt": "2025-02-25T11:00:00Z",
+    "title": "N-Peloton #593",
+    "description": "ATTENTION : il est fortement conseillé de prendre la map\r\nAppli Android : https://n-peloton.fr/app-android\r\nAppli Garmin : https://n-peloton.fr/app-garmin\r\nAttention : Ride interdit aux mineur·e·s\r\n\r\nRappel sécurité : LUMIERES PUISSANTES/GILET & PERRUQUE ROSE/CASQUE/caa/outils/EAU/€/Coupe mulet conseillée\r\n\r\nRespect des bonnes pratiques nécessaire pour la sécurité\r\net le plaisir de chacun·e : https://www.prendslaroue.fr/n-peloton/faq\r\n\r\nÀ demain en pleine forme!",
+    "imaged": true,
+    "numberOfGroups": 12
+  },
+  {
+    "feedType": "RIDE",
+    "id": "590448a0-600a-4cf6-9fab-3afe7a632cdf",
+    "teamId": "n-peloton",
+    "permalink": "Raymond_Ride_218",
+    "publishedStatus": "PUBLISHED",
+    "type": "REGULAR",
+    "date": "2025-02-23",
+    "startPlace": {
+      "id": "7b45bb02-8927-436d-9314-978f18799900rt",
+      "teamId": "n-peloton",
+      "name": "Fonderies",
+      "address": "Place des Fonderies 44200 Nantes",
+      "link": null,
+      "point": {
+        "lat": 47.20587797222379,
+        "lng": -1.545577968361348
+      },
+      "startPlace": true,
+      "endPlace": false
+    },
+    "endPlace": null,
+    "meetingTime": "08:45:00",
+    "publishedAt": "2025-02-21T11:00:00Z",
+    "title": "Raymond Ride #218",
+    "description": "ATTENTION : il est fortement conseillé de prendre la map\r\n\r\nMerci de respecter le code de la route, et de faire preuve de vigilance, notamment dans les agglomérations.\r\n\r\nAppli Android : https://n-peloton.fr/app-android\r\nAppli Garmin : https://n-peloton.fr/app-garmin\r\nAttention : Ride interdit aux mineur⋅e⋅s\r\nRappel sécurité : CASQUE/CAA/OUTILS/EAU/€",
+    "imaged": true,
+    "numberOfGroups": 4
+  },
+  {
+    "feedType": "RIDE",
+    "id": "2ab44845-ca86-480b-94a9-beca934ff7e4",
+    "teamId": "n-peloton",
+    "permalink": "N-Peloton_592",
+    "publishedStatus": "PUBLISHED",
+    "type": "REGULAR",
+    "date": "2025-02-19",
+    "startPlace": {
+      "id": "7b45bb02-8927-436d-9314-978f18799900rt",
+      "teamId": "n-peloton",
+      "name": "Fonderies",
+      "address": "Place des Fonderies 44200 Nantes",
+      "link": null,
+      "point": {
+        "lat": 47.20587797222379,
+        "lng": -1.545577968361348
+      },
+      "startPlace": true,
+      "endPlace": false
+    },
+    "endPlace": {
+      "id": "2265f2dc-1323-4115-8b0c-1d24693402c3",
+      "teamId": "n-peloton",
+      "name": "Chemin de Traverse",
+      "address": "2bis Rue Bon Secours 44000 Nantes",
+      "link": "https://le-chemin-de-traverse.bar/",
+      "point": {
+        "lat": 47.21372196070022,
+        "lng": -1.5537649341497979
+      },
+      "startPlace": true,
+      "endPlace": true
+    },
+    "meetingTime": "19:30:00",
+    "publishedAt": "2025-02-18T11:00:00Z",
+    "title": "N-Peloton #592",
+    "description": "ATTENTION : il est fortement conseillé de prendre la map\r\nAppli Android : https://n-peloton.fr/app-android\r\nAppli Garmin : https://n-peloton.fr/app-garmin\r\nAttention : Ride interdit aux mineur·e·s\r\n\r\nRappel sécurité : LUMIERES PUISSANTES/GILET & PERRUQUE ROSE/CASQUE/caa/outils/EAU/€/Coupe mulet conseillée\r\n\r\nRespect des bonnes pratiques nécessaire pour la sécurité\r\net le plaisir de chacun·e : https://www.prendslaroue.fr/n-peloton/faq\r\n\r\nÀ demain en pleine forme!",
+    "imaged": true,
+    "numberOfGroups": 12
+  },
+  {
+    "feedType": "RIDE",
+    "id": "e1fd98d2-91fd-4832-b87d-0afe1f372154",
+    "teamId": "n-peloton",
+    "permalink": "Raymond_Ride_217",
+    "publishedStatus": "PUBLISHED",
+    "type": "REGULAR",
+    "date": "2025-02-16",
+    "startPlace": {
+      "id": "7b45bb02-8927-436d-9314-978f18799900rt",
+      "teamId": "n-peloton",
+      "name": "Fonderies",
+      "address": "Place des Fonderies 44200 Nantes",
+      "link": null,
+      "point": {
+        "lat": 47.20587797222379,
+        "lng": -1.545577968361348
+      },
+      "startPlace": true,
+      "endPlace": false
+    },
+    "endPlace": null,
+    "meetingTime": "08:45:00",
+    "publishedAt": "2025-02-14T11:00:00Z",
+    "title": "Raymond Ride #217",
+    "description": "ATTENTION : il est fortement conseillé de prendre la map\r\n\r\nMerci de respecter le code de la route, et de faire preuve de vigilance, notamment dans les agglomérations.\r\n\r\nAppli Android : https://n-peloton.fr/app-android\r\nAppli Garmin : https://n-peloton.fr/app-garmin\r\nAttention : Ride interdit aux mineur⋅e⋅s\r\nRappel sécurité : CASQUE/CAA/OUTILS/EAU/€",
+    "imaged": false,
+    "numberOfGroups": 4
+  },
+  {
+    "feedType": "RIDE",
+    "id": "4fde50a8-8adb-4716-a2ca-8d6c7d5b62c3",
+    "teamId": "n-peloton",
+    "permalink": "N-Peloton_591",
+    "publishedStatus": "PUBLISHED",
+    "type": "REGULAR",
+    "date": "2025-02-12",
+    "startPlace": {
+      "id": "7b45bb02-8927-436d-9314-978f18799900rt",
+      "teamId": "n-peloton",
+      "name": "Fonderies",
+      "address": "Place des Fonderies 44200 Nantes",
+      "link": null,
+      "point": {
+        "lat": 47.20587797222379,
+        "lng": -1.545577968361348
+      },
+      "startPlace": true,
+      "endPlace": false
+    },
+    "endPlace": {
+      "id": "f4da88d8-b538-4fe9-b23f-afea0654460d",
+      "teamId": "n-peloton",
+      "name": "Le Point Bar",
+      "address": "38 Rue La Noue Bras de Fer 44200 Nantes",
+      "link": null,
+      "point": {
+        "lat": 47.20678199278835,
+        "lng": -1.5637959420394791
+      },
+      "startPlace": false,
+      "endPlace": true
+    },
+    "meetingTime": "19:30:00",
+    "publishedAt": "2025-02-11T11:00:00Z",
+    "title": "N-Peloton #591",
+    "description": "ATTENTION : il est fortement conseillé de prendre la map\r\nAppli Android : https://n-peloton.fr/app-android\r\nAppli Garmin : https://n-peloton.fr/app-garmin\r\nAttention : Ride interdit aux mineur·e·s\r\n\r\nRappel sécurité : LUMIERES PUISSANTES/GILET & PERRUQUE ROSE/CASQUE/caa/outils/EAU/€/Coupe mulet conseillée\r\n\r\nRespect des bonnes pratiques nécessaire pour la sécurité\r\net le plaisir de chacun·e : https://www.prendslaroue.fr/n-peloton/faq\r\n\r\nÀ demain en pleine forme!",
+    "imaged": true,
+    "numberOfGroups": 12
+  },
+  {
+    "feedType": "RIDE",
+    "id": "a2a9a0fb-c7cc-40e6-bed2-3f5d80c021ff",
+    "teamId": "n-peloton",
+    "permalink": "Raymond_Ride_216",
+    "publishedStatus": "PUBLISHED",
+    "type": "REGULAR",
+    "date": "2025-02-09",
+    "startPlace": {
+      "id": "7b45bb02-8927-436d-9314-978f18799900rt",
+      "teamId": "n-peloton",
+      "name": "Fonderies",
+      "address": "Place des Fonderies 44200 Nantes",
+      "link": null,
+      "point": {
+        "lat": 47.20587797222379,
+        "lng": -1.545577968361348
+      },
+      "startPlace": true,
+      "endPlace": false
+    },
+    "endPlace": null,
+    "meetingTime": "08:45:00",
+    "publishedAt": "2025-02-07T11:00:00Z",
+    "title": "Raymond Ride #216",
+    "description": "ATTENTION : NOUVEL HORAIRE DE DEPART\r\n\r\nIl est fortement conseillé de prendre la map.\r\n\r\nMerci de respecter le code de la route, et de faire preuve de vigilance, notamment dans les agglomérations.\r\n\r\nAppli Android : https://n-peloton.fr/app-android\r\nAppli Garmin : https://n-peloton.fr/app-garmin\r\nAttention : Ride interdit aux mineur⋅e⋅s\r\nRappel sécurité : CASQUE/CAA/OUTILS/EAU/€",
+    "imaged": true,
+    "numberOfGroups": 4
+  },
+  {
+    "feedType": "RIDE",
+    "id": "8d6afe20-0b03-41f3-876c-1aa0f7534337",
+    "teamId": "n-peloton",
+    "permalink": "N-Peloton_590",
+    "publishedStatus": "PUBLISHED",
+    "type": "REGULAR",
+    "date": "2025-02-05",
+    "startPlace": {
+      "id": "7b45bb02-8927-436d-9314-978f18799900rt",
+      "teamId": "n-peloton",
+      "name": "Fonderies",
+      "address": "Place des Fonderies 44200 Nantes",
+      "link": null,
+      "point": {
+        "lat": 47.20587797222379,
+        "lng": -1.545577968361348
+      },
+      "startPlace": true,
+      "endPlace": false
+    },
+    "endPlace": {
+      "id": "89706cb0-e699-4d0f-a50f-58de10ffc9bb",
+      "teamId": "n-peloton",
+      "name": "Bar Île",
+      "address": "9 Boulevard Gustave Roch 44200 Nantes",
+      "link": "https://www.facebook.com/lebarilenantes",
+      "point": {
+        "lat": 47.20476900972131,
+        "lng": -1.5484670016655318
+      },
+      "startPlace": false,
+      "endPlace": true
+    },
+    "meetingTime": "19:30:00",
+    "publishedAt": "2025-02-04T11:00:00Z",
+    "title": "N-Peloton #590",
+    "description": "ATTENTION : il est fortement conseillé de prendre la map\r\nAppli Android : https://n-peloton.fr/app-android\r\nAppli Garmin : https://n-peloton.fr/app-garmin\r\nAttention : Ride interdit aux mineur·e·s\r\n\r\nRappel sécurité : LUMIERES PUISSANTES/GILET & PERRUQUE ROSE/CASQUE/caa/outils/EAU/€/Coupe mulet conseillée\r\n\r\nRespect des bonnes pratiques nécessaire pour la sécurité\r\net le plaisir de chacun·e : https://www.prendslaroue.fr/n-peloton/faq\r\n\r\nÀ demain en pleine forme!",
+    "imaged": true,
+    "numberOfGroups": 12
+  },
+  {
+    "feedType": "RIDE",
+    "id": "1e3517d2-8c04-4a02-bab3-ba5ee9caf9d2",
+    "teamId": "n-peloton",
+    "permalink": "Raymond_Ride_215",
+    "publishedStatus": "PUBLISHED",
+    "type": "REGULAR",
+    "date": "2025-02-02",
+    "startPlace": {
+      "id": "7b45bb02-8927-436d-9314-978f18799900rt",
+      "teamId": "n-peloton",
+      "name": "Fonderies",
+      "address": "Place des Fonderies 44200 Nantes",
+      "link": null,
+      "point": {
+        "lat": 47.20587797222379,
+        "lng": -1.545577968361348
+      },
+      "startPlace": true,
+      "endPlace": false
+    },
+    "endPlace": null,
+    "meetingTime": "09:00:00",
+    "publishedAt": "2025-01-31T11:00:00Z",
+    "title": "Raymond Ride #215",
+    "description": "ATTENTION : DEPART 8h45 !\r\n\r\nIl est fortement conseillé de prendre la map\r\nMerci de respecter le code de la route, et de faire preuve de vigilance, notamment dans les agglomérations.\r\n\r\nAppli Android : https://n-peloton.fr/app-android\r\nAppli Garmin : https://n-peloton.fr/app-garmin\r\nRide interdit aux mineur⋅e⋅s\r\nRappel sécurité : CASQUE/CAA/OUTILS/EAU/€",
+    "imaged": true,
+    "numberOfGroups": 4
+  },
+  {
+    "feedType": "RIDE",
+    "id": "196293ad-9194-4c94-93b6-f2342cd767a2",
+    "teamId": "n-peloton",
+    "permalink": "N-Peloton_589",
+    "publishedStatus": "PUBLISHED",
+    "type": "REGULAR",
+    "date": "2025-01-29",
+    "startPlace": {
+      "id": "7b45bb02-8927-436d-9314-978f18799900rt",
+      "teamId": "n-peloton",
+      "name": "Fonderies",
+      "address": "Place des Fonderies 44200 Nantes",
+      "link": null,
+      "point": {
+        "lat": 47.20587797222379,
+        "lng": -1.545577968361348
+      },
+      "startPlace": true,
+      "endPlace": false
+    },
+    "endPlace": {
+      "id": "e33db393-7be1-43b9-b72d-8d90eaf89dda",
+      "teamId": "n-peloton",
+      "name": "Mashup",
+      "address": "63 Boulevard de la Prairie au Duc 44200 Nantes",
+      "link": "https://mashup-nantes.fr/",
+      "point": {
+        "lat": 47.20424603237672,
+        "lng": -1.5638799451823178
+      },
+      "startPlace": false,
+      "endPlace": true
+    },
+    "meetingTime": "19:30:00",
+    "publishedAt": "2025-01-28T11:00:00Z",
+    "title": "N-Peloton #589",
+    "description": "ATTENTION : il est fortement conseillé de prendre la map\r\nAppli Android : https://n-peloton.fr/app-android\r\nAppli Garmin : https://n-peloton.fr/app-garmin\r\nAttention : Ride interdit aux mineur·e·s\r\n\r\nRappel sécurité : LUMIERES PUISSANTES/GILET & PERRUQUE ROSE/CASQUE/caa/outils/EAU/€/Coupe mulet conseillée\r\n\r\nRespect des bonnes pratiques nécessaire pour la sécurité\r\net le plaisir de chacun·e : https://www.prendslaroue.fr/n-peloton/faq\r\n\r\nÀ demain en pleine forme!",
+    "imaged": true,
+    "numberOfGroups": 12
+  },
+  {
+    "feedType": "RIDE",
+    "id": "0ab9f4c7-6381-4290-acea-ea44d97bdb78",
+    "teamId": "n-peloton",
+    "permalink": "Raymond_Ride_214",
+    "publishedStatus": "PUBLISHED",
+    "type": "REGULAR",
+    "date": "2025-01-26",
+    "startPlace": {
+      "id": "7b45bb02-8927-436d-9314-978f18799900rt",
+      "teamId": "n-peloton",
+      "name": "Fonderies",
+      "address": "Place des Fonderies 44200 Nantes",
+      "link": null,
+      "point": {
+        "lat": 47.20587797222379,
+        "lng": -1.545577968361348
+      },
+      "startPlace": true,
+      "endPlace": false
+    },
+    "endPlace": null,
+    "meetingTime": "09:00:00",
+    "publishedAt": "2025-01-24T11:00:00Z",
+    "title": "Raymond Ride #214",
+    "description": "ATTENTION : il est fortement conseillé de prendre la map\r\n\r\nMerci de respecter le code de la route, et de faire preuve de vigilance, notamment dans les agglomérations.\r\n\r\nAppli Android : https://n-peloton.fr/app-android\r\nAppli Garmin : https://n-peloton.fr/app-garmin\r\nAttention : Ride interdit aux mineur⋅e⋅s\r\nRappel sécurité : CASQUE/CAA/OUTILS/EAU/€",
+    "imaged": true,
+    "numberOfGroups": 4
+  },
+  {
+    "feedType": "RIDE",
+    "id": "c8ed6707-018b-4481-a4d2-a035ab4fab97",
+    "teamId": "n-peloton",
+    "permalink": "N-Peloton_588",
+    "publishedStatus": "PUBLISHED",
+    "type": "REGULAR",
+    "date": "2025-01-22",
+    "startPlace": {
+      "id": "7b45bb02-8927-436d-9314-978f18799900rt",
+      "teamId": "n-peloton",
+      "name": "Fonderies",
+      "address": "Place des Fonderies 44200 Nantes",
+      "link": null,
+      "point": {
+        "lat": 47.20587797222379,
+        "lng": -1.545577968361348
+      },
+      "startPlace": true,
+      "endPlace": false
+    },
+    "endPlace": {
+      "id": "7f8a8da7-3167-4595-8726-859a1d019245",
+      "teamId": "n-peloton",
+      "name": "Pioche",
+      "address": "10 Rue de Bel Air 44000 Nantes",
+      "link": null,
+      "point": {
+        "lat": 47.2211500225097,
+        "lng": -1.5589980189579473
+      },
+      "startPlace": false,
+      "endPlace": true
+    },
+    "meetingTime": "19:30:00",
+    "publishedAt": "2025-01-21T11:30:00Z",
+    "title": "N-Peloton #588",
+    "description": "ATTENTION : il est fortement conseillé de prendre la map\r\nAppli Android : https://n-peloton.fr/app-android\r\nAppli Garmin : https://n-peloton.fr/app-garmin\r\nAttention : Ride interdit aux mineur·e·s\r\n\r\nRappel sécurité : LUMIERES PUISSANTES/GILET & PERRUQUE ROSE/CASQUE/caa/outils/EAU/€/Coupe mulet conseillée\r\n\r\nRespect des bonnes pratiques nécessaire pour la sécurité\r\net le plaisir de chacun·e : https://www.prendslaroue.fr/n-peloton/faq\r\n\r\nÀ demain en pleine forme!",
+    "imaged": true,
+    "numberOfGroups": 12
+  },
+  {
+    "feedType": "RIDE",
+    "id": "56029f54-c5a8-45a3-8bc7-4808358cd84f",
+    "teamId": "n-peloton",
+    "permalink": "Raymond_Ride_213",
+    "publishedStatus": "PUBLISHED",
+    "type": "REGULAR",
+    "date": "2025-01-19",
+    "startPlace": {
+      "id": "7b45bb02-8927-436d-9314-978f18799900rt",
+      "teamId": "n-peloton",
+      "name": "Fonderies",
+      "address": "Place des Fonderies 44200 Nantes",
+      "link": null,
+      "point": {
+        "lat": 47.20587797222379,
+        "lng": -1.545577968361348
+      },
+      "startPlace": true,
+      "endPlace": false
+    },
+    "endPlace": null,
+    "meetingTime": "09:00:00",
+    "publishedAt": "2025-01-17T11:00:00Z",
+    "title": "Raymond Ride #213",
+    "description": "ATTENTION : il est fortement conseillé de prendre la map\r\n\r\nMerci de respecter le code de la route, et de faire preuve de vigilance, notamment dans les agglomérations.\r\n\r\nAppli Android : https://n-peloton.fr/app-android\r\nAppli Garmin : https://n-peloton.fr/app-garmin\r\nAttention : Ride interdit aux mineur⋅e⋅s\r\nRappel sécurité : CASQUE/CAA/OUTILS/EAU/€",
+    "imaged": true,
+    "numberOfGroups": 4
+  },
+  {
+    "feedType": "RIDE",
+    "id": "5a8ff5a4-df2c-45cb-8dc6-3cf8461e989d",
+    "teamId": "n-peloton",
+    "permalink": "200_des_Ribines_2025",
+    "publishedStatus": "PUBLISHED",
+    "type": "SPECIAL",
+    "date": "2025-02-22",
+    "startPlace": {
+      "id": "7b45bb02-8927-436d-9314-978f18799900rt",
+      "teamId": "n-peloton",
+      "name": "Fonderies",
+      "address": "Place des Fonderies 44200 Nantes",
+      "link": null,
+      "point": {
+        "lat": 47.20587797222379,
+        "lng": -1.545577968361348
+      },
+      "startPlace": true,
+      "endPlace": false
+    },
+    "endPlace": {
+      "id": "2265f2dc-1323-4115-8b0c-1d24693402c3",
+      "teamId": "n-peloton",
+      "name": "Chemin de Traverse",
+      "address": "2bis Rue Bon Secours 44000 Nantes",
+      "link": "https://le-chemin-de-traverse.bar/",
+      "point": {
+        "lat": 47.21372196070022,
+        "lng": -1.5537649341497979
+      },
+      "startPlace": true,
+      "endPlace": true
+    },
+    "meetingTime": "08:15:00",
+    "publishedAt": "2025-01-16T09:00:00Z",
+    "title": "200 des Ribines 2025",
+    "description": "Tu veux repeindre ton vélo aux couleurs de la boue des ribines ? Rendez-vous le samedi 22 février 2025 aux fonderies pour un 200 des Ribines !\r\n\r\nUn départ collectif, puis plusieurs groupes se formeront en fonction de l'état et des envies de chacun.e.\r\nMap gravel léger (30% de chemins roulants et 70% de petites routes) mais qui doit passer en 30 slick cependant... Plaquettes de frein de rechange à prévoir...\r\n\r\nATTENTION : il est fortement conseillé de prendre la map\r\n\r\n\r\nRappel sécurité : MASQUE/ PERRUQUE ROSE/CASQUE/caa/outils/EAU/€/Coupe mulet conseillée\r\n\r\nBonne humeur\r\nMême dans la difficulté, garde le sourire avec les autres participant·e·s.\r\n\r\nRespect de l'humain\r\nNe laisse pas les stéréotypes influencer tes interactions avec autrui. On ne discrimine pas une personne sur des critères basés sur ses origines, sa couleur de peau, son genre ou identité de genre, son orientation sexuelle, son âge, son handicap, son origine sociale, son physique...\r\n\r\nEntraide\r\nCe n'est pas une course, sauf envers vous-même selon vos propres envies et défis personnels. Les allures annoncées sont indicatives. L'individualité n'est pas de mise.",
+    "imaged": true,
+    "numberOfGroups": 5
+  },
+  {
+    "feedType": "RIDE",
+    "id": "700958cd-1626-463f-bb0e-32703bea8404",
+    "teamId": "n-peloton",
+    "permalink": "N-Peloton_587",
+    "publishedStatus": "PUBLISHED",
+    "type": "REGULAR",
+    "date": "2025-01-15",
+    "startPlace": {
+      "id": "7b45bb02-8927-436d-9314-978f18799900rt",
+      "teamId": "n-peloton",
+      "name": "Fonderies",
+      "address": "Place des Fonderies 44200 Nantes",
+      "link": null,
+      "point": {
+        "lat": 47.20587797222379,
+        "lng": -1.545577968361348
+      },
+      "startPlace": true,
+      "endPlace": false
+    },
+    "endPlace": {
+      "id": "89706cb0-e699-4d0f-a50f-58de10ffc9bb",
+      "teamId": "n-peloton",
+      "name": "Bar Île",
+      "address": "9 Boulevard Gustave Roch 44200 Nantes",
+      "link": "https://www.facebook.com/lebarilenantes",
+      "point": {
+        "lat": 47.20476900972131,
+        "lng": -1.5484670016655318
+      },
+      "startPlace": false,
+      "endPlace": true
+    },
+    "meetingTime": "19:30:00",
+    "publishedAt": "2025-01-14T11:00:00Z",
+    "title": "N-Peloton #587",
+    "description": "ATTENTION : il est fortement conseillé de prendre la map\r\nAppli Android : https://n-peloton.fr/app-android\r\nAppli Garmin : https://n-peloton.fr/app-garmin\r\nAttention : Ride interdit aux mineur·e·s\r\n\r\nRappel sécurité : LUMIERES PUISSANTES/GILET & PERRUQUE ROSE/CASQUE/caa/outils/EAU/€/Coupe mulet conseillée\r\n\r\nRespect des bonnes pratiques nécessaire pour la sécurité\r\net le plaisir de chacun·e : https://www.prendslaroue.fr/n-peloton/faq\r\n\r\nÀ demain en pleine forme!",
+    "imaged": true,
+    "numberOfGroups": 12
+  },
+  {
+    "feedType": "RIDE",
+    "id": "27ca3acd-0e52-440e-bb35-4f59b1946325",
+    "teamId": "n-peloton",
+    "permalink": "Raymond_Ride_212",
+    "publishedStatus": "PUBLISHED",
+    "type": "REGULAR",
+    "date": "2025-01-12",
+    "startPlace": {
+      "id": "7b45bb02-8927-436d-9314-978f18799900rt",
+      "teamId": "n-peloton",
+      "name": "Fonderies",
+      "address": "Place des Fonderies 44200 Nantes",
+      "link": null,
+      "point": {
+        "lat": 47.20587797222379,
+        "lng": -1.545577968361348
+      },
+      "startPlace": true,
+      "endPlace": false
+    },
+    "endPlace": null,
+    "meetingTime": "09:00:00",
+    "publishedAt": "2025-01-10T11:00:00Z",
+    "title": "Raymond Ride #212",
+    "description": "ATTENTION : il est fortement conseillé de prendre la map\r\n\r\nMerci de respecter le code de la route, et de faire preuve de vigilance, notamment dans les agglomérations.\r\n\r\nAppli Android : https://n-peloton.fr/app-android\r\nAppli Garmin : https://n-peloton.fr/app-garmin\r\nAttention : Ride interdit aux mineur⋅e⋅s\r\nRappel sécurité : CASQUE/CAA/OUTILS/EAU/€",
+    "imaged": true,
+    "numberOfGroups": 4
+  },
+  {
+    "feedType": "RIDE",
+    "id": "99c18fd7-f443-4f64-968d-ef109dcde009",
+    "teamId": "n-peloton",
+    "permalink": "N-Peloton_586",
+    "publishedStatus": "PUBLISHED",
+    "type": "REGULAR",
+    "date": "2025-01-08",
+    "startPlace": {
+      "id": "7b45bb02-8927-436d-9314-978f18799900rt",
+      "teamId": "n-peloton",
+      "name": "Fonderies",
+      "address": "Place des Fonderies 44200 Nantes",
+      "link": null,
+      "point": {
+        "lat": 47.20587797222379,
+        "lng": -1.545577968361348
+      },
+      "startPlace": true,
+      "endPlace": false
+    },
+    "endPlace": {
+      "id": "d57e3dfc-356f-49c9-b58d-f1889195e8b9",
+      "teamId": "n-peloton",
+      "name": "BB'O Café Culturel",
+      "address": "16 Rue Petite Biesse 44200 Nantes",
+      "link": "https://www.facebook.com/people/BBO-Caf%C3%A9-Culturel/100090786021109/",
+      "point": {
+        "lat": 47.20434899964997,
+        "lng": -1.5482779685308623
+      },
+      "startPlace": false,
+      "endPlace": true
+    },
+    "meetingTime": "19:30:00",
+    "publishedAt": "2025-01-07T11:00:00Z",
+    "title": "N-Peloton #586",
+    "description": "ATTENTION : il est fortement conseillé de prendre la map\r\nAppli Android : https://n-peloton.fr/app-android\r\nAppli Garmin : https://n-peloton.fr/app-garmin\r\nAttention : Ride interdit aux mineur·e·s\r\n\r\nRappel sécurité : LUMIERES PUISSANTES/GILET & PERRUQUE ROSE/CASQUE/caa/outils/EAU/€/Coupe mulet conseillée\r\n\r\nRespect des bonnes pratiques nécessaire pour la sécurité\r\net le plaisir de chacun·e : https://www.prendslaroue.fr/n-peloton/faq\r\n\r\nÀ demain en pleine forme!",
+    "imaged": true,
+    "numberOfGroups": 12
+  },
+  {
+    "feedType": "RIDE",
+    "id": "d4991ccb-2618-48af-a726-8db61f47c51a",
+    "teamId": "n-peloton",
+    "permalink": "Raymond_Ride_211",
+    "publishedStatus": "PUBLISHED",
+    "type": "REGULAR",
+    "date": "2025-01-05",
+    "startPlace": {
+      "id": "7b45bb02-8927-436d-9314-978f18799900rt",
+      "teamId": "n-peloton",
+      "name": "Fonderies",
+      "address": "Place des Fonderies 44200 Nantes",
+      "link": null,
+      "point": {
+        "lat": 47.20587797222379,
+        "lng": -1.545577968361348
+      },
+      "startPlace": true,
+      "endPlace": false
+    },
+    "endPlace": null,
+    "meetingTime": "09:00:00",
+    "publishedAt": "2025-01-03T11:00:00Z",
+    "title": "Raymond Ride #211",
+    "description": "ATTENTION : il est fortement conseillé de prendre la map\r\n\r\nMerci de respecter le code de la route, et de faire preuve de vigilance, notamment dans les agglomérations.\r\n\r\nAppli Android : https://n-peloton.fr/app-android\r\nAppli Garmin : https://n-peloton.fr/app-garmin\r\nAttention : Ride interdit aux mineur⋅e⋅s\r\nRappel sécurité : CASQUE/CAA/OUTILS/EAU/€",
+    "imaged": true,
+    "numberOfGroups": 3
+  },
+  {
+    "feedType": "RIDE",
+    "id": "04bcb050-6322-472a-a55a-edb9aa5b49b5",
+    "teamId": "n-peloton",
+    "permalink": "N-Peloton_585",
+    "publishedStatus": "PUBLISHED",
+    "type": "REGULAR",
+    "date": "2025-01-01",
+    "startPlace": {
+      "id": "7b45bb02-8927-436d-9314-978f18799900rt",
+      "teamId": "n-peloton",
+      "name": "Fonderies",
+      "address": "Place des Fonderies 44200 Nantes",
+      "link": null,
+      "point": {
+        "lat": 47.20587797222379,
+        "lng": -1.545577968361348
+      },
+      "startPlace": true,
+      "endPlace": false
+    },
+    "endPlace": {
+      "id": "84ca342c-cb09-4649-a785-408002093590",
+      "teamId": "n-peloton",
+      "name": "Zazou",
+      "address": "3 Quai Turenne 44000 Nantes",
+      "link": "https://www.facebook.com/nictorzazou/",
+      "point": {
+        "lat": 47.213107007881575,
+        "lng": -1.553868994440838
+      },
+      "startPlace": false,
+      "endPlace": true
+    },
+    "meetingTime": "19:30:00",
+    "publishedAt": "2024-12-31T11:00:00Z",
+    "title": "N-Peloton #585",
+    "description": "ATTENTION : il est fortement conseillé de prendre la map\r\nAppli Android : https://n-peloton.fr/app-android\r\nAppli Garmin : https://n-peloton.fr/app-garmin\r\nAttention : Ride interdit aux mineur·e·s\r\n\r\nRappel sécurité : LUMIERES PUISSANTES/GILET & PERRUQUE ROSE/CASQUE/caa/outils/EAU/€/Coupe mulet conseillée\r\n\r\nRespect des bonnes pratiques nécessaire pour la sécurité\r\net le plaisir de chacun·e : https://www.prendslaroue.fr/n-peloton/faq\r\n\r\nÀ demain en pleine forme!",
+    "imaged": true,
+    "numberOfGroups": 12
+  },
+  {
+    "feedType": "RIDE",
+    "id": "51ba3784-c85d-4e52-9e17-d6310e43d0d8",
+    "teamId": "n-peloton",
+    "permalink": "N-Peloton_584",
+    "publishedStatus": "PUBLISHED",
+    "type": "REGULAR",
+    "date": "2024-12-25",
+    "startPlace": {
+      "id": "7b45bb02-8927-436d-9314-978f18799900rt",
+      "teamId": "n-peloton",
+      "name": "Fonderies",
+      "address": "Place des Fonderies 44200 Nantes",
+      "link": null,
+      "point": {
+        "lat": 47.20587797222379,
+        "lng": -1.545577968361348
+      },
+      "startPlace": true,
+      "endPlace": false
+    },
+    "endPlace": {
+      "id": "2b673d58-d786-4e16-a5de-91e72c37752a",
+      "teamId": "n-peloton",
+      "name": "FEU BAR",
+      "address": "87 Rue Maréchal Joffre 44000 Nantes",
+      "link": "http://www.instagram.com/feu.bar",
+      "point": {
+        "lat": 47.22020198956298,
+        "lng": -1.5489959364878023
+      },
+      "startPlace": false,
+      "endPlace": true
+    },
+    "meetingTime": "19:30:00",
+    "publishedAt": "2024-12-24T11:00:00Z",
+    "title": "N-Peloton #584",
+    "description": "ATTENTION : il est fortement conseillé de prendre la map\r\nAppli Android : https://n-peloton.fr/app-android\r\nAppli Garmin : https://n-peloton.fr/app-garmin\r\nAttention : Ride interdit aux mineur·e·s\r\n\r\nRappel sécurité : LUMIERES PUISSANTES/GILET & PERRUQUE ROSE/CASQUE/caa/outils/EAU/€/Coupe mulet conseillée\r\n\r\nRespect des bonnes pratiques nécessaire pour la sécurité\r\net le plaisir de chacun·e : https://www.prendslaroue.fr/n-peloton/faq\r\n\r\nÀ demain en pleine forme!",
+    "imaged": true,
+    "numberOfGroups": 12
+  },
+  {
+    "feedType": "RIDE",
+    "id": "63bc86c7-2075-4f96-9896-15d8b1d598b8",
+    "teamId": "n-peloton",
+    "permalink": "Raymond_Ride_210",
+    "publishedStatus": "PUBLISHED",
+    "type": "REGULAR",
+    "date": "2024-12-22",
+    "startPlace": {
+      "id": "7b45bb02-8927-436d-9314-978f18799900rt",
+      "teamId": "n-peloton",
+      "name": "Fonderies",
+      "address": "Place des Fonderies 44200 Nantes",
+      "link": null,
+      "point": {
+        "lat": 47.20587797222379,
+        "lng": -1.545577968361348
+      },
+      "startPlace": true,
+      "endPlace": false
+    },
+    "endPlace": null,
+    "meetingTime": "09:00:00",
+    "publishedAt": "2024-12-20T11:30:00Z",
+    "title": "Raymond Ride #210",
+    "description": "ATTENTION : il est fortement conseillé de prendre la map\r\n\r\nMerci de respecter le code de la route, et de faire preuve de vigilance, notamment dans les agglomérations.\r\n\r\nAppli Android : https://n-peloton.fr/app-android\r\nAppli Garmin : https://n-peloton.fr/app-garmin\r\nAttention : Ride interdit aux mineur⋅e⋅s\r\nRappel sécurité : CASQUE/CAA/OUTILS/EAU/€",
+    "imaged": true,
+    "numberOfGroups": 4
+  },
+  {
+    "feedType": "RIDE",
+    "id": "32372b9c-ab5b-474e-a4a9-d241264126b4",
+    "teamId": "n-peloton",
+    "permalink": "N-Peloton_583",
+    "publishedStatus": "PUBLISHED",
+    "type": "REGULAR",
+    "date": "2024-12-18",
+    "startPlace": {
+      "id": "7b45bb02-8927-436d-9314-978f18799900rt",
+      "teamId": "n-peloton",
+      "name": "Fonderies",
+      "address": "Place des Fonderies 44200 Nantes",
+      "link": null,
+      "point": {
+        "lat": 47.20587797222379,
+        "lng": -1.545577968361348
+      },
+      "startPlace": true,
+      "endPlace": false
+    },
+    "endPlace": {
+      "id": "4882d892-1a52-4ca0-9acc-6cc93ebcb8c7",
+      "teamId": "n-peloton",
+      "name": "Atomics",
+      "address": "6 Cours Olivier De Clisson 44000 Nantes",
+      "link": null,
+      "point": {
+        "lat": 47.213087963775365,
+        "lng": -1.5547220556476014
+      },
+      "startPlace": false,
+      "endPlace": true
+    },
+    "meetingTime": "19:30:00",
+    "publishedAt": "2024-12-17T11:00:00Z",
+    "title": "N-Peloton #583",
+    "description": "ATTENTION : il est fortement conseillé de prendre la map\r\nAppli Android : https://n-peloton.fr/app-android\r\nAppli Garmin : https://n-peloton.fr/app-garmin\r\nAttention : Ride interdit aux mineur·e·s\r\n\r\nRappel sécurité : LUMIERES PUISSANTES/GILET & PERRUQUE ROSE/CASQUE/caa/outils/EAU/€/Coupe mulet conseillée\r\n\r\nRespect des bonnes pratiques nécessaire pour la sécurité\r\net le plaisir de chacun·e : https://www.prendslaroue.fr/n-peloton/faq\r\n\r\nÀ demain en pleine forme!",
+    "imaged": true,
+    "numberOfGroups": 12
+  },
+  {
+    "feedType": "RIDE",
+    "id": "aa41581e-e2de-422d-980a-254ed4dd67b1",
+    "teamId": "n-peloton",
+    "permalink": "Raymond_Ride_209",
+    "publishedStatus": "PUBLISHED",
+    "type": "REGULAR",
+    "date": "2024-12-15",
+    "startPlace": {
+      "id": "7b45bb02-8927-436d-9314-978f18799900rt",
+      "teamId": "n-peloton",
+      "name": "Fonderies",
+      "address": "Place des Fonderies 44200 Nantes",
+      "link": null,
+      "point": {
+        "lat": 47.20587797222379,
+        "lng": -1.545577968361348
+      },
+      "startPlace": true,
+      "endPlace": false
+    },
+    "endPlace": null,
+    "meetingTime": "09:00:00",
+    "publishedAt": "2024-12-13T11:00:00Z",
+    "title": "Raymond Ride #209",
+    "description": "ATTENTION : il est fortement conseillé de prendre la map\r\n\r\nMerci de respecter le code de la route, et de faire preuve de vigilance, notamment dans les agglomérations.\r\n\r\nAppli Android : https://n-peloton.fr/app-android\r\nAppli Garmin : https://n-peloton.fr/app-garmin\r\nAttention : Ride interdit aux mineur⋅e⋅s\r\nRappel sécurité : CASQUE/CAA/OUTILS/EAU/€",
+    "imaged": true,
+    "numberOfGroups": 4
+  },
+  {
+    "feedType": "RIDE",
+    "id": "870527cb-22cd-4027-9d77-11d4b7c844b0",
+    "teamId": "n-peloton",
+    "permalink": "N-Peloton_582",
+    "publishedStatus": "PUBLISHED",
+    "type": "REGULAR",
+    "date": "2024-12-11",
+    "startPlace": {
+      "id": "7b45bb02-8927-436d-9314-978f18799900rt",
+      "teamId": "n-peloton",
+      "name": "Fonderies",
+      "address": "Place des Fonderies 44200 Nantes",
+      "link": null,
+      "point": {
+        "lat": 47.20587797222379,
+        "lng": -1.545577968361348
+      },
+      "startPlace": true,
+      "endPlace": false
+    },
+    "endPlace": {
+      "id": "f4da88d8-b538-4fe9-b23f-afea0654460d",
+      "teamId": "n-peloton",
+      "name": "Le Point Bar",
+      "address": "38 Rue La Noue Bras de Fer 44200 Nantes",
+      "link": null,
+      "point": {
+        "lat": 47.20678199278835,
+        "lng": -1.5637959420394791
+      },
+      "startPlace": false,
+      "endPlace": true
+    },
+    "meetingTime": "19:30:00",
+    "publishedAt": "2024-12-10T11:00:00Z",
+    "title": "N-Peloton #582",
+    "description": "ATTENTION : il est fortement conseillé de prendre la map\r\nAppli Android : https://n-peloton.fr/app-android\r\nAppli Garmin : https://n-peloton.fr/app-garmin\r\nAttention : Ride interdit aux mineur·e·s\r\n\r\nRappel sécurité : LUMIERES PUISSANTES/GILET & PERRUQUE ROSE/CASQUE/caa/outils/EAU/€/Coupe mulet conseillée\r\n\r\nRespect des bonnes pratiques nécessaire pour la sécurité\r\net le plaisir de chacun·e : https://www.prendslaroue.fr/n-peloton/faq\r\n\r\nÀ demain en pleine forme!",
+    "imaged": true,
+    "numberOfGroups": 12
+  }
+]

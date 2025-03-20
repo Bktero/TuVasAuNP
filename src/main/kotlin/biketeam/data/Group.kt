@@ -10,7 +10,7 @@ data class Group(
     val id: String,
     val name: String,
     val meetingTime: LocalTime,
-    val averageSpeed: Int,
+    val averageSpeed: UInt,
     val map: Map,
     val participants: List<Participant>
 ) {
@@ -29,7 +29,7 @@ data class Group(
                 id = json.getString("id"),
                 name = json.getString("name"),
                 meetingTime = LocalTime.parse(json.getString("meetingTime")),
-                averageSpeed = json.getInt("averageSpeed"),
+                averageSpeed = json.getInt("averageSpeed").toUInt(),
                 map = Map.from(json.getJSONObject("map")),
                 participants = participants
             )
