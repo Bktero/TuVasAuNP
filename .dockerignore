@@ -1,0 +1,4 @@
+# IntelliJ's Run Configurations may set environment variable with sensitive data.
+# They are stored in .idea/workspace.xml normally.
+# It's better to exclude the entire directory altogether from the Docker context.
+.idea
