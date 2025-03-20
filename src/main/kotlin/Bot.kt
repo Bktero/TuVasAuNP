@@ -13,6 +13,7 @@ import java.time.DayOfWeek
 import java.time.LocalDate
 import java.time.LocalDateTime
 import java.time.Period
+import kotlin.system.exitProcess
 
 private fun DayOfWeek.toFrench(): String {
     when (this) {
@@ -53,7 +54,20 @@ class Bot(private val telegramClient: TelegramClient, private val adminId: Strin
     private val mapDownloader = MapDownloader(downloadDirectory)
 
     init {
+        // Delete all files downloaded during a previous execution
         downloadDirectory.deleteRecursively()
+
+
+        // Recreate the download directory
+        println("Creating directory $downloadDirectory...")
+        val created = downloadDirectory.mkdirs()
+
+        if (created) {
+            println("OK")
+        } else {
+            println("Failure")
+            exitProcess(1)
+        }
     }
 
     override fun consume(update: Update?) {
