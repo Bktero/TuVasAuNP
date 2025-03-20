@@ -3,6 +3,7 @@ import biketeam.WednesdayGroups
 import biketeam.data.Ride
 import org.telegram.telegrambots.longpolling.util.LongPollingSingleThreadUpdateConsumer
 import org.telegram.telegrambots.meta.api.methods.send.SendDocument
+import org.telegram.telegrambots.meta.api.methods.send.SendLocation
 import org.telegram.telegrambots.meta.api.methods.send.SendMessage
 import org.telegram.telegrambots.meta.api.objects.InputFile
 import org.telegram.telegrambots.meta.api.objects.Update
@@ -194,7 +195,7 @@ class Bot(private val telegramClient: TelegramClient, private val adminId: Strin
 
             else -> {
                 sendText(
-                    "Désolé, on est encore que ${today.dayOfWeek.toFrench()}... Il faut attendre un peu plus pour la prochaine sortie !",
+                    "Désolé, on est encore que ${today.dayOfWeek.toFrench()}... Il faut attendre un peu pour la prochaine sortie !",
                     userId
                 )
             }
@@ -220,8 +221,8 @@ class Bot(private val telegramClient: TelegramClient, private val adminId: Strin
     }
 
     private fun processRide(ride: Ride, userId: String) {
+        // First, get the map
         val desiredGroups = setOf(WednesdayGroups.C3, WednesdayGroups.SuperChillGravel)
-
         sendText("Récupération des maps pour les groupes $desiredGroups pour la sortie ${ride.title}", userId)
 
         for (group in ride.groups) {
@@ -231,6 +232,33 @@ class Bot(private val telegramClient: TelegramClient, private val adminId: Strin
                 println("Map for group ${group.name} is here: $file")
                 val caption = "Voici la la map pour ${group.name}. RDV à ${group.meetingTime}"
                 sendFile(file, caption, userId)
+            }
+        }
+
+        // Second, get the bar
+        val entries = biketeamClient.requestFeed();
+        for (entry in entries) {
+            if (entry.title == ride.title && entry.date == ride.date) {
+                // The title and the date are the same, we have normally found our entry
+                when (entry.endPlace) {
+                    null -> {
+                        sendText("Oh ben... On ne sait pas où est le finish :(", userId)
+                    }
+
+                    else -> {
+                        val name = entry.endPlace.name
+                        val address = entry.endPlace.address
+                        sendText("Le finish sera ici: $name => $address", userId)
+
+                        val method = SendLocation
+                            .builder()
+                            .chatId(userId)
+                            .latitude(entry.endPlace.point.latitude)
+                            .longitude(entry.endPlace.point.longitude)
+                            .build()
+                        telegramClient.execute(method)
+                    }
+                }
             }
         }
     }
