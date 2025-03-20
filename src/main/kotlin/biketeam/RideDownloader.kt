@@ -1,4 +1,6 @@
-import data.Ride
+package biketeam
+
+import biketeam.data.Ride
 import org.json.JSONArray
 import java.net.URI
 import java.time.LocalDate
@@ -12,7 +14,7 @@ class RideDownloader {
 
     fun day(date: LocalDate): List<Ride> {
         val array = download("$baseUrl?from=$date&to=$date")
-        val rides = mutableListOf<Ride>();
+        val rides = mutableListOf<Ride>()
         for (i in 0 until array.length()) {
             rides.add(Ride.from(array.getJSONObject(i)))
         }

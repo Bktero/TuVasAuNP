@@ -1,11 +1,13 @@
-package data
+package biketeam.data
 
 import org.json.JSONObject
 import java.time.LocalDate
 import java.time.ZonedDateTime
 import java.time.format.DateTimeFormatter
 
-// Main Ride class
+/**
+ * A dataclass to represent the objects returned by the `/rides` API.
+ */
 data class Ride(
     val id: String,
     val date: LocalDate,

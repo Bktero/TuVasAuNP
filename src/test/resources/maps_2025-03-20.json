@@ -1,0 +1,140 @@
+[
+  {
+    "id": "9807a5fd-141a-4a4a-99c7-6bde820c2ba6",
+    "teamId": "n-peloton",
+    "permalink": "RR_222_G3Chill",
+    "name": "RR #222 G3Chill",
+    "length": 84.18,
+    "type": "ROAD",
+    "positiveElevation": 537.0,
+    "negativeElevation": -538.8,
+    "postedAt": "2025-03-20",
+    "tags": [
+      "Sortie Hebdo"
+    ],
+    "crossing": false
+  },
+  {
+    "id": "feb440a9-791e-4dac-8708-dfbc24f9a594",
+    "teamId": "n-peloton",
+    "permalink": "RR_222_G1G2",
+    "name": "RR #222 G1G2",
+    "length": 96.62,
+    "type": "ROAD",
+    "positiveElevation": 618.9,
+    "negativeElevation": -620.7,
+    "postedAt": "2025-03-20",
+    "tags": [
+      "Sortie Hebdo"
+    ],
+    "crossing": false
+  },
+  {
+    "id": "2d36d9a2-d472-4863-ab15-cb7ba9bbe858",
+    "teamId": "n-peloton",
+    "permalink": "NP_596_Gravel_Superchill",
+    "name": "NP_596_Gravel_Superchill",
+    "length": 32.02,
+    "type": "GRAVEL",
+    "positiveElevation": 229.7,
+    "negativeElevation": -228.6,
+    "postedAt": "2025-03-18",
+    "tags": [
+      "Gravel débutant",
+      "Sortie Hebdo"
+    ],
+    "crossing": false
+  },
+  {
+    "id": "d1e3f375-811d-4997-87b5-343716f6ecf6",
+    "teamId": "n-peloton",
+    "permalink": "NP_596_Gravel",
+    "name": "NP_596_Gravel",
+    "length": 47.13,
+    "type": "GRAVEL",
+    "positiveElevation": 365.9,
+    "negativeElevation": -364.8,
+    "postedAt": "2025-03-18",
+    "tags": [
+      "Gravel expert",
+      "Gravel intermédiaire",
+      "Sortie Hebdo"
+    ],
+    "crossing": true
+  },
+  {
+    "id": "13b42859-9c5c-43ff-87c6-4454b34907fc",
+    "teamId": "n-peloton",
+    "permalink": "NP_596_C4",
+    "name": "NP #596 C4",
+    "length": 35.42,
+    "type": "ROAD",
+    "positiveElevation": 317.6,
+    "negativeElevation": -315.4,
+    "postedAt": "2025-03-17",
+    "tags": [
+      "Sortie Hebdo"
+    ],
+    "crossing": false
+  },
+  {
+    "id": "217073aa-2013-4e75-98d4-fc5468505b32",
+    "teamId": "n-peloton",
+    "permalink": "NP_596_G123",
+    "name": "NP #596 G123",
+    "length": 65.05,
+    "type": "ROAD",
+    "positiveElevation": 491.2,
+    "negativeElevation": -489.1,
+    "postedAt": "2025-03-17",
+    "tags": [
+      "Sortie Hebdo"
+    ],
+    "crossing": false
+  },
+  {
+    "id": "f2f1a5b4-c669-45e7-aa2a-1c05fbc9556e",
+    "teamId": "n-peloton",
+    "permalink": "NP_596_C3",
+    "name": "NP #596 C3",
+    "length": 42.0,
+    "type": "ROAD",
+    "positiveElevation": 324.6,
+    "negativeElevation": -322.4,
+    "postedAt": "2025-03-17",
+    "tags": [
+      "Sortie Hebdo"
+    ],
+    "crossing": false
+  },
+  {
+    "id": "fe0f48ba-3f3b-4716-802d-2ef12eaa3b32",
+    "teamId": "n-peloton",
+    "permalink": "NP_596_G4C012",
+    "name": "NP #596 G4C012",
+    "length": 55.18,
+    "type": "ROAD",
+    "positiveElevation": 421.9,
+    "negativeElevation": -419.8,
+    "postedAt": "2025-03-17",
+    "tags": [
+      "Sortie Hebdo"
+    ],
+    "crossing": false
+  },
+  {
+    "id": "200bc9f0-ec4a-4801-8e7f-2ffc24fc5a54",
+    "teamId": "n-peloton",
+    "permalink": "RR_221_G1",
+    "name": "RR #221 G1",
+    "length": 92.1,
+    "type": "ROAD",
+    "positiveElevation": 698.3,
+    "negativeElevation": -697.7,
+    "postedAt": "2025-03-13",
+    "tags": [
+      "Sortie Hebdo"
+    ],
+    "crossing": false
+  }
+]

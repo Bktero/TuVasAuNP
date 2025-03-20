@@ -1,4 +1,7 @@
-import data.Ride
+import biketeam.MapDownloader
+import biketeam.RideDownloader
+import biketeam.WednesdayGroups
+import biketeam.data.Ride
 import org.telegram.telegrambots.longpolling.util.LongPollingSingleThreadUpdateConsumer
 import org.telegram.telegrambots.meta.api.methods.send.SendDocument
 import org.telegram.telegrambots.meta.api.methods.send.SendMessage

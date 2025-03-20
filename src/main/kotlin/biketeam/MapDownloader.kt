@@ -1,4 +1,6 @@
-import data.Map
+package biketeam
+
+import biketeam.data.Map
 import java.io.File
 import java.net.URI
 import kotlin.system.exitProcess

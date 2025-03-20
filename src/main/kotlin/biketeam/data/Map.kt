@@ -1,10 +1,10 @@
-package data
+package biketeam.data
 
 import org.json.JSONObject
-import java.io.File
-import java.net.URI
 
-// data.Map class
+/**
+ * A dataclass to represent the objects returned by the `/maps` API.
+ */
 data class Map(
     val id: String,
     val name: String,

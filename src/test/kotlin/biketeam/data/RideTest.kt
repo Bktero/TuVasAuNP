@@ -1,22 +1,24 @@
-import biketeam.data.Map
+package biketeam.data
+
+import loadJsonArrayFile
+import loadResourceFile
 import org.junit.jupiter.api.Test
 import kotlin.test.assertEquals
 
-
-class MapTest {
+class RideTest {
     @Test
     fun test() {
         // TODO we may use ApprovalTests here
-        val input = loadJsonArrayFile("maps_2025-03-20.json")
+        val input = loadJsonArrayFile("rides_2025-03-20.json")
 
         var output = ""
         for (i in 0 until input.length()) {
             val jsonObject = input.getJSONObject(i)
-            val map = Map.from(jsonObject)
-            output += map.toString() + "\n"
+            val ride = Ride.from(jsonObject)
+            output += ride.toString() + "\n"
         }
 
-        val expected = loadResourceFile("maps.txt")
+        val expected = loadResourceFile("rides.txt")
         assertEquals(expected, output)
     }
 }

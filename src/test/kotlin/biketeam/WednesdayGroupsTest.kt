@@ -1,9 +1,10 @@
-import org.junit.jupiter.api.Assertions.*
+package biketeam
+
 import org.junit.jupiter.api.Test
+import kotlin.test.assertEquals
 
 
 class WednesdayGroupsTest {
-
     @Test
     fun testValidGuess() {
         val names = listOf(
@@ -58,7 +59,7 @@ class WednesdayGroupsTest {
 
         for (name in names) {
             val actual = WednesdayGroups.guess(name)
-            assertEquals( null, actual)
+            assertEquals(null, actual)
         }
     }
 }

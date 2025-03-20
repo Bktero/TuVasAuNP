@@ -1,0 +1,2877 @@
+[
+  {
+    "id": "19e2daaf-881f-41ed-8e7c-60985c7c7d36",
+    "teamId": "n-peloton",
+    "permalink": "N-Peloton_596",
+    "publishedStatus": "PUBLISHED",
+    "type": "REGULAR",
+    "date": "2025-03-19",
+    "publishedAt": "2025-03-18T11:00:00Z",
+    "title": "N-Peloton #596",
+    "description": "ATTENTION : il est fortement conseillé de prendre la map\r\nAppli Android : https://n-peloton.fr/app-android\r\nAppli Garmin : https://n-peloton.fr/app-garmin\r\nAttention : Ride interdit aux mineur·e·s\r\n\r\nRappel sécurité : LUMIERES PUISSANTES/GILET & PERRUQUE ROSE/CASQUE/caa/outils/EAU/€/Coupe mulet conseillée\r\n\r\nRespect des bonnes pratiques nécessaire pour la sécurité\r\net le plaisir de chacun·e : https://www.prendslaroue.fr/n-peloton/faq\r\n\r\nÀ demain en pleine forme!",
+    "imaged": true,
+    "groups": [
+      {
+        "id": "129bf698-731b-49d1-a9aa-6d8da09594ac",
+        "name": "G4 \uD83E\uDD55",
+        "averageSpeed": 30.0,
+        "map": {
+          "id": "fe0f48ba-3f3b-4716-802d-2ef12eaa3b32",
+          "teamId": "n-peloton",
+          "permalink": "NP_596_G4C012",
+          "name": "NP #596 G4C012",
+          "length": 55.18,
+          "type": "ROAD",
+          "positiveElevation": 421.9,
+          "negativeElevation": -419.8,
+          "postedAt": "2025-03-17",
+          "tags": [
+            "Sortie Hebdo"
+          ],
+          "crossing": false
+        },
+        "meetingTime": "20:30:00",
+        "participants": []
+      },
+      {
+        "id": "07406937-1e4b-4eab-8f46-fcde015d8f6f",
+        "name": "C4 Super Chill \uD83E\uDD66",
+        "averageSpeed": 20.0,
+        "map": {
+          "id": "13b42859-9c5c-43ff-87c6-4454b34907fc",
+          "teamId": "n-peloton",
+          "permalink": "NP_596_C4",
+          "name": "NP #596 C4",
+          "length": 35.42,
+          "type": "ROAD",
+          "positiveElevation": 317.6,
+          "negativeElevation": -315.4,
+          "postedAt": "2025-03-17",
+          "tags": [
+            "Sortie Hebdo"
+          ],
+          "crossing": false
+        },
+        "meetingTime": "19:30:00",
+        "participants": [
+          {
+            "identity": "Victor D",
+            "id": "cf303c90-e135-4962-8275-c185d110f9cf"
+          },
+          {
+            "identity": "Nicolas Vaumourin",
+            "id": "6682cca3-1387-42ac-b89b-cc0d2dc02f17"
+          }
+        ]
+      },
+      {
+        "id": "4c3b50d5-51cb-4fe4-aa1e-5b6a87fda5a2",
+        "name": "C1 \uD83C\uDF4B",
+        "averageSpeed": 28.0,
+        "map": {
+          "id": "fe0f48ba-3f3b-4716-802d-2ef12eaa3b32",
+          "teamId": "n-peloton",
+          "permalink": "NP_596_G4C012",
+          "name": "NP #596 G4C012",
+          "length": 55.18,
+          "type": "ROAD",
+          "positiveElevation": 421.9,
+          "negativeElevation": -419.8,
+          "postedAt": "2025-03-17",
+          "tags": [
+            "Sortie Hebdo"
+          ],
+          "crossing": false
+        },
+        "meetingTime": "19:30:00",
+        "participants": [
+          {
+            "identity": "Renan Gaubert",
+            "id": "141e7962-575b-4e44-8adf-1a846fcb11ca"
+          },
+          {
+            "identity": "Pierre Praud",
+            "id": "7947bbf4-a11a-4a08-84ec-b69573c7d954"
+          },
+          {
+            "identity": "Titouan Lepoittevin",
+            "id": "966f1530-91e9-43cd-9ba0-e867940cb549"
+          },
+          {
+            "identity": "Luc R",
+            "id": "66d4f7a7-fee0-40de-9bae-af205eff3842"
+          },
+          {
+            "identity": "Clément Grd",
+            "id": "51eba75f-4c15-4fd4-a27a-93dd1779d174"
+          }
+        ]
+      },
+      {
+        "id": "d445443d-f10d-41c9-87d7-ec30f7b50eee",
+        "name": "Chill Gravel \uD83C\uDF47",
+        "averageSpeed": 20.0,
+        "map": {
+          "id": "d1e3f375-811d-4997-87b5-343716f6ecf6",
+          "teamId": "n-peloton",
+          "permalink": "NP_596_Gravel",
+          "name": "NP_596_Gravel",
+          "length": 47.13,
+          "type": "GRAVEL",
+          "positiveElevation": 365.9,
+          "negativeElevation": -364.8,
+          "postedAt": "2025-03-18",
+          "tags": [
+            "Gravel expert",
+            "Gravel intermédiaire",
+            "Sortie Hebdo"
+          ],
+          "crossing": true
+        },
+        "meetingTime": "19:30:00",
+        "participants": [
+          {
+            "identity": "Franck Biclown",
+            "id": "c0c54b6f-7b29-4160-8540-dde4e10bdbed"
+          },
+          {
+            "identity": "Timothée Bargain",
+            "id": "c64edd02-b7cf-44be-bf9d-3e85117a61f3"
+          },
+          {
+            "identity": "Arnaud Maurel",
+            "id": "723c2cc3-5e38-435b-9d5b-b78a7da13926"
+          }
+        ]
+      },
+      {
+        "id": "a2f1760e-3219-410e-878f-050d9f67c6ec",
+        "name": "G2 \uD83C\uDF51",
+        "averageSpeed": 35.0,
+        "map": {
+          "id": "217073aa-2013-4e75-98d4-fc5468505b32",
+          "teamId": "n-peloton",
+          "permalink": "NP_596_G123",
+          "name": "NP #596 G123",
+          "length": 65.05,
+          "type": "ROAD",
+          "positiveElevation": 491.2,
+          "negativeElevation": -489.1,
+          "postedAt": "2025-03-17",
+          "tags": [
+            "Sortie Hebdo"
+          ],
+          "crossing": false
+        },
+        "meetingTime": "20:30:00",
+        "participants": [
+          {
+            "identity": "Nicolas G.",
+            "id": "b5fd2d0e-f654-4b80-93c3-18dd169dadc4"
+          },
+          {
+            "identity": "Antoine Cypierre",
+            "id": "0541328b-5309-435d-b4d8-e99063ed379e"
+          },
+          {
+            "identity": "Clement Bonneau \uD83C\uDDEB\uD83C\uDDF7",
+            "id": "1a11682a-fca0-4f18-ba41-2eca3045aefb"
+          },
+          {
+            "identity": "Jérôme REDUREAU",
+            "id": "9f20972c-f3e5-45d3-97e9-15683815ef38"
+          }
+        ]
+      },
+      {
+        "id": "8b64a66e-11bf-41c7-bf1d-345c066ac2cc",
+        "name": "Superchill Gravel \uD83E\uDED0",
+        "averageSpeed": 16.0,
+        "map": {
+          "id": "2d36d9a2-d472-4863-ab15-cb7ba9bbe858",
+          "teamId": "n-peloton",
+          "permalink": "NP_596_Gravel_Superchill",
+          "name": "NP_596_Gravel_Superchill",
+          "length": 32.02,
+          "type": "GRAVEL",
+          "positiveElevation": 229.7,
+          "negativeElevation": -228.6,
+          "postedAt": "2025-03-18",
+          "tags": [
+            "Gravel débutant",
+            "Sortie Hebdo"
+          ],
+          "crossing": false
+        },
+        "meetingTime": "19:30:00",
+        "participants": [
+          {
+            "identity": "Gui Yome Wisu",
+            "id": "a9cca0f7-d99f-4c04-a265-e20f4dc03622"
+          }
+        ]
+      },
+      {
+        "id": "742639e4-ecb3-491b-a84a-294a343d1fe3",
+        "name": "G3 \uD83C\uDF4C",
+        "averageSpeed": 32.0,
+        "map": {
+          "id": "217073aa-2013-4e75-98d4-fc5468505b32",
+          "teamId": "n-peloton",
+          "permalink": "NP_596_G123",
+          "name": "NP #596 G123",
+          "length": 65.05,
+          "type": "ROAD",
+          "positiveElevation": 491.2,
+          "negativeElevation": -489.1,
+          "postedAt": "2025-03-17",
+          "tags": [
+            "Sortie Hebdo"
+          ],
+          "crossing": false
+        },
+        "meetingTime": "20:30:00",
+        "participants": [
+          {
+            "identity": "William Soler",
+            "id": "aae4337f-1665-4182-a3f2-d4745b01b0a4"
+          },
+          {
+            "identity": "Marcos P",
+            "id": "0434e3b7-1c08-4032-9bfd-fc988856da1b"
+          }
+        ]
+      },
+      {
+        "id": "709aff4a-6314-4d8b-9836-21fd10ce1ccb",
+        "name": "C0 Fast Pack \uD83C\uDF46",
+        "averageSpeed": 32.0,
+        "map": {
+          "id": "fe0f48ba-3f3b-4716-802d-2ef12eaa3b32",
+          "teamId": "n-peloton",
+          "permalink": "NP_596_G4C012",
+          "name": "NP #596 G4C012",
+          "length": 55.18,
+          "type": "ROAD",
+          "positiveElevation": 421.9,
+          "negativeElevation": -419.8,
+          "postedAt": "2025-03-17",
+          "tags": [
+            "Sortie Hebdo"
+          ],
+          "crossing": false
+        },
+        "meetingTime": "19:30:00",
+        "participants": []
+      },
+      {
+        "id": "5ec4a323-d16f-4ad9-9f39-ddc8f9e8cc0a",
+        "name": "G1 \uD83C\uDF36️",
+        "averageSpeed": 38.0,
+        "map": {
+          "id": "217073aa-2013-4e75-98d4-fc5468505b32",
+          "teamId": "n-peloton",
+          "permalink": "NP_596_G123",
+          "name": "NP #596 G123",
+          "length": 65.05,
+          "type": "ROAD",
+          "positiveElevation": 491.2,
+          "negativeElevation": -489.1,
+          "postedAt": "2025-03-17",
+          "tags": [
+            "Sortie Hebdo"
+          ],
+          "crossing": false
+        },
+        "meetingTime": "20:30:00",
+        "participants": []
+      },
+      {
+        "id": "f8a63b39-e362-4435-b96f-e7198d47a454",
+        "name": "Gravel \uD83C\uDF30",
+        "averageSpeed": 24.0,
+        "map": {
+          "id": "d1e3f375-811d-4997-87b5-343716f6ecf6",
+          "teamId": "n-peloton",
+          "permalink": "NP_596_Gravel",
+          "name": "NP_596_Gravel",
+          "length": 47.13,
+          "type": "GRAVEL",
+          "positiveElevation": 365.9,
+          "negativeElevation": -364.8,
+          "postedAt": "2025-03-18",
+          "tags": [
+            "Gravel expert",
+            "Gravel intermédiaire",
+            "Sortie Hebdo"
+          ],
+          "crossing": true
+        },
+        "meetingTime": "19:30:00",
+        "participants": [
+          {
+            "identity": "Yann Haffner",
+            "id": "a57cbce1-926d-4291-a4d4-3d37d5d752b0"
+          },
+          {
+            "identity": "PouletFurtif (Flavien L.)",
+            "id": "b0fa6242-5d8a-4dee-abc1-bc38d663f7b6"
+          }
+        ]
+      },
+      {
+        "id": "3f0e9442-f2b5-4fc7-a057-c7bad02c2667",
+        "name": "C3 \uD83C\uDF53",
+        "averageSpeed": 22.0,
+        "map": {
+          "id": "f2f1a5b4-c669-45e7-aa2a-1c05fbc9556e",
+          "teamId": "n-peloton",
+          "permalink": "NP_596_C3",
+          "name": "NP #596 C3",
+          "length": 42.0,
+          "type": "ROAD",
+          "positiveElevation": 324.6,
+          "negativeElevation": -322.4,
+          "postedAt": "2025-03-17",
+          "tags": [
+            "Sortie Hebdo"
+          ],
+          "crossing": false
+        },
+        "meetingTime": "19:30:00",
+        "participants": [
+          {
+            "identity": "Chloé Peltier",
+            "id": "4d1a9e3c-a38d-49e8-8a87-7e0f75c29bf2"
+          }
+        ]
+      },
+      {
+        "id": "4a6b4e92-37fb-4919-9382-8acbd263c62f",
+        "name": "C2 \uD83C\uDF44",
+        "averageSpeed": 25.0,
+        "map": {
+          "id": "fe0f48ba-3f3b-4716-802d-2ef12eaa3b32",
+          "teamId": "n-peloton",
+          "permalink": "NP_596_G4C012",
+          "name": "NP #596 G4C012",
+          "length": 55.18,
+          "type": "ROAD",
+          "positiveElevation": 421.9,
+          "negativeElevation": -419.8,
+          "postedAt": "2025-03-17",
+          "tags": [
+            "Sortie Hebdo"
+          ],
+          "crossing": false
+        },
+        "meetingTime": "19:30:00",
+        "participants": [
+          {
+            "identity": "Alexandre Grignon",
+            "id": "c565f26d-e4bc-4f2e-8aea-83eb02ee3f13"
+          },
+          {
+            "identity": "Benjamin Rbt",
+            "id": "5b1dafb2-e6a5-4634-9b56-015dc5bccb0e"
+          },
+          {
+            "identity": "Juliette K.",
+            "id": "9dc0432c-a0b3-4372-a123-e7af69c7dd91"
+          },
+          {
+            "identity": "Thibaut Clss",
+            "id": "e88e94a9-9f55-424e-9d15-d0b9a7d44b69"
+          },
+          {
+            "identity": "Pierre-Louis Pancher",
+            "id": "ac25860c-a512-43f0-93bc-63282e106c7e"
+          },
+          {
+            "identity": "Pierre LEBLANC",
+            "id": "baa334c4-82e1-45da-8f7e-ec6e1d0e703d"
+          },
+          {
+            "identity": "Céline Chtl",
+            "id": "32a07e08-072f-4468-a794-2fb196091f66"
+          },
+          {
+            "identity": "Theo Friolaud",
+            "id": "dd732e88-d726-4d30-838f-ae8fa35c27da"
+          },
+          {
+            "identity": "Malo Dupont",
+            "id": "70547ea8-edaf-4fb2-8549-ef807ebe714d"
+          },
+          {
+            "identity": "Benjamin Chaurois",
+            "id": "227d81ac-4a3d-4a4d-bbdc-7aeb190c31c2"
+          },
+          {
+            "identity": "Rémy Bertrand",
+            "id": "7649aed2-e400-400e-b84a-93e0070c907e"
+          },
+          {
+            "identity": "Nico DUGRAIN",
+            "id": "a405ad7a-4852-425e-bbf0-0eddc655cbef"
+          },
+          {
+            "identity": "Benjamin Dugast",
+            "id": "7c73eb0d-97f4-42b2-805e-745d54e53ed5"
+          },
+          {
+            "identity": "Lorand Boa",
+            "id": "a7374880-d590-4d6c-9e62-4b4996e9e083"
+          },
+          {
+            "identity": "T S",
+            "id": "24678038-85ea-414f-bacc-6d81a5b3eaef"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "80c4882f-4f50-41bd-8ebf-0e2d3deeff04",
+    "teamId": "n-peloton",
+    "permalink": "Raymond_Ride_221",
+    "publishedStatus": "PUBLISHED",
+    "type": "REGULAR",
+    "date": "2025-03-16",
+    "publishedAt": "2025-03-14T11:00:00Z",
+    "title": "Raymond Ride #221",
+    "description": "ATTENTION : il est fortement conseillé de prendre la map\r\n\r\nMerci de respecter le code de la route, et de faire preuve de vigilance, notamment dans les agglomérations.\r\n\r\nAppli Android : https://n-peloton.fr/app-android\r\nAppli Garmin : https://n-peloton.fr/app-garmin\r\nAttention : Ride interdit aux mineur⋅e⋅s\r\nRappel sécurité : CASQUE/CAA/OUTILS/EAU/€",
+    "imaged": false,
+    "groups": [
+      {
+        "id": "be5b12cb-6eae-470e-b9c7-7cdd800d5408",
+        "name": "G1",
+        "averageSpeed": 33.0,
+        "map": {
+          "id": "200bc9f0-ec4a-4801-8e7f-2ffc24fc5a54",
+          "teamId": "n-peloton",
+          "permalink": "RR_221_G1",
+          "name": "RR #221 G1",
+          "length": 92.1,
+          "type": "ROAD",
+          "positiveElevation": 698.3,
+          "negativeElevation": -697.7,
+          "postedAt": "2025-03-13",
+          "tags": [
+            "Sortie Hebdo"
+          ],
+          "crossing": false
+        },
+        "meetingTime": "08:30:00",
+        "participants": [
+          {
+            "identity": "Lucas Bckr",
+            "id": "4846065f-f5c3-47fd-b63a-cf395a599292"
+          }
+        ]
+      },
+      {
+        "id": "94a3e08d-1ebc-4a3a-a545-733377d15741",
+        "name": "Chill",
+        "averageSpeed": 27.0,
+        "map": {
+          "id": "ca0bb93b-b843-4a64-9c8d-693466e94c18",
+          "teamId": "n-peloton",
+          "permalink": "RR_221_Chill",
+          "name": "RR #221 Chill",
+          "length": 79.22,
+          "type": "ROAD",
+          "positiveElevation": 518.9,
+          "negativeElevation": -518.4,
+          "postedAt": "2025-03-13",
+          "tags": [
+            "Sortie Hebdo"
+          ],
+          "crossing": false
+        },
+        "meetingTime": "08:30:00",
+        "participants": [
+          {
+            "identity": "Fayhaz Fayhaz guroo",
+            "id": "8253c005-4372-49bf-9c9f-4ace9cd033b4"
+          },
+          {
+            "identity": "Sebastian Peña",
+            "id": "36058304-438d-4b6e-b3b4-c0709550e007"
+          }
+        ]
+      },
+      {
+        "id": "f40166af-4fc9-4f79-99d4-d094dd9bdc9c",
+        "name": "G2",
+        "averageSpeed": 30.0,
+        "map": {
+          "id": "200bc9f0-ec4a-4801-8e7f-2ffc24fc5a54",
+          "teamId": "n-peloton",
+          "permalink": "RR_221_G1",
+          "name": "RR #221 G1",
+          "length": 92.1,
+          "type": "ROAD",
+          "positiveElevation": 698.3,
+          "negativeElevation": -697.7,
+          "postedAt": "2025-03-13",
+          "tags": [
+            "Sortie Hebdo"
+          ],
+          "crossing": false
+        },
+        "meetingTime": "08:30:00",
+        "participants": [
+          {
+            "identity": "Yohann Bardy",
+            "id": "7cddc041-d0d2-48a7-9ff7-63a55615cca3"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "24f0effc-f6da-4bc7-9a0a-b9e8e8f8ffa0",
+    "teamId": "n-peloton",
+    "permalink": "Ridus_Nantes",
+    "publishedStatus": "PUBLISHED",
+    "type": "SPECIAL",
+    "date": "2025-03-15",
+    "publishedAt": "2025-03-01T09:00:00Z",
+    "title": "Ridus Nantes",
+    "description": "Prenez part à l'évènement cycliste co-organisé avec la Desertus Bikus !\r\n\r\nLe principe ? Un départ simultané (ou presque) dans différentes villes, avec des femmes et minorités de genre en tête de peloton. Cette grande sortie s'appuie sur des valeurs telles que la mixité et la tolérance, merci de venir si vous partagez et respectez les valeurs décrites ci-dessous.\r\n\r\nA Nantes, un départ collectif est prévu dès 8h depuis les Fonderies, peu importe la distance et l'allure. Si vous êtes OK nous pourrons prendre une photo de groupe avant de commencer.\r\n\r\n3 distances sont proposées pour ouvrir l'évènement à toutes et tous :\r\n- un 50 km\r\n- un 100 km\r\n- un 200 km\r\n\r\nIl s'agit de traces roulantes, de préférence par les petites routes.\r\n\r\nL'évènement est ouvert à tous·tes, gratuit, et sans inscription préalable. Néanmoins, pour avoir une idée du nombre de personnes à attendre, n'hésitez pas indiquer si vous comptez venir en vous cochant \"participant·e\" sur cette page.\r\n\r\nLes allures annoncées sont indicatives. Des groupes pourront se former spontanément sur les premiers kilomètres, mais on ne laisse personne seul·e ...\r\n\r\nFinish commun dès 17h30 aux Filles du Marronnier.\r\n\r\nGardez un peu d'énergie pour la fin de journée, un Goldsprint nous attend pour mettre à rude épreuve nos cuissots et nos émotions !\r\n\r\nATTENTION : il est fortement recommandé de prendre la map.\r\n\r\nRappel sécurité : MASQUE/ PERRUQUE ROSE/CASQUE/caa/outils/EAU/€/Coupe mulet conseillée\r\n\r\nPlusieurs points de ravito sont possibles sur la trace, et il est bien prévu de s'y arrêter. Néanmoins nous vous conseillons de prévoir le nécessaire pour s'alimenter \r\n/  s'hydrater en conséquence et selon vos besoins.\r\n\r\nBonne humeur\r\nMême dans la difficulté, garde le sourire avec les autres participant·e·s.\r\n\r\nRespect de l'humain\r\nOn ne laisse pas les stéréotypes influencer nos interactions avec autrui. On ne discrimine pas une personne sur des critères basés sur ses origines, sa couleur de peau, son genre ou identité de genre, son orientation sexuelle, son âge, son handicap, son origine sociale, son physique...\r\n\r\nEntraide\r\nCe n'est pas une course, sauf envers soi-même selon ses propres envies et défis personnels. L'individualité n'est pas de mise, on s’attend et on se rend service en cas de pépin.\r\n\r\nINFORMATIONS CONCERNANT LES TRACES :\r\n-\tPOUR LE 50 KM : départ et arrivée aux Fonderies, RDV au finish à partir de 17h30. Vous partirez sud Loire par les petites routes du Vignoble nantais. Vous découvrirez le point de vue de Pont-Caffino. Ravito possible à La Haie-Fouassière (boulangerie, café) et à la Chapelle-Heulin (boulangerie). Gare à La Haie-Fouassière en cas de souci. Retour par les marais de Goulaine.\r\n-\tPOUR LE 100 KM : départ et arrivée aux Fonderies, RDV au finish à partir de 17h30. Vous partirez sud Loire par les petites routes près du Lac de Grand-Lieu et de L’Achenau. Ravito possible à mi-parcours à Bourgneuf-en-Retz (boulangerie) et Saint-Cyr (épicerie), vous passerez par le point de vue de Saint-Cyr pour admirer le Marais Breton. Gares à Saint-Hilaire-de-Chaléons, Bourgneuf-en-Retz et Bouaye.\r\n-\tPOUR LE 200KM : Départ des Fonderies, arrivée directe au finish. Vous partirez nord Loire vers l'ouest, direction l'océan et Pénestin. Vous traverserez deux fois la Vilaine et passerez par le joli pont de La Roche-Bernard. Nombreux ravito possibles sur la route dont Savenay, Pontchâteau, Pénestin, Missilac, Sainte-Anne-sur-Brivet, et Bouvron. Gares à Savenay, Pontchâteau et Drefféac. \r\n\r\nLes Filles du Marronnier nous font le plaisir de nous recevoir. Une grande cour permettra de déposer vos vélos. Cependant, n'hésitez pas à ramener un petit lock pour le finish si vous en avez un. Il y aura de quoi boire et manger !\r\n\r\nHâte de toustes vous voir pour rouler et trinquer ensemble !",
+    "imaged": true,
+    "groups": [
+      {
+        "id": "ae8502fa-7e49-450a-a0f1-ec3dd1f37b57",
+        "name": "100km \uD83C\uDF36️\uD83C\uDF36️",
+        "averageSpeed": 22.0,
+        "map": {
+          "id": "de4d09d5-5913-4e05-8472-ebf2b098f514",
+          "teamId": "n-peloton",
+          "permalink": "RIDUS_100",
+          "name": "RIDUS 100",
+          "length": 104.47,
+          "type": "ROAD",
+          "positiveElevation": 569.6,
+          "negativeElevation": -571.1,
+          "postedAt": "2025-02-13",
+          "tags": [],
+          "crossing": false
+        },
+        "meetingTime": "08:00:00",
+        "participants": [
+          {
+            "identity": "Ale Garrote",
+            "id": "141f95b6-5d14-49d3-94b2-6dfd77a78cf4"
+          },
+          {
+            "identity": "Morgano Legarreco",
+            "id": "b109912c-3191-43db-9501-abb7f7598205"
+          },
+          {
+            "identity": "Juliette K.",
+            "id": "9dc0432c-a0b3-4372-a123-e7af69c7dd91"
+          },
+          {
+            "identity": "Raphaelle Riché",
+            "id": "a3fa010d-e764-4d76-be8d-d2af38120d51"
+          },
+          {
+            "identity": "Alex Gaignard",
+            "id": "6b68fd55-9f53-4729-b573-69c81587986a"
+          },
+          {
+            "identity": "Lise Carnot",
+            "id": "0d07dbc6-bae2-49ce-9a3e-5df847d8961e"
+          },
+          {
+            "identity": "kevin richard",
+            "id": "73b7bab8-2476-4493-a2da-427b30ca8de2"
+          },
+          {
+            "identity": "Thomas Goyet",
+            "id": "b3fc5cd9-5b65-4287-9dcf-4d7c83d5c83a"
+          },
+          {
+            "identity": "Chloé Peltier",
+            "id": "4d1a9e3c-a38d-49e8-8a87-7e0f75c29bf2"
+          },
+          {
+            "identity": "valentin guillaud",
+            "id": "0418282e-490f-4ee7-a00c-6613b10a96ae"
+          },
+          {
+            "identity": "Pierre-Louis Pancher",
+            "id": "ac25860c-a512-43f0-93bc-63282e106c7e"
+          },
+          {
+            "identity": "Clément Robelin",
+            "id": "a7b12e0f-14f6-4b98-99ab-3057a15dc6f0"
+          },
+          {
+            "identity": "Lucie Gayer",
+            "id": "38a14f88-6624-493a-9a5c-ef6ec4989b81"
+          },
+          {
+            "identity": "C'est moi Wawane",
+            "id": "65ee3140-0c46-4f44-93da-662b3f650e7c"
+          },
+          {
+            "identity": "Antoine Vignon",
+            "id": "90c120c6-3716-45fd-95df-0b70eaed095c"
+          },
+          {
+            "identity": "Eliott Planchin",
+            "id": "4229d2f4-07cb-4fc6-9b2b-db71e612db35"
+          },
+          {
+            "identity": "Clément Champy",
+            "id": "8e0f80c4-445b-4510-99c8-db978822a22b"
+          },
+          {
+            "identity": "juliette même",
+            "id": "7ea7f7a5-872e-403c-96e8-9d1611d6c55b"
+          },
+          {
+            "identity": "Roxane Leclère",
+            "id": "0b67ad31-c6d5-4697-9a0f-e608edd9a6bd"
+          },
+          {
+            "identity": "Benjamin Rbt",
+            "id": "5b1dafb2-e6a5-4634-9b56-015dc5bccb0e"
+          },
+          {
+            "identity": "CoCo BmX",
+            "id": "0bbcec52-0d14-439a-ac89-888c72ea80fa"
+          },
+          {
+            "identity": "Caro V",
+            "id": "19bec9cb-aeeb-432d-8ec5-452fbe272958"
+          },
+          {
+            "identity": "Laura S",
+            "id": "35da6dd9-ff53-4060-a337-fc8704111fb5"
+          },
+          {
+            "identity": "Quentin BEAUREPAIRE",
+            "id": "ea378573-2f7f-41d0-b1f2-e0a06e26e8a3"
+          },
+          {
+            "identity": "Raoul Y",
+            "id": "3251acfb-456a-4482-8dae-1fbb935ee5ad"
+          },
+          {
+            "identity": "Nina W",
+            "id": "394a712f-02ab-490a-a869-2eb0b00fc214"
+          },
+          {
+            "identity": "thomas guilbaud",
+            "id": "53b42c9a-4589-4c97-87ba-556ff872d677"
+          },
+          {
+            "identity": "Clément Da-Purificaçao",
+            "id": "050c7922-4113-4afa-962d-287b015b4940"
+          },
+          {
+            "identity": "Louise MC",
+            "id": "71c374f6-b17c-40dc-84c0-a00f646cf81e"
+          },
+          {
+            "identity": "Aurelien Barraud",
+            "id": "955db274-dba6-4d3e-a29b-6d99f6faa8b3"
+          },
+          {
+            "identity": "Strava Athlete",
+            "id": "3dc0613c-1c2a-44fd-9fd0-c1216aefc1e8"
+          }
+        ]
+      },
+      {
+        "id": "cf626902-51a5-4681-84b9-e65f6055f3f8",
+        "name": "DireKtoBar",
+        "averageSpeed": 22.0,
+        "map": {
+          "id": "77378701-197a-45de-833b-969b61a3ca5a",
+          "teamId": "n-peloton",
+          "permalink": "DIREKTOBAR",
+          "name": "DIREKTOBAR",
+          "length": 3.95,
+          "type": "ROAD",
+          "positiveElevation": 33.3,
+          "negativeElevation": -15.3,
+          "postedAt": "2025-02-25",
+          "tags": [
+            "Sortie Hebdo"
+          ],
+          "crossing": false
+        },
+        "meetingTime": "08:00:00",
+        "participants": [
+          {
+            "identity": "Benjito C.",
+            "id": "87c65b37-1409-4a5a-98f0-955a68cffa28"
+          }
+        ]
+      },
+      {
+        "id": "e987fb84-3b3c-41e2-bf1d-56a91185e3e7",
+        "name": "200km \uD83C\uDF36️\uD83C\uDF36️\uD83C\uDF36️",
+        "averageSpeed": 22.0,
+        "map": {
+          "id": "f2b755d6-82e8-4703-9245-31808ac0dcdb",
+          "teamId": "n-peloton",
+          "permalink": "RIDUS_200",
+          "name": "RIDUS 200",
+          "length": 200.85,
+          "type": "ROAD",
+          "positiveElevation": 1437.4,
+          "negativeElevation": -1417.5,
+          "postedAt": "2025-02-13",
+          "tags": [
+            "Sortie Hebdo"
+          ],
+          "crossing": false
+        },
+        "meetingTime": "08:00:00",
+        "participants": [
+          {
+            "identity": "Vincent vinzzz",
+            "id": "69a17183-e046-4ac9-bc2c-5c3e67b83b72"
+          },
+          {
+            "identity": "Thomas Sulle",
+            "id": "fa04c5f1-5457-47e7-a24e-8c5576ab2cb6"
+          },
+          {
+            "identity": "Hervé Criaud",
+            "id": "81c45ac3-9709-46a3-9cab-f12ea5226ff9"
+          },
+          {
+            "identity": "Gabrielle A.",
+            "id": "f4820bc8-4a27-442d-9454-fd3d907b1f99"
+          },
+          {
+            "identity": "Benjamin Chaurois",
+            "id": "227d81ac-4a3d-4a4d-bbdc-7aeb190c31c2"
+          },
+          {
+            "identity": "Bri Eg",
+            "id": "9a1fd476-70c4-4255-9f76-6bcd38d043b8"
+          },
+          {
+            "identity": "T S",
+            "id": "24678038-85ea-414f-bacc-6d81a5b3eaef"
+          },
+          {
+            "identity": "Sébastien T.",
+            "id": "f7efcf93-da0c-4889-8a63-ee3a1ceaf2e5"
+          },
+          {
+            "identity": "Numa Benamer",
+            "id": "373f87e6-dde0-469a-bd08-cd8e5504d047"
+          },
+          {
+            "identity": "Auriane Dion",
+            "id": "38945f3b-a8d9-47ae-b375-5aa50a963c73"
+          },
+          {
+            "identity": "Nicolas Fradin",
+            "id": "e55da41f-fff6-49ed-9e44-cacd645721d2"
+          },
+          {
+            "identity": "Yann GO",
+            "id": "89e9b8df-4c1d-4165-84b7-d12d92a667bf"
+          },
+          {
+            "identity": "Francois Lebreton",
+            "id": "aee17dd2-6909-40ba-98c3-72589b5db044"
+          },
+          {
+            "identity": "Ver Gozilla",
+            "id": "2cd4e6c2-c305-4b55-a46e-42932b5fcc99"
+          },
+          {
+            "identity": "Louise Rglr",
+            "id": "44b689be-1245-4181-b055-0c8daa4a7f22"
+          },
+          {
+            "identity": "Antoine Blondeau \uD83C\uDD8E",
+            "id": "2aa44c80-207a-4034-82c0-1fc4af61d06d"
+          },
+          {
+            "identity": "Julien Viniane",
+            "id": "1a007df0-fb69-4e28-ad5b-ec04784667e7"
+          },
+          {
+            "identity": "DANILO Thomas",
+            "id": "bea1dfe6-1729-4dfd-b7c0-048085e1dd21"
+          },
+          {
+            "identity": "Jean-Baptiste Minvielle",
+            "id": "73013d05-b455-464e-a0c7-c98ae1a80ff3"
+          },
+          {
+            "identity": "Luc R",
+            "id": "66d4f7a7-fee0-40de-9bae-af205eff3842"
+          },
+          {
+            "identity": "Romain Folliot",
+            "id": "cb177105-abd8-47a3-bb3e-bb4208a2ddbf"
+          },
+          {
+            "identity": "Iris Sachet",
+            "id": "3cd4be4d-6422-4696-98b9-dc54958f2cef"
+          },
+          {
+            "identity": "Franck Biclown",
+            "id": "c0c54b6f-7b29-4160-8540-dde4e10bdbed"
+          },
+          {
+            "identity": "Léo Jacq",
+            "id": "6ccfa698-f63d-49d9-9158-6989491705bd"
+          },
+          {
+            "identity": "Stéphane G",
+            "id": "910b8c4c-ed48-4793-9346-7ce7b92ad6e9"
+          },
+          {
+            "identity": "Minh Tam Kaplan",
+            "id": "e0a07da0-cfa4-4508-81ab-75e90818ae9b"
+          },
+          {
+            "identity": "All’ Road",
+            "id": "df489cff-3f1c-4031-80c0-7afff4697ffe"
+          },
+          {
+            "identity": "Mickael B",
+            "id": "ff20b8b6-abc8-4abb-a191-8a8e2390b182"
+          },
+          {
+            "identity": "Flo Mars",
+            "id": "e68d9974-189d-4f00-af8a-eb96b336edec"
+          },
+          {
+            "identity": "Jonathan Reboux",
+            "id": "60294719-9c64-4a1e-9858-46bbe33ade7d"
+          },
+          {
+            "identity": "William Soler",
+            "id": "aae4337f-1665-4182-a3f2-d4745b01b0a4"
+          },
+          {
+            "identity": "Pierre Praud",
+            "id": "7947bbf4-a11a-4a08-84ec-b69573c7d954"
+          },
+          {
+            "identity": "Laura Orlhiac",
+            "id": "bdfe2cae-2b1b-49ce-88e8-6a3551dd02f0"
+          },
+          {
+            "identity": "David Papapostolou",
+            "id": "6ebd9b43-0330-47f2-8a1d-6194feb0a249"
+          },
+          {
+            "identity": "sebastien lessire",
+            "id": "d316d5a5-53a8-44d2-b6cb-88bbb0d85624"
+          },
+          {
+            "identity": "Lucas Bckr",
+            "id": "4846065f-f5c3-47fd-b63a-cf395a599292"
+          },
+          {
+            "identity": "Céline Chtl",
+            "id": "32a07e08-072f-4468-a794-2fb196091f66"
+          },
+          {
+            "identity": "Vincent D",
+            "id": "5d8dac90-75cb-4f1b-b92a-acdf4b209a10"
+          },
+          {
+            "identity": "Silvi DeA.",
+            "id": "ebb6acfb-c130-41c9-94ca-3e824f2e2443"
+          },
+          {
+            "identity": "Gaby Landais",
+            "id": "06ceb207-2c9f-4260-a7c5-833edd84837e"
+          }
+        ]
+      },
+      {
+        "id": "c0f92ba0-d5be-48a3-8669-ddc987c533bd",
+        "name": "50km \uD83C\uDF36️",
+        "averageSpeed": 22.0,
+        "map": {
+          "id": "2a48daf7-9302-458a-8b95-761abefa42f5",
+          "teamId": "n-peloton",
+          "permalink": "RIDUS_50",
+          "name": "RIDUS 50",
+          "length": 54.6,
+          "type": "ROAD",
+          "positiveElevation": 337.9,
+          "negativeElevation": -337.1,
+          "postedAt": "2025-02-13",
+          "tags": [],
+          "crossing": false
+        },
+        "meetingTime": "08:00:00",
+        "participants": [
+          {
+            "identity": "Clémence Castagnet",
+            "id": "2c4c2808-29cf-4e76-a65b-54d2de01939a"
+          },
+          {
+            "identity": "Antoine Renault",
+            "id": "f4ed0e98-8ec3-483a-93c1-e305f060d046"
+          },
+          {
+            "identity": "Maëlle Michalewicz",
+            "id": "2c3e78e6-8ba5-464b-b11b-cccd37b21923"
+          },
+          {
+            "identity": "Guillaume B.",
+            "id": "ea2958e4-73da-48a9-ab29-9735b8e58f66"
+          },
+          {
+            "identity": "Anaïs B.",
+            "id": "d9422583-c8dd-4e6d-9085-a5ba6f24ed55"
+          },
+          {
+            "identity": "Tiphaine LJ",
+            "id": "0c0ddd91-24c6-45ef-882e-2044e4864c21"
+          },
+          {
+            "identity": "Anne-Lise Alexis",
+            "id": "56a66fda-16f7-4dd0-90d1-dc1e43d87956"
+          },
+          {
+            "identity": "Antoine Laurent-A",
+            "id": "4ac80b9a-fce6-4fda-85fa-8382a2f9f922"
+          },
+          {
+            "identity": "Dorine Coquillaud",
+            "id": "34824475-3062-4f03-9571-144ae1f7e8f4"
+          },
+          {
+            "identity": "Rapha Bicyclette GGCG",
+            "id": "dad309fb-e15d-40c8-8f12-78ff9302a58c"
+          },
+          {
+            "identity": "Fabien M",
+            "id": "ffca472f-b196-4d9b-a062-e9ddf6e020eb"
+          },
+          {
+            "identity": "Noé Mie",
+            "id": "fdd99936-8cb1-4755-b998-84c1318087d1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "db797f6f-af7f-4d94-8d21-3a73d487596a",
+    "teamId": "n-peloton",
+    "permalink": "N-Peloton_595",
+    "publishedStatus": "PUBLISHED",
+    "type": "REGULAR",
+    "date": "2025-03-12",
+    "publishedAt": "2025-03-11T11:00:00Z",
+    "title": "N-Peloton #595",
+    "description": "ATTENTION : il est fortement conseillé de prendre la map\r\nAppli Android : https://n-peloton.fr/app-android\r\nAppli Garmin : https://n-peloton.fr/app-garmin\r\nAttention : Ride interdit aux mineur·e·s\r\n\r\nRappel sécurité : LUMIERES PUISSANTES/GILET & PERRUQUE ROSE/CASQUE/caa/outils/EAU/€/Coupe mulet conseillée\r\n\r\nRespect des bonnes pratiques nécessaire pour la sécurité\r\net le plaisir de chacun·e : https://www.prendslaroue.fr/n-peloton/faq\r\n\r\nÀ demain en pleine forme!",
+    "imaged": true,
+    "groups": [
+      {
+        "id": "cf303793-37ac-43ee-a8c2-bd39df92b649",
+        "name": "C2 \uD83C\uDF44",
+        "averageSpeed": 25.0,
+        "map": {
+          "id": "b7ac7927-ce58-4632-8e80-a692633bfbae",
+          "teamId": "n-peloton",
+          "permalink": "NP_595_C2",
+          "name": "NP #595 C2",
+          "length": 54.64,
+          "type": "ROAD",
+          "positiveElevation": 417.3,
+          "negativeElevation": -413.1,
+          "postedAt": "2025-03-11",
+          "tags": [
+            "Sortie Hebdo"
+          ],
+          "crossing": false
+        },
+        "meetingTime": "19:30:00",
+        "participants": [
+          {
+            "identity": "Flo Mars",
+            "id": "e68d9974-189d-4f00-af8a-eb96b336edec"
+          },
+          {
+            "identity": "Thibaut Clss",
+            "id": "e88e94a9-9f55-424e-9d15-d0b9a7d44b69"
+          },
+          {
+            "identity": "William Soler",
+            "id": "aae4337f-1665-4182-a3f2-d4745b01b0a4"
+          },
+          {
+            "identity": "valentin guillaud",
+            "id": "0418282e-490f-4ee7-a00c-6613b10a96ae"
+          },
+          {
+            "identity": "Luc R",
+            "id": "66d4f7a7-fee0-40de-9bae-af205eff3842"
+          },
+          {
+            "identity": "david juhel",
+            "id": "7a96af07-bed2-4e45-84d1-51c542cc9587"
+          }
+        ]
+      },
+      {
+        "id": "2c7ad4a6-a529-4578-9054-51c4ac1542bd",
+        "name": "Chill Gravel \uD83C\uDF47",
+        "averageSpeed": 19.0,
+        "map": {
+          "id": "bea054da-17fc-416e-ae69-486299f960fa",
+          "teamId": "n-peloton",
+          "permalink": "NP_595_Gravel2",
+          "name": "NP #595 Gravel",
+          "length": 49.34,
+          "type": "GRAVEL",
+          "positiveElevation": 268.6,
+          "negativeElevation": -267.2,
+          "postedAt": "2025-03-11",
+          "tags": [
+            "Gravel expert",
+            "Gravel intermédiaire",
+            "Sortie Hebdo"
+          ],
+          "crossing": true
+        },
+        "meetingTime": "19:30:00",
+        "participants": [
+          {
+            "identity": "Timothée Bargain",
+            "id": "c64edd02-b7cf-44be-bf9d-3e85117a61f3"
+          }
+        ]
+      },
+      {
+        "id": "886a9d87-52cf-46a8-9059-e93b98e6cddf",
+        "name": "C3 \uD83C\uDF53",
+        "averageSpeed": 22.0,
+        "map": {
+          "id": "ef9d56e7-62e2-417e-9ecd-104d35e97c74",
+          "teamId": "n-peloton",
+          "permalink": "NP_595_C3",
+          "name": "NP #595 C3",
+          "length": 41.18,
+          "type": "ROAD",
+          "positiveElevation": 263.1,
+          "negativeElevation": -258.7,
+          "postedAt": "2025-03-10",
+          "tags": [
+            "Sortie Hebdo"
+          ],
+          "crossing": false
+        },
+        "meetingTime": "19:30:00",
+        "participants": [
+          {
+            "identity": "David Bouard",
+            "id": "2fc29835-3a9c-4083-8a5a-d1ff74839e09"
+          },
+          {
+            "identity": "Édouard Barbe",
+            "id": "d71c8f9b-1df3-41b3-a875-9a04001ce11b"
+          },
+          {
+            "identity": "Thomas Bretin",
+            "id": "56861400-4786-48d5-985c-a1928769bbdd"
+          },
+          {
+            "identity": "Fanny Silvestri",
+            "id": "03c350ef-0935-47e4-8507-24951104a25a"
+          },
+          {
+            "identity": "Alex Gaignard",
+            "id": "6b68fd55-9f53-4729-b573-69c81587986a"
+          },
+          {
+            "identity": "Chloé Peltier",
+            "id": "4d1a9e3c-a38d-49e8-8a87-7e0f75c29bf2"
+          },
+          {
+            "identity": "hardy Fustel",
+            "id": "ef4abb77-3bb5-48eb-8f24-e0311c205381"
+          }
+        ]
+      },
+      {
+        "id": "1a4c189a-5d9f-4e1e-8156-86c174a92dab",
+        "name": "C0 Fast Pack \uD83C\uDF46",
+        "averageSpeed": 32.0,
+        "map": {
+          "id": "1828f812-2357-4cdc-b030-3612119764b7",
+          "teamId": "n-peloton",
+          "permalink": "NP_595_G123C0",
+          "name": "NP #595 G123C0",
+          "length": 66.13,
+          "type": "ROAD",
+          "positiveElevation": 494.6,
+          "negativeElevation": -490.7,
+          "postedAt": "2025-03-09",
+          "tags": [
+            "Sortie Hebdo"
+          ],
+          "crossing": false
+        },
+        "meetingTime": "19:30:00",
+        "participants": []
+      },
+      {
+        "id": "080ad1b8-186d-440e-aea1-e136ba5994f2",
+        "name": "G4 \uD83E\uDD55",
+        "averageSpeed": 30.0,
+        "map": {
+          "id": "4f63204c-5bd0-4fd4-89f3-b789d34101c7",
+          "teamId": "n-peloton",
+          "permalink": "NP_595_G4C1",
+          "name": "NP #595 G4C1",
+          "length": 56.91,
+          "type": "ROAD",
+          "positiveElevation": 437.8,
+          "negativeElevation": -433.7,
+          "postedAt": "2025-03-09",
+          "tags": [
+            "Sortie Hebdo"
+          ],
+          "crossing": false
+        },
+        "meetingTime": "20:30:00",
+        "participants": []
+      },
+      {
+        "id": "5c60055b-78e9-4d0a-b9f6-8e9584b06fbd",
+        "name": "G2 \uD83C\uDF51",
+        "averageSpeed": 35.0,
+        "map": {
+          "id": "1828f812-2357-4cdc-b030-3612119764b7",
+          "teamId": "n-peloton",
+          "permalink": "NP_595_G123C0",
+          "name": "NP #595 G123C0",
+          "length": 66.13,
+          "type": "ROAD",
+          "positiveElevation": 494.6,
+          "negativeElevation": -490.7,
+          "postedAt": "2025-03-09",
+          "tags": [
+            "Sortie Hebdo"
+          ],
+          "crossing": false
+        },
+        "meetingTime": "20:30:00",
+        "participants": [
+          {
+            "identity": "Nicolas G.",
+            "id": "b5fd2d0e-f654-4b80-93c3-18dd169dadc4"
+          },
+          {
+            "identity": "Gaby Landais",
+            "id": "06ceb207-2c9f-4260-a7c5-833edd84837e"
+          },
+          {
+            "identity": "Clement Bonneau \uD83C\uDDEB\uD83C\uDDF7",
+            "id": "1a11682a-fca0-4f18-ba41-2eca3045aefb"
+          }
+        ]
+      },
+      {
+        "id": "f94dca24-51a2-4465-9861-14c6593b4aa3",
+        "name": "C4 Super Chill \uD83E\uDD66",
+        "averageSpeed": 20.0,
+        "map": {
+          "id": "317b19e9-be54-465a-a968-2e6d42cbdbe6",
+          "teamId": "n-peloton",
+          "permalink": "NP_595_C4",
+          "name": "NP #595 C4",
+          "length": 34.22,
+          "type": "ROAD",
+          "positiveElevation": 210.4,
+          "negativeElevation": -205.9,
+          "postedAt": "2025-03-10",
+          "tags": [
+            "Sortie Hebdo"
+          ],
+          "crossing": false
+        },
+        "meetingTime": "19:30:00",
+        "participants": [
+          {
+            "identity": "Nicolas Vaumourin",
+            "id": "6682cca3-1387-42ac-b89b-cc0d2dc02f17"
+          }
+        ]
+      },
+      {
+        "id": "ce5aae09-bc30-4209-8e33-4322f2ce920d",
+        "name": "C1 \uD83C\uDF4B",
+        "averageSpeed": 28.0,
+        "map": {
+          "id": "4f63204c-5bd0-4fd4-89f3-b789d34101c7",
+          "teamId": "n-peloton",
+          "permalink": "NP_595_G4C1",
+          "name": "NP #595 G4C1",
+          "length": 56.91,
+          "type": "ROAD",
+          "positiveElevation": 437.8,
+          "negativeElevation": -433.7,
+          "postedAt": "2025-03-09",
+          "tags": [
+            "Sortie Hebdo"
+          ],
+          "crossing": false
+        },
+        "meetingTime": "19:30:00",
+        "participants": [
+          {
+            "identity": "Pierre-Louis Pancher",
+            "id": "ac25860c-a512-43f0-93bc-63282e106c7e"
+          }
+        ]
+      },
+      {
+        "id": "4afedc6e-26f5-430f-9618-e7eecb16dda8",
+        "name": "G3 \uD83C\uDF4C",
+        "averageSpeed": 32.0,
+        "map": {
+          "id": "1828f812-2357-4cdc-b030-3612119764b7",
+          "teamId": "n-peloton",
+          "permalink": "NP_595_G123C0",
+          "name": "NP #595 G123C0",
+          "length": 66.13,
+          "type": "ROAD",
+          "positiveElevation": 494.6,
+          "negativeElevation": -490.7,
+          "postedAt": "2025-03-09",
+          "tags": [
+            "Sortie Hebdo"
+          ],
+          "crossing": false
+        },
+        "meetingTime": "20:30:00",
+        "participants": [
+          {
+            "identity": "Cogrel Alban",
+            "id": "5ad7be6b-a48f-4eb7-a291-bdec457db11a"
+          },
+          {
+            "identity": "Jérôme REDUREAU",
+            "id": "9f20972c-f3e5-45d3-97e9-15683815ef38"
+          }
+        ]
+      },
+      {
+        "id": "9067290a-7c62-4cd8-a904-b42450620542",
+        "name": "Gravel \uD83C\uDF30",
+        "averageSpeed": 22.0,
+        "map": {
+          "id": "bea054da-17fc-416e-ae69-486299f960fa",
+          "teamId": "n-peloton",
+          "permalink": "NP_595_Gravel2",
+          "name": "NP #595 Gravel",
+          "length": 49.34,
+          "type": "GRAVEL",
+          "positiveElevation": 268.6,
+          "negativeElevation": -267.2,
+          "postedAt": "2025-03-11",
+          "tags": [
+            "Gravel expert",
+            "Gravel intermédiaire",
+            "Sortie Hebdo"
+          ],
+          "crossing": true
+        },
+        "meetingTime": "19:30:00",
+        "participants": [
+          {
+            "identity": "dom bel",
+            "id": "ac201845-276c-4d92-92b8-e933f8b310b3"
+          },
+          {
+            "identity": "Cl Ement",
+            "id": "ecf512c6-0cda-4333-afbc-d230891ac32a"
+          },
+          {
+            "identity": "Thomas Durand",
+            "id": "839a7464-fd1d-4e7b-b171-3fd7584d2f14"
+          },
+          {
+            "identity": "Jicé NICOLAS",
+            "id": "c02ccd41-b1fd-4a00-99b1-7750ab014e56"
+          }
+        ]
+      },
+      {
+        "id": "233556d1-df2e-4461-8bc7-5f0a0ca21116",
+        "name": "Superchill Gravel \uD83E\uDED0",
+        "averageSpeed": 16.0,
+        "map": {
+          "id": "a227e391-558c-4fd8-8cd9-607c7eaff0ca",
+          "teamId": "n-peloton",
+          "permalink": "NP_595_SuperChill_Gravel2",
+          "name": "NP_595_SuperChill Gravel",
+          "length": 34.06,
+          "type": "GRAVEL",
+          "positiveElevation": 194.6,
+          "negativeElevation": -193.2,
+          "postedAt": "2025-03-11",
+          "tags": [
+            "Gravel débutant",
+            "Sortie Hebdo"
+          ],
+          "crossing": true
+        },
+        "meetingTime": "19:30:00",
+        "participants": [
+          {
+            "identity": "Yann Haffner",
+            "id": "a57cbce1-926d-4291-a4d4-3d37d5d752b0"
+          }
+        ]
+      },
+      {
+        "id": "bad6f887-590e-4f2d-95f4-a6df9ce6ac15",
+        "name": "Pignon Fixe ⚙️",
+        "averageSpeed": 27.0,
+        "map": {
+          "id": "947798ee-fce7-4fc1-b61b-031d454b4785",
+          "teamId": "n-peloton",
+          "permalink": "NP_595_PF2",
+          "name": "NP #595 PF",
+          "length": 56.14,
+          "type": "ROAD",
+          "positiveElevation": 310.4,
+          "negativeElevation": -308.6,
+          "postedAt": "2025-03-10",
+          "tags": [
+            "Sortie Hebdo"
+          ],
+          "crossing": true
+        },
+        "meetingTime": "20:02:00",
+        "participants": [
+          {
+            "identity": "Benjito C.",
+            "id": "87c65b37-1409-4a5a-98f0-955a68cffa28"
+          },
+          {
+            "identity": "Laura Orlhiac",
+            "id": "bdfe2cae-2b1b-49ce-88e8-6a3551dd02f0"
+          },
+          {
+            "identity": "Ronan \uD83D\uDEB4⚙️",
+            "id": "c455197c-33b4-4421-9a45-b7c1fe18404a"
+          },
+          {
+            "identity": "Louise Rglr",
+            "id": "44b689be-1245-4181-b055-0c8daa4a7f22"
+          }
+        ]
+      },
+      {
+        "id": "577ee451-9ae7-451e-8387-e146da5d43f2",
+        "name": "G1 \uD83C\uDF36️",
+        "averageSpeed": 38.0,
+        "map": {
+          "id": "1828f812-2357-4cdc-b030-3612119764b7",
+          "teamId": "n-peloton",
+          "permalink": "NP_595_G123C0",
+          "name": "NP #595 G123C0",
+          "length": 66.13,
+          "type": "ROAD",
+          "positiveElevation": 494.6,
+          "negativeElevation": -490.7,
+          "postedAt": "2025-03-09",
+          "tags": [
+            "Sortie Hebdo"
+          ],
+          "crossing": false
+        },
+        "meetingTime": "20:30:00",
+        "participants": []
+      }
+    ]
+  },
+  {
+    "id": "a7556b68-35c2-434e-bf01-1c87ed219045",
+    "teamId": "n-peloton",
+    "permalink": "Raymond_Ride_220",
+    "publishedStatus": "PUBLISHED",
+    "type": "REGULAR",
+    "date": "2025-03-09",
+    "publishedAt": "2025-03-07T11:00:00Z",
+    "title": "Raymond Ride #220",
+    "description": "ATTENTION : il est fortement conseillé de prendre la map\r\n\r\nMerci de respecter le code de la route, et de faire preuve de vigilance, notamment dans les agglomérations.\r\n\r\nAppli Android : https://n-peloton.fr/app-android\r\nAppli Garmin : https://n-peloton.fr/app-garmin\r\nAttention : Ride interdit aux mineur⋅e⋅s\r\nRappel sécurité : CASQUE/CAA/OUTILS/EAU/€",
+    "imaged": true,
+    "groups": [
+      {
+        "id": "ecdb924a-cb7b-49bc-ba8f-367239bb8e0a",
+        "name": "G2",
+        "averageSpeed": 30.0,
+        "map": {
+          "id": "52f5108e-d28f-4f32-a8fe-e529bec91fed",
+          "teamId": "n-peloton",
+          "permalink": "RR_220_G1G2",
+          "name": "RR #220 G1G2",
+          "length": 97.98,
+          "type": "ROAD",
+          "positiveElevation": 805.5,
+          "negativeElevation": -808.4,
+          "postedAt": "2025-03-06",
+          "tags": [
+            "Sortie Hebdo"
+          ],
+          "crossing": false
+        },
+        "meetingTime": "08:30:00",
+        "participants": [
+          {
+            "identity": "Charles Gayot",
+            "id": "44fa7129-61bd-47a4-ae2b-171f61fc9c33"
+          },
+          {
+            "identity": "Jérémy Hervy",
+            "id": "79279631-04e4-420e-bf29-5a45487ca0a4"
+          }
+        ]
+      },
+      {
+        "id": "bc34c1e8-2d21-4c51-bd73-58e8440005cf",
+        "name": "Chill",
+        "averageSpeed": 27.0,
+        "map": {
+          "id": "205da502-8d30-4172-ae2f-bc682ba79a8d",
+          "teamId": "n-peloton",
+          "permalink": "RR_220_G3",
+          "name": "RR #220 G3",
+          "length": 87.89,
+          "type": "ROAD",
+          "positiveElevation": 738.9,
+          "negativeElevation": -741.8,
+          "postedAt": "2025-03-06",
+          "tags": [
+            "Sortie Hebdo"
+          ],
+          "crossing": false
+        },
+        "meetingTime": "08:30:00",
+        "participants": [
+          {
+            "identity": "Luc R",
+            "id": "66d4f7a7-fee0-40de-9bae-af205eff3842"
+          },
+          {
+            "identity": "Sébastien T.",
+            "id": "f7efcf93-da0c-4889-8a63-ee3a1ceaf2e5"
+          },
+          {
+            "identity": "Cedric Beaurepere",
+            "id": "bad21c7c-5851-4ef1-b7cc-3dfa78355797"
+          },
+          {
+            "identity": "Cyril Corre",
+            "id": "5491134e-2988-4c4e-96ce-3c7830744196"
+          },
+          {
+            "identity": "Joachim Le Tallec",
+            "id": "cefb5592-3d77-41fc-af0d-b9bb5cf40479"
+          }
+        ]
+      },
+      {
+        "id": "878b14c6-8272-496b-a687-b488fd3248b8",
+        "name": "G1",
+        "averageSpeed": 33.0,
+        "map": {
+          "id": "52f5108e-d28f-4f32-a8fe-e529bec91fed",
+          "teamId": "n-peloton",
+          "permalink": "RR_220_G1G2",
+          "name": "RR #220 G1G2",
+          "length": 97.98,
+          "type": "ROAD",
+          "positiveElevation": 805.5,
+          "negativeElevation": -808.4,
+          "postedAt": "2025-03-06",
+          "tags": [
+            "Sortie Hebdo"
+          ],
+          "crossing": false
+        },
+        "meetingTime": "08:30:00",
+        "participants": []
+      }
+    ]
+  },
+  {
+    "id": "8c8025b9-3d8a-43a4-bf9b-d232743c5beb",
+    "teamId": "n-peloton",
+    "permalink": "N-Peloton_594",
+    "publishedStatus": "PUBLISHED",
+    "type": "REGULAR",
+    "date": "2025-03-05",
+    "publishedAt": "2025-03-04T11:00:00Z",
+    "title": "N-Peloton #594",
+    "description": "ATTENTION : il est fortement conseillé de prendre la map\r\nAppli Android : https://n-peloton.fr/app-android\r\nAppli Garmin : https://n-peloton.fr/app-garmin\r\nAttention : Ride interdit aux mineur·e·s\r\n\r\nRappel sécurité : LUMIERES PUISSANTES/GILET & PERRUQUE ROSE/CASQUE/caa/outils/EAU/€/Coupe mulet conseillée\r\n\r\nRespect des bonnes pratiques nécessaire pour la sécurité\r\net le plaisir de chacun·e : https://www.prendslaroue.fr/n-peloton/faq\r\n\r\nÀ demain en pleine forme!",
+    "imaged": true,
+    "groups": [
+      {
+        "id": "f6c05ee1-7d2f-433c-9e6b-9df3959b8c79",
+        "name": "C0 Fast Pack \uD83C\uDF46",
+        "averageSpeed": 32.0,
+        "map": {
+          "id": "2fa7ed16-5028-4f5f-bcd3-5c037bc1412f",
+          "teamId": "n-peloton",
+          "permalink": "NP_594_G123",
+          "name": "NP #594 G123",
+          "length": 62.35,
+          "type": "ROAD",
+          "positiveElevation": 489.0,
+          "negativeElevation": -487.0,
+          "postedAt": "2025-03-04",
+          "tags": [
+            "Sortie Hebdo"
+          ],
+          "crossing": false
+        },
+        "meetingTime": "19:30:00",
+        "participants": [
+          {
+            "identity": "Luc R",
+            "id": "66d4f7a7-fee0-40de-9bae-af205eff3842"
+          },
+          {
+            "identity": "Marcos P",
+            "id": "0434e3b7-1c08-4032-9bfd-fc988856da1b"
+          }
+        ]
+      },
+      {
+        "id": "df9adef0-3fc4-44bc-b95e-9f38e59ae453",
+        "name": "Superchill Gravel \uD83E\uDED0",
+        "averageSpeed": 16.0,
+        "map": {
+          "id": "4761a57a-1706-423a-88ce-38ac0bc7572d",
+          "teamId": "n-peloton",
+          "permalink": "Super_Chill_Gravel_1er",
+          "name": "Super Chill Gravel 1er",
+          "length": 32.61,
+          "type": "GRAVEL",
+          "positiveElevation": 254.5,
+          "negativeElevation": -252.4,
+          "postedAt": "2024-12-31",
+          "tags": [
+            "Gravel débutant",
+            "Sortie Hebdo"
+          ],
+          "crossing": false
+        },
+        "meetingTime": "19:30:00",
+        "participants": []
+      },
+      {
+        "id": "fa9320b8-2ce7-4674-be34-05c5e2780418",
+        "name": "G2 \uD83C\uDF51",
+        "averageSpeed": 35.0,
+        "map": {
+          "id": "2fa7ed16-5028-4f5f-bcd3-5c037bc1412f",
+          "teamId": "n-peloton",
+          "permalink": "NP_594_G123",
+          "name": "NP #594 G123",
+          "length": 62.35,
+          "type": "ROAD",
+          "positiveElevation": 489.0,
+          "negativeElevation": -487.0,
+          "postedAt": "2025-03-04",
+          "tags": [
+            "Sortie Hebdo"
+          ],
+          "crossing": false
+        },
+        "meetingTime": "20:30:00",
+        "participants": [
+          {
+            "identity": "Vincent Perhirin",
+            "id": "122ad4eb-57d7-4942-bfbc-612cd4d904ee"
+          },
+          {
+            "identity": "Clement Bonneau \uD83C\uDDEB\uD83C\uDDF7",
+            "id": "1a11682a-fca0-4f18-ba41-2eca3045aefb"
+          }
+        ]
+      },
+      {
+        "id": "08d7b121-92f1-474f-8601-1aeebffbecbf",
+        "name": "G4 \uD83E\uDD55",
+        "averageSpeed": 30.0,
+        "map": {
+          "id": "97961e77-9ad1-47a8-a52b-15a4e3f319cd",
+          "teamId": "n-peloton",
+          "permalink": "NP_594_G4C12",
+          "name": "NP #594 G4C12",
+          "length": 52.37,
+          "type": "ROAD",
+          "positiveElevation": 402.1,
+          "negativeElevation": -400.3,
+          "postedAt": "2025-03-04",
+          "tags": [
+            "Sortie Hebdo"
+          ],
+          "crossing": false
+        },
+        "meetingTime": "20:30:00",
+        "participants": [
+          {
+            "identity": "Sebastian Peña",
+            "id": "36058304-438d-4b6e-b3b4-c0709550e007"
+          },
+          {
+            "identity": "Ver Gozilla",
+            "id": "2cd4e6c2-c305-4b55-a46e-42932b5fcc99"
+          },
+          {
+            "identity": "Jean-Baptiste Minvielle",
+            "id": "73013d05-b455-464e-a0c7-c98ae1a80ff3"
+          }
+        ]
+      },
+      {
+        "id": "38ff1bc7-040d-483f-9662-15269d48c1cd",
+        "name": "Chill Gravel \uD83C\uDF47",
+        "averageSpeed": 19.0,
+        "map": {
+          "id": "fd337046-cabe-4a26-8b96-146dead0e243",
+          "teamId": "n-peloton",
+          "permalink": "Gravel_1er",
+          "name": "Gravel 1er",
+          "length": 47.96,
+          "type": "GRAVEL",
+          "positiveElevation": 412.3,
+          "negativeElevation": -410.0,
+          "postedAt": "2024-12-31",
+          "tags": [
+            "Gravel intermédiaire",
+            "Sortie Hebdo"
+          ],
+          "crossing": true
+        },
+        "meetingTime": "19:30:00",
+        "participants": [
+          {
+            "identity": "Gui Yome Wisu",
+            "id": "a9cca0f7-d99f-4c04-a265-e20f4dc03622"
+          },
+          {
+            "identity": "Timothée Bargain",
+            "id": "c64edd02-b7cf-44be-bf9d-3e85117a61f3"
+          },
+          {
+            "identity": "Alabate L",
+            "id": "cff08ecc-928a-49a3-8efb-089ec5c27313"
+          }
+        ]
+      },
+      {
+        "id": "f01d4cd1-9c57-46f1-a93e-a90797bd21d4",
+        "name": "C2 \uD83C\uDF44",
+        "averageSpeed": 25.0,
+        "map": {
+          "id": "97961e77-9ad1-47a8-a52b-15a4e3f319cd",
+          "teamId": "n-peloton",
+          "permalink": "NP_594_G4C12",
+          "name": "NP #594 G4C12",
+          "length": 52.37,
+          "type": "ROAD",
+          "positiveElevation": 402.1,
+          "negativeElevation": -400.3,
+          "postedAt": "2025-03-04",
+          "tags": [
+            "Sortie Hebdo"
+          ],
+          "crossing": false
+        },
+        "meetingTime": "19:30:00",
+        "participants": [
+          {
+            "identity": "Alexandre Grignon",
+            "id": "c565f26d-e4bc-4f2e-8aea-83eb02ee3f13"
+          },
+          {
+            "identity": "Vincent vinzzz",
+            "id": "69a17183-e046-4ac9-bc2c-5c3e67b83b72"
+          },
+          {
+            "identity": "Juliette K.",
+            "id": "9dc0432c-a0b3-4372-a123-e7af69c7dd91"
+          },
+          {
+            "identity": "Raphaël LAUNAY",
+            "id": "c72df0dc-d22b-47c7-a428-1ee4e65f857a"
+          },
+          {
+            "identity": "Caro V",
+            "id": "19bec9cb-aeeb-432d-8ec5-452fbe272958"
+          },
+          {
+            "identity": "Pierre Praud",
+            "id": "7947bbf4-a11a-4a08-84ec-b69573c7d954"
+          },
+          {
+            "identity": "valentin guillaud",
+            "id": "0418282e-490f-4ee7-a00c-6613b10a96ae"
+          },
+          {
+            "identity": "Céline Chtl",
+            "id": "32a07e08-072f-4468-a794-2fb196091f66"
+          },
+          {
+            "identity": "david juhel",
+            "id": "7a96af07-bed2-4e45-84d1-51c542cc9587"
+          },
+          {
+            "identity": "Arnaud Maurel",
+            "id": "723c2cc3-5e38-435b-9d5b-b78a7da13926"
+          },
+          {
+            "identity": "Clément Chevalier",
+            "id": "f8e3291d-d094-4133-ad8e-41252defdde2"
+          }
+        ]
+      },
+      {
+        "id": "fabe483a-6a7f-4952-a941-fc00eef76360",
+        "name": "C1 \uD83C\uDF4B",
+        "averageSpeed": 28.0,
+        "map": {
+          "id": "97961e77-9ad1-47a8-a52b-15a4e3f319cd",
+          "teamId": "n-peloton",
+          "permalink": "NP_594_G4C12",
+          "name": "NP #594 G4C12",
+          "length": 52.37,
+          "type": "ROAD",
+          "positiveElevation": 402.1,
+          "negativeElevation": -400.3,
+          "postedAt": "2025-03-04",
+          "tags": [
+            "Sortie Hebdo"
+          ],
+          "crossing": false
+        },
+        "meetingTime": "19:30:00",
+        "participants": [
+          {
+            "identity": "Antoine Blondeau \uD83C\uDD8E",
+            "id": "2aa44c80-207a-4034-82c0-1fc4af61d06d"
+          },
+          {
+            "identity": "Titouan Lepoittevin",
+            "id": "966f1530-91e9-43cd-9ba0-e867940cb549"
+          }
+        ]
+      },
+      {
+        "id": "e024d5ca-92f3-4fd2-b995-6c218c6831d3",
+        "name": "C3 \uD83C\uDF53",
+        "averageSpeed": 22.0,
+        "map": {
+          "id": "dafe9e9c-c108-406f-910f-07bcfa9bc071",
+          "teamId": "n-peloton",
+          "permalink": "NP_594_C3",
+          "name": "NP #594 C3",
+          "length": 43.09,
+          "type": "ROAD",
+          "positiveElevation": 367.8,
+          "negativeElevation": -366.0,
+          "postedAt": "2025-03-04",
+          "tags": [
+            "Sortie Hebdo"
+          ],
+          "crossing": false
+        },
+        "meetingTime": "19:30:00",
+        "participants": [
+          {
+            "identity": "Julien D",
+            "id": "12bbeeee-553d-4a15-90e2-a25e472e9263"
+          },
+          {
+            "identity": "236 Bäntöü",
+            "id": "5b83cb76-54f1-45ba-8269-cdcb5e11c700"
+          },
+          {
+            "identity": "Aurelien Barraud",
+            "id": "955db274-dba6-4d3e-a29b-6d99f6faa8b3"
+          },
+          {
+            "identity": "Chloé Peltier",
+            "id": "4d1a9e3c-a38d-49e8-8a87-7e0f75c29bf2"
+          },
+          {
+            "identity": "Dom Dom",
+            "id": "1ead911a-54e3-474a-9c49-9cc6e616a2de"
+          }
+        ]
+      },
+      {
+        "id": "dfc77c46-9f06-4f05-adca-7bd468aa7c76",
+        "name": "Gravel \uD83C\uDF30",
+        "averageSpeed": 22.0,
+        "map": {
+          "id": "fd337046-cabe-4a26-8b96-146dead0e243",
+          "teamId": "n-peloton",
+          "permalink": "Gravel_1er",
+          "name": "Gravel 1er",
+          "length": 47.96,
+          "type": "GRAVEL",
+          "positiveElevation": 412.3,
+          "negativeElevation": -410.0,
+          "postedAt": "2024-12-31",
+          "tags": [
+            "Gravel intermédiaire",
+            "Sortie Hebdo"
+          ],
+          "crossing": true
+        },
+        "meetingTime": "19:30:00",
+        "participants": [
+          {
+            "identity": "Thomas Durand",
+            "id": "839a7464-fd1d-4e7b-b171-3fd7584d2f14"
+          },
+          {
+            "identity": "Jicé NICOLAS",
+            "id": "c02ccd41-b1fd-4a00-99b1-7750ab014e56"
+          }
+        ]
+      },
+      {
+        "id": "d1a734ba-463e-4594-884f-41f34a7d86a5",
+        "name": "G3 \uD83C\uDF4C",
+        "averageSpeed": 32.0,
+        "map": {
+          "id": "2fa7ed16-5028-4f5f-bcd3-5c037bc1412f",
+          "teamId": "n-peloton",
+          "permalink": "NP_594_G123",
+          "name": "NP #594 G123",
+          "length": 62.35,
+          "type": "ROAD",
+          "positiveElevation": 489.0,
+          "negativeElevation": -487.0,
+          "postedAt": "2025-03-04",
+          "tags": [
+            "Sortie Hebdo"
+          ],
+          "crossing": false
+        },
+        "meetingTime": "20:30:00",
+        "participants": [
+          {
+            "identity": "Antoine Cypierre",
+            "id": "0541328b-5309-435d-b4d8-e99063ed379e"
+          },
+          {
+            "identity": "Valentin Mumble",
+            "id": "2f0303a8-34df-4222-9460-0fc13b53b08b"
+          },
+          {
+            "identity": "Jérôme REDUREAU",
+            "id": "9f20972c-f3e5-45d3-97e9-15683815ef38"
+          }
+        ]
+      },
+      {
+        "id": "993665c8-453e-470e-87fa-a7aaef261c0d",
+        "name": "C4 Super Chill \uD83E\uDD66",
+        "averageSpeed": 20.0,
+        "map": {
+          "id": "3cf491bf-f8ff-46c9-9f8b-8be347e37b95",
+          "teamId": "n-peloton",
+          "permalink": "NP_594_C4",
+          "name": "NP #594 C4",
+          "length": 34.73,
+          "type": "ROAD",
+          "positiveElevation": 265.2,
+          "negativeElevation": -263.2,
+          "postedAt": "2025-03-04",
+          "tags": [
+            "Sortie Hebdo"
+          ],
+          "crossing": false
+        },
+        "meetingTime": "19:30:00",
+        "participants": [
+          {
+            "identity": "Nicolas Vaumourin",
+            "id": "6682cca3-1387-42ac-b89b-cc0d2dc02f17"
+          },
+          {
+            "identity": "Jean-philippe Savary",
+            "id": "c0b36e9c-1449-4a57-ab70-8542692a0f44"
+          }
+        ]
+      },
+      {
+        "id": "fc552238-1007-46b0-b23d-80f0cef9faab",
+        "name": "G1 \uD83C\uDF36️",
+        "averageSpeed": 38.0,
+        "map": {
+          "id": "2fa7ed16-5028-4f5f-bcd3-5c037bc1412f",
+          "teamId": "n-peloton",
+          "permalink": "NP_594_G123",
+          "name": "NP #594 G123",
+          "length": 62.35,
+          "type": "ROAD",
+          "positiveElevation": 489.0,
+          "negativeElevation": -487.0,
+          "postedAt": "2025-03-04",
+          "tags": [
+            "Sortie Hebdo"
+          ],
+          "crossing": false
+        },
+        "meetingTime": "20:30:00",
+        "participants": [
+          {
+            "identity": "Lucas Bckr",
+            "id": "4846065f-f5c3-47fd-b63a-cf395a599292"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "20eac95b-dfe1-4955-8f4b-9cb494b7343d",
+    "teamId": "n-peloton",
+    "permalink": "Raymond_Ride_219",
+    "publishedStatus": "PUBLISHED",
+    "type": "REGULAR",
+    "date": "2025-03-02",
+    "publishedAt": "2025-02-28T11:00:00Z",
+    "title": "Raymond Ride #219",
+    "description": "ATTENTION AU CHANGEMENT D'HORAIRE DE DÉPART\r\n\r\nIl est fortement conseillé de prendre la map.\r\nMerci de respecter le code de la route, et de faire preuve de vigilance, notamment dans les agglomérations.\r\n\r\nAppli Android : https://n-peloton.fr/app-android\r\nAppli Garmin : https://n-peloton.fr/app-garmin\r\nAttention : Ride interdit aux mineur⋅e⋅s\r\nRappel sécurité : CASQUE/CAA/OUTILS/EAU/€",
+    "imaged": true,
+    "groups": [
+      {
+        "id": "75ec9798-27d9-46f3-8fa3-1a805d5ac580",
+        "name": "G1",
+        "averageSpeed": 33.0,
+        "map": {
+          "id": "4213261b-1125-4dd6-b123-324baea917b0",
+          "teamId": "n-peloton",
+          "permalink": "RR_219_G1G2",
+          "name": "RR #219 G1G2",
+          "length": 94.86,
+          "type": "ROAD",
+          "positiveElevation": 730.6,
+          "negativeElevation": -727.0,
+          "postedAt": "2025-02-27",
+          "tags": [
+            "Sortie Hebdo"
+          ],
+          "crossing": false
+        },
+        "meetingTime": "08:30:00",
+        "participants": [
+          {
+            "identity": "emmanuel maurellet",
+            "id": "c394c254-0733-4d9a-b69f-a0dd0ba0dd8b"
+          },
+          {
+            "identity": "PY LB",
+            "id": "5ecd611a-59c8-4696-b4db-c6ff0879024a"
+          },
+          {
+            "identity": "Clement Bonneau \uD83C\uDDEB\uD83C\uDDF7",
+            "id": "1a11682a-fca0-4f18-ba41-2eca3045aefb"
+          },
+          {
+            "identity": "Lucas Bckr",
+            "id": "4846065f-f5c3-47fd-b63a-cf395a599292"
+          },
+          {
+            "identity": "Mickael FROGER",
+            "id": "09408c39-ed23-427c-a4dc-2ea96a284f70"
+          },
+          {
+            "identity": "Vincent Perhirin",
+            "id": "122ad4eb-57d7-4942-bfbc-612cd4d904ee"
+          },
+          {
+            "identity": "Gaby Landais",
+            "id": "06ceb207-2c9f-4260-a7c5-833edd84837e"
+          }
+        ]
+      },
+      {
+        "id": "d5e610ab-594f-4230-b8b0-329be4fbe741",
+        "name": "Chill",
+        "averageSpeed": 27.0,
+        "map": {
+          "id": "73e5a854-bf7b-44d5-a667-2f18c8d74a17",
+          "teamId": "n-peloton",
+          "permalink": "RR_219_Chill",
+          "name": "RR #219 Chill",
+          "length": 84.72,
+          "type": "ROAD",
+          "positiveElevation": 635.0,
+          "negativeElevation": -631.3,
+          "postedAt": "2025-02-27",
+          "tags": [
+            "Sortie Hebdo"
+          ],
+          "crossing": false
+        },
+        "meetingTime": "08:30:00",
+        "participants": []
+      },
+      {
+        "id": "8abdffd7-c715-430b-a6b3-27baa53d387e",
+        "name": "G2",
+        "averageSpeed": 30.0,
+        "map": {
+          "id": "4213261b-1125-4dd6-b123-324baea917b0",
+          "teamId": "n-peloton",
+          "permalink": "RR_219_G1G2",
+          "name": "RR #219 G1G2",
+          "length": 94.86,
+          "type": "ROAD",
+          "positiveElevation": 730.6,
+          "negativeElevation": -727.0,
+          "postedAt": "2025-02-27",
+          "tags": [
+            "Sortie Hebdo"
+          ],
+          "crossing": false
+        },
+        "meetingTime": "08:30:00",
+        "participants": [
+          {
+            "identity": "Mickael B",
+            "id": "ff20b8b6-abc8-4abb-a191-8a8e2390b182"
+          },
+          {
+            "identity": "Jérémy Hervy",
+            "id": "79279631-04e4-420e-bf29-5a45487ca0a4"
+          },
+          {
+            "identity": "sebastien lessire",
+            "id": "d316d5a5-53a8-44d2-b6cb-88bbb0d85624"
+          },
+          {
+            "identity": "Clément Grd",
+            "id": "51eba75f-4c15-4fd4-a27a-93dd1779d174"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "21f0390e-c9c6-467d-b9e0-0d2255d3046c",
+    "teamId": "n-peloton",
+    "permalink": "N-Peloton_593",
+    "publishedStatus": "PUBLISHED",
+    "type": "REGULAR",
+    "date": "2025-02-26",
+    "publishedAt": "2025-02-25T11:00:00Z",
+    "title": "N-Peloton #593",
+    "description": "ATTENTION : il est fortement conseillé de prendre la map\r\nAppli Android : https://n-peloton.fr/app-android\r\nAppli Garmin : https://n-peloton.fr/app-garmin\r\nAttention : Ride interdit aux mineur·e·s\r\n\r\nRappel sécurité : LUMIERES PUISSANTES/GILET & PERRUQUE ROSE/CASQUE/caa/outils/EAU/€/Coupe mulet conseillée\r\n\r\nRespect des bonnes pratiques nécessaire pour la sécurité\r\net le plaisir de chacun·e : https://www.prendslaroue.fr/n-peloton/faq\r\n\r\nÀ demain en pleine forme!",
+    "imaged": true,
+    "groups": [
+      {
+        "id": "54240d77-ccaf-431d-85f3-516749ab1655",
+        "name": "C1 \uD83C\uDF4B",
+        "averageSpeed": 28.0,
+        "map": {
+          "id": "3eb49526-ca78-4f65-91c9-b02de4978f1b",
+          "teamId": "n-peloton",
+          "permalink": "NP_593_G4_C1",
+          "name": "NP 593 G4 C1",
+          "length": 58.15,
+          "type": "ROAD",
+          "positiveElevation": 449.3,
+          "negativeElevation": -446.0,
+          "postedAt": "2025-02-26",
+          "tags": [
+            "Sortie Hebdo"
+          ],
+          "crossing": false
+        },
+        "meetingTime": "19:30:00",
+        "participants": [
+          {
+            "identity": "Paul Le Sausse",
+            "id": "b1eccca1-5ae8-4860-936d-7284bb592ab0"
+          },
+          {
+            "identity": "Cogrel Alban",
+            "id": "5ad7be6b-a48f-4eb7-a291-bdec457db11a"
+          },
+          {
+            "identity": "Antoine Blondeau \uD83C\uDD8E",
+            "id": "2aa44c80-207a-4034-82c0-1fc4af61d06d"
+          },
+          {
+            "identity": "Gauthier Schaeffer",
+            "id": "83ef57c2-d614-48d7-aa78-b3c06e6d6d46"
+          }
+        ]
+      },
+      {
+        "id": "4b2bdf9b-35aa-41d8-a9b3-d79f01e52f1e",
+        "name": "C3 \uD83C\uDF53",
+        "averageSpeed": 22.0,
+        "map": {
+          "id": "53c56e64-19c8-4a28-8253-98f31e448e1c",
+          "teamId": "n-peloton",
+          "permalink": "NP_593_C3",
+          "name": "NP 593 C3",
+          "length": 44.27,
+          "type": "ROAD",
+          "positiveElevation": 336.8,
+          "negativeElevation": -332.7,
+          "postedAt": "2025-02-26",
+          "tags": [
+            "Sortie Hebdo"
+          ],
+          "crossing": false
+        },
+        "meetingTime": "19:30:00",
+        "participants": [
+          {
+            "identity": "Melaine B.",
+            "id": "8a680662-d7cb-4faf-b9f1-8a469b0d3619"
+          }
+        ]
+      },
+      {
+        "id": "b02d5d13-1847-47eb-86a0-bacf54713f47",
+        "name": "G3 \uD83C\uDF4C",
+        "averageSpeed": 32.0,
+        "map": {
+          "id": "5aaaf28b-6c46-468b-86d1-b255a75f391a",
+          "teamId": "n-peloton",
+          "permalink": "NP_593_G3",
+          "name": "NP 593 G3",
+          "length": 60.77,
+          "type": "ROAD",
+          "positiveElevation": 423.9,
+          "negativeElevation": -419.2,
+          "postedAt": "2025-02-26",
+          "tags": [
+            "Sortie Hebdo"
+          ],
+          "crossing": false
+        },
+        "meetingTime": "20:30:00",
+        "participants": [
+          {
+            "identity": "Benjito C.",
+            "id": "87c65b37-1409-4a5a-98f0-955a68cffa28"
+          }
+        ]
+      },
+      {
+        "id": "5ccf65d1-d1c1-4f5d-b6f3-a07ba9e329b8",
+        "name": "Gravel \uD83C\uDF30",
+        "averageSpeed": 22.0,
+        "map": {
+          "id": "42618b66-dc54-4c98-8165-bcb56082bbf1",
+          "teamId": "n-peloton",
+          "permalink": "NP_593_Gravel",
+          "name": "NP #593 Gravel",
+          "length": 54.9,
+          "type": "GRAVEL",
+          "positiveElevation": 519.4,
+          "negativeElevation": -513.9,
+          "postedAt": "2025-02-25",
+          "tags": [
+            "Gravel expert",
+            "Sortie Hebdo"
+          ],
+          "crossing": false
+        },
+        "meetingTime": "19:30:00",
+        "participants": [
+          {
+            "identity": "Yann Haffner",
+            "id": "a57cbce1-926d-4291-a4d4-3d37d5d752b0"
+          }
+        ]
+      },
+      {
+        "id": "e1426b63-2668-4c9b-9fda-9ad4b5460e4d",
+        "name": "G1 \uD83C\uDF36️",
+        "averageSpeed": 38.0,
+        "map": {
+          "id": "471c64d1-f61a-4ad6-8d22-b2f0842c2348",
+          "teamId": "n-peloton",
+          "permalink": "NP_593_G123_C0",
+          "name": "NP 593 G123 C0",
+          "length": 68.36,
+          "type": "ROAD",
+          "positiveElevation": 458.0,
+          "negativeElevation": -453.5,
+          "postedAt": "2025-02-26",
+          "tags": [
+            "Sortie Hebdo"
+          ],
+          "crossing": false
+        },
+        "meetingTime": "20:30:00",
+        "participants": []
+      },
+      {
+        "id": "94d882b4-e44c-40ed-aabc-13cb77ab521f",
+        "name": "Superchill Gravel \uD83E\uDED0",
+        "averageSpeed": 16.0,
+        "map": {
+          "id": "0039015d-1640-42a4-9796-91de08e0e013",
+          "teamId": "n-peloton",
+          "permalink": "NP_593_SuperChill_Gravel",
+          "name": "NP #593 SuperChill Gravel",
+          "length": 37.25,
+          "type": "GRAVEL",
+          "positiveElevation": 339.9,
+          "negativeElevation": -334.5,
+          "postedAt": "2025-02-25",
+          "tags": [
+            "Gravel débutant",
+            "Sortie Hebdo"
+          ],
+          "crossing": false
+        },
+        "meetingTime": "19:30:00",
+        "participants": [
+          {
+            "identity": "J-Marie Gouhier",
+            "id": "00252711-dd79-48aa-a546-eb0dc8e9ef39"
+          }
+        ]
+      },
+      {
+        "id": "6e5ec7d1-625b-4caf-9631-5aa3015a1ea8",
+        "name": "Chill Gravel \uD83C\uDF47",
+        "averageSpeed": 19.0,
+        "map": {
+          "id": "3a2f7637-d339-463e-a4be-122039ad146c",
+          "teamId": "n-peloton",
+          "permalink": "NP_593_Chill_Gravel",
+          "name": "NP #593 Chill Gravel",
+          "length": 44.98,
+          "type": "GRAVEL",
+          "positiveElevation": 400.1,
+          "negativeElevation": -394.6,
+          "postedAt": "2025-02-25",
+          "tags": [
+            "Gravel intermédiaire",
+            "Sortie Hebdo"
+          ],
+          "crossing": false
+        },
+        "meetingTime": "19:30:00",
+        "participants": [
+          {
+            "identity": "Cl Ement",
+            "id": "ecf512c6-0cda-4333-afbc-d230891ac32a"
+          },
+          {
+            "identity": "Laurent Renlau",
+            "id": "b7c59215-f916-40a2-b4a0-9db92cbe0719"
+          }
+        ]
+      },
+      {
+        "id": "2cdf89af-4cac-4182-bc86-8af20a6049bb",
+        "name": "G4 \uD83E\uDD55",
+        "averageSpeed": 30.0,
+        "map": {
+          "id": "3eb49526-ca78-4f65-91c9-b02de4978f1b",
+          "teamId": "n-peloton",
+          "permalink": "NP_593_G4_C1",
+          "name": "NP 593 G4 C1",
+          "length": 58.15,
+          "type": "ROAD",
+          "positiveElevation": 449.3,
+          "negativeElevation": -446.0,
+          "postedAt": "2025-02-26",
+          "tags": [
+            "Sortie Hebdo"
+          ],
+          "crossing": false
+        },
+        "meetingTime": "20:30:00",
+        "participants": []
+      },
+      {
+        "id": "793efa57-2f9a-4889-a92b-9df323541c6f",
+        "name": "C4 Super Chill \uD83E\uDD66",
+        "averageSpeed": 20.0,
+        "map": {
+          "id": "43d2f43a-acce-4714-9bd7-0a277ba998f3",
+          "teamId": "n-peloton",
+          "permalink": "NP_593_C4",
+          "name": "NP 593 C4",
+          "length": 38.52,
+          "type": "ROAD",
+          "positiveElevation": 304.7,
+          "negativeElevation": -300.5,
+          "postedAt": "2025-02-26",
+          "tags": [
+            "Sortie Hebdo"
+          ],
+          "crossing": false
+        },
+        "meetingTime": "19:30:00",
+        "participants": [
+          {
+            "identity": "Nicolas Vaumourin",
+            "id": "6682cca3-1387-42ac-b89b-cc0d2dc02f17"
+          }
+        ]
+      },
+      {
+        "id": "f9e7031a-688b-4573-bc7b-6a9c04ffcaa4",
+        "name": "G2 \uD83C\uDF51",
+        "averageSpeed": 35.0,
+        "map": {
+          "id": "471c64d1-f61a-4ad6-8d22-b2f0842c2348",
+          "teamId": "n-peloton",
+          "permalink": "NP_593_G123_C0",
+          "name": "NP 593 G123 C0",
+          "length": 68.36,
+          "type": "ROAD",
+          "positiveElevation": 458.0,
+          "negativeElevation": -453.5,
+          "postedAt": "2025-02-26",
+          "tags": [
+            "Sortie Hebdo"
+          ],
+          "crossing": false
+        },
+        "meetingTime": "20:30:00",
+        "participants": []
+      },
+      {
+        "id": "71831214-8890-4a9a-b56a-340469ccad9d",
+        "name": "C0 Fast Pack \uD83C\uDF46",
+        "averageSpeed": 32.0,
+        "map": {
+          "id": "471c64d1-f61a-4ad6-8d22-b2f0842c2348",
+          "teamId": "n-peloton",
+          "permalink": "NP_593_G123_C0",
+          "name": "NP 593 G123 C0",
+          "length": 68.36,
+          "type": "ROAD",
+          "positiveElevation": 458.0,
+          "negativeElevation": -453.5,
+          "postedAt": "2025-02-26",
+          "tags": [
+            "Sortie Hebdo"
+          ],
+          "crossing": false
+        },
+        "meetingTime": "19:30:00",
+        "participants": [
+          {
+            "identity": "Marcos P",
+            "id": "0434e3b7-1c08-4032-9bfd-fc988856da1b"
+          }
+        ]
+      },
+      {
+        "id": "8152cec4-34a9-428a-8739-b5c81f67e199",
+        "name": "C2 \uD83C\uDF44",
+        "averageSpeed": 25.0,
+        "map": {
+          "id": "ce15c90d-c620-404b-94ba-c34f4c06def3",
+          "teamId": "n-peloton",
+          "permalink": "NP_593_C2",
+          "name": "NP 593 C2",
+          "length": 53.64,
+          "type": "ROAD",
+          "positiveElevation": 400.2,
+          "negativeElevation": -396.7,
+          "postedAt": "2025-02-26",
+          "tags": [
+            "Sortie Hebdo"
+          ],
+          "crossing": false
+        },
+        "meetingTime": "19:30:00",
+        "participants": [
+          {
+            "identity": "Luc R",
+            "id": "66d4f7a7-fee0-40de-9bae-af205eff3842"
+          },
+          {
+            "identity": "valentin guillaud",
+            "id": "0418282e-490f-4ee7-a00c-6613b10a96ae"
+          },
+          {
+            "identity": "Pierre Praud",
+            "id": "7947bbf4-a11a-4a08-84ec-b69573c7d954"
+          },
+          {
+            "identity": "hardy Fustel",
+            "id": "ef4abb77-3bb5-48eb-8f24-e0311c205381"
+          },
+          {
+            "identity": "Hugo Prouille",
+            "id": "082d3050-6afc-42f8-81fb-f3be97213a03"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "590448a0-600a-4cf6-9fab-3afe7a632cdf",
+    "teamId": "n-peloton",
+    "permalink": "Raymond_Ride_218",
+    "publishedStatus": "PUBLISHED",
+    "type": "REGULAR",
+    "date": "2025-02-23",
+    "publishedAt": "2025-02-21T11:00:00Z",
+    "title": "Raymond Ride #218",
+    "description": "ATTENTION : il est fortement conseillé de prendre la map\r\n\r\nMerci de respecter le code de la route, et de faire preuve de vigilance, notamment dans les agglomérations.\r\n\r\nAppli Android : https://n-peloton.fr/app-android\r\nAppli Garmin : https://n-peloton.fr/app-garmin\r\nAttention : Ride interdit aux mineur⋅e⋅s\r\nRappel sécurité : CASQUE/CAA/OUTILS/EAU/€",
+    "imaged": true,
+    "groups": [
+      {
+        "id": "7ce54c01-542f-4ee3-90d0-872c01283330",
+        "name": "Chill",
+        "averageSpeed": 25.0,
+        "map": {
+          "id": "564af135-bf27-4092-92f6-2ca6e45b3865",
+          "teamId": "n-peloton",
+          "permalink": "RR_218_G3Chill",
+          "name": "RR #218 G3Chill",
+          "length": 84.41,
+          "type": "ROAD",
+          "positiveElevation": 622.6,
+          "negativeElevation": -624.6,
+          "postedAt": "2025-02-20",
+          "tags": [
+            "Sortie Hebdo"
+          ],
+          "crossing": false
+        },
+        "meetingTime": "08:45:00",
+        "participants": []
+      },
+      {
+        "id": "c0b9d117-0571-47c3-960e-a11a36c22dc5",
+        "name": "G3",
+        "averageSpeed": 28.0,
+        "map": {
+          "id": "564af135-bf27-4092-92f6-2ca6e45b3865",
+          "teamId": "n-peloton",
+          "permalink": "RR_218_G3Chill",
+          "name": "RR #218 G3Chill",
+          "length": 84.41,
+          "type": "ROAD",
+          "positiveElevation": 622.6,
+          "negativeElevation": -624.6,
+          "postedAt": "2025-02-20",
+          "tags": [
+            "Sortie Hebdo"
+          ],
+          "crossing": false
+        },
+        "meetingTime": "08:45:00",
+        "participants": [
+          {
+            "identity": "Viktor Béranger",
+            "id": "7c632c6d-15d1-487c-8178-07ddb4a116cb"
+          }
+        ]
+      },
+      {
+        "id": "e16fd6e9-1480-4c45-8645-eb63d1f96ce3",
+        "name": "G1",
+        "averageSpeed": 33.0,
+        "map": {
+          "id": "48c63cf9-2eb7-4c45-baca-a1e77e790919",
+          "teamId": "n-peloton",
+          "permalink": "RR_218_G1G2",
+          "name": "RR #218 G1G2",
+          "length": 95.99,
+          "type": "ROAD",
+          "positiveElevation": 665.2,
+          "negativeElevation": -667.3,
+          "postedAt": "2025-02-20",
+          "tags": [
+            "Sortie Hebdo"
+          ],
+          "crossing": false
+        },
+        "meetingTime": "08:45:00",
+        "participants": [
+          {
+            "identity": "Vincent Perhirin",
+            "id": "122ad4eb-57d7-4942-bfbc-612cd4d904ee"
+          },
+          {
+            "identity": "Clement Bonneau \uD83C\uDDEB\uD83C\uDDF7",
+            "id": "1a11682a-fca0-4f18-ba41-2eca3045aefb"
+          },
+          {
+            "identity": "Gaby Landais",
+            "id": "06ceb207-2c9f-4260-a7c5-833edd84837e"
+          }
+        ]
+      },
+      {
+        "id": "031b2d3b-e741-43bc-bef4-877bb12a7d8b",
+        "name": "G2",
+        "averageSpeed": 30.0,
+        "map": {
+          "id": "48c63cf9-2eb7-4c45-baca-a1e77e790919",
+          "teamId": "n-peloton",
+          "permalink": "RR_218_G1G2",
+          "name": "RR #218 G1G2",
+          "length": 95.99,
+          "type": "ROAD",
+          "positiveElevation": 665.2,
+          "negativeElevation": -667.3,
+          "postedAt": "2025-02-20",
+          "tags": [
+            "Sortie Hebdo"
+          ],
+          "crossing": false
+        },
+        "meetingTime": "08:45:00",
+        "participants": [
+          {
+            "identity": "Théophane Jarry",
+            "id": "cd9139c0-487e-4d03-bad9-2514412129d2"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "5a8ff5a4-df2c-45cb-8dc6-3cf8461e989d",
+    "teamId": "n-peloton",
+    "permalink": "200_des_Ribines_2025",
+    "publishedStatus": "PUBLISHED",
+    "type": "SPECIAL",
+    "date": "2025-02-22",
+    "publishedAt": "2025-01-16T09:00:00Z",
+    "title": "200 des Ribines 2025",
+    "description": "Tu veux repeindre ton vélo aux couleurs de la boue des ribines ? Rendez-vous le samedi 22 février 2025 aux fonderies pour un 200 des Ribines !\r\n\r\nUn départ collectif, puis plusieurs groupes se formeront en fonction de l'état et des envies de chacun.e.\r\nMap gravel léger (30% de chemins roulants et 70% de petites routes) mais qui doit passer en 30 slick cependant... Plaquettes de frein de rechange à prévoir...\r\n\r\nATTENTION : il est fortement conseillé de prendre la map\r\n\r\n\r\nRappel sécurité : MASQUE/ PERRUQUE ROSE/CASQUE/caa/outils/EAU/€/Coupe mulet conseillée\r\n\r\nBonne humeur\r\nMême dans la difficulté, garde le sourire avec les autres participant·e·s.\r\n\r\nRespect de l'humain\r\nNe laisse pas les stéréotypes influencer tes interactions avec autrui. On ne discrimine pas une personne sur des critères basés sur ses origines, sa couleur de peau, son genre ou identité de genre, son orientation sexuelle, son âge, son handicap, son origine sociale, son physique...\r\n\r\nEntraide\r\nCe n'est pas une course, sauf envers vous-même selon vos propres envies et défis personnels. Les allures annoncées sont indicatives. L'individualité n'est pas de mise.",
+    "imaged": true,
+    "groups": [
+      {
+        "id": "9d174efc-5ca1-4b51-84b2-1cc680561d8a",
+        "name": "100 des Ribines",
+        "averageSpeed": 23.0,
+        "map": {
+          "id": "d085e3ee-10b1-460d-90c4-42e34205b401",
+          "teamId": "n-peloton",
+          "permalink": "100_des_Ribines_2025",
+          "name": "100 des Ribines 2025",
+          "length": 107.84,
+          "type": "GRAVEL",
+          "positiveElevation": 666.5,
+          "negativeElevation": -664.9,
+          "postedAt": "2025-01-14",
+          "tags": [
+            "Sortie Hebdo"
+          ],
+          "crossing": true
+        },
+        "meetingTime": "08:15:00",
+        "participants": [
+          {
+            "identity": "julien vallee",
+            "id": "c9666bc6-406c-487a-bb15-75d7214fd2ed"
+          },
+          {
+            "identity": "Gabrielle A.",
+            "id": "f4820bc8-4a27-442d-9454-fd3d907b1f99"
+          },
+          {
+            "identity": "Alex Gaignard",
+            "id": "6b68fd55-9f53-4729-b573-69c81587986a"
+          },
+          {
+            "identity": "Sébastien Gandin",
+            "id": "491e7558-e420-47d7-b974-b4ff8fd28e71"
+          },
+          {
+            "identity": "Vincent Drouet",
+            "id": "aeb965ad-e8b2-404b-b34c-0846760f3e3a"
+          },
+          {
+            "identity": "Guillaume Sabin",
+            "id": "410190c1-c957-4d16-a774-9ab0f5cbeb45"
+          },
+          {
+            "identity": "Matthieu Quantin",
+            "id": "3459ef00-7d03-41cf-a8e1-62e36852bd98"
+          },
+          {
+            "identity": "Valentin Mumble",
+            "id": "2f0303a8-34df-4222-9460-0fc13b53b08b"
+          },
+          {
+            "identity": "C'est moi Wawane",
+            "id": "65ee3140-0c46-4f44-93da-662b3f650e7c"
+          },
+          {
+            "identity": "Emmanuel Pottier",
+            "id": "930abb22-8e15-457d-92ef-fd7f20929722"
+          },
+          {
+            "identity": "Alexandre Mumble",
+            "id": "a5e023ce-fda1-4722-83ad-95d285fdac65"
+          },
+          {
+            "identity": "Yann VIGNERON",
+            "id": "59a06add-ecb6-48fb-87a9-ff6597579bf1"
+          },
+          {
+            "identity": "Flo Mars",
+            "id": "e68d9974-189d-4f00-af8a-eb96b336edec"
+          },
+          {
+            "identity": "Jonathan Reboux",
+            "id": "60294719-9c64-4a1e-9858-46bbe33ade7d"
+          },
+          {
+            "identity": "flo velo",
+            "id": "3a860920-cf5e-4473-939e-5180091548c5"
+          },
+          {
+            "identity": "fabien dufeil",
+            "id": "fd58ad33-9b4c-4926-921b-5e9f672f3a24"
+          },
+          {
+            "identity": "Félix ARTUS",
+            "id": "a81cb12b-e2e4-461b-905e-25c0c76a5586"
+          },
+          {
+            "identity": "Céline Chtl",
+            "id": "32a07e08-072f-4468-a794-2fb196091f66"
+          },
+          {
+            "identity": "Dadcat Fred",
+            "id": "5e413230-6613-4063-a8e8-db671043ed24"
+          },
+          {
+            "identity": "MICHEL Lucie",
+            "id": "a7150a2b-8ddb-41fd-b30e-f5b050abaa0a"
+          },
+          {
+            "identity": "Gui Yome Wisu",
+            "id": "a9cca0f7-d99f-4c04-a265-e20f4dc03622"
+          },
+          {
+            "identity": "Fx Boulaire",
+            "id": "3ef685ed-018a-4a8f-bfd6-e06e198f5f3b"
+          }
+        ]
+      },
+      {
+        "id": "b974e0d3-93e0-472f-b0e0-602fa5eab670",
+        "name": "200 des Ribines G2",
+        "averageSpeed": 23.0,
+        "map": {
+          "id": "9675f16b-3d35-4956-9ec5-e4d7afa91e91",
+          "teamId": "n-peloton",
+          "permalink": "200_des_Ribines_2025",
+          "name": "200 des Ribines 2025",
+          "length": 197.43,
+          "type": "GRAVEL",
+          "positiveElevation": 1781.3,
+          "negativeElevation": -1779.7,
+          "postedAt": "2025-01-14",
+          "tags": [
+            "Sortie Hebdo"
+          ],
+          "crossing": true
+        },
+        "meetingTime": "08:15:00",
+        "participants": [
+          {
+            "identity": "Ale Garrote",
+            "id": "141f95b6-5d14-49d3-94b2-6dfd77a78cf4"
+          },
+          {
+            "identity": "Vincent vinzzz",
+            "id": "69a17183-e046-4ac9-bc2c-5c3e67b83b72"
+          },
+          {
+            "identity": "Arthur Courtel",
+            "id": "ccddc8a3-819c-4535-8a65-ac08d76bfb79"
+          },
+          {
+            "identity": "Thomas Durand",
+            "id": "839a7464-fd1d-4e7b-b171-3fd7584d2f14"
+          },
+          {
+            "identity": "Matthéo Marchand",
+            "id": "4ed61ac9-e5e6-4615-857a-6b793c02011e"
+          },
+          {
+            "identity": "Nicolas L",
+            "id": "802cf3ab-a789-43ba-82f2-a6acbeb3fc0b"
+          },
+          {
+            "identity": "Antonin Fillon",
+            "id": "23c419bd-150e-49ff-8caf-a98ed38d07b8"
+          },
+          {
+            "identity": "Thibault Manderscheid",
+            "id": "1ecd28b5-2223-42ad-a24c-07188dfa57fb"
+          },
+          {
+            "identity": "T S",
+            "id": "24678038-85ea-414f-bacc-6d81a5b3eaef"
+          },
+          {
+            "identity": "Cl Ement",
+            "id": "ecf512c6-0cda-4333-afbc-d230891ac32a"
+          },
+          {
+            "identity": "Pierre-Axel NOEL",
+            "id": "5c71e558-0dbf-43fb-883c-fef148114433"
+          },
+          {
+            "identity": "Chris C",
+            "id": "d1a4181a-b7c0-434a-91af-e527fc7761ed"
+          },
+          {
+            "identity": "Benjamin MAILLET",
+            "id": "8563a997-a530-470c-a84f-1840cdc89b82"
+          },
+          {
+            "identity": "Arnaud Stricher",
+            "id": "0f168157-4895-4922-b90a-017b2f6e806d"
+          },
+          {
+            "identity": "PouletFurtif (Flavien L.)",
+            "id": "b0fa6242-5d8a-4dee-abc1-bc38d663f7b6"
+          },
+          {
+            "identity": "dom bel",
+            "id": "ac201845-276c-4d92-92b8-e933f8b310b3"
+          },
+          {
+            "identity": "Laurent Renlau",
+            "id": "b7c59215-f916-40a2-b4a0-9db92cbe0719"
+          },
+          {
+            "identity": "Corentin Ads",
+            "id": "14808560-24f9-433d-a8c3-12a27e5ebcd2"
+          },
+          {
+            "identity": "Louise Rglr",
+            "id": "44b689be-1245-4181-b055-0c8daa4a7f22"
+          },
+          {
+            "identity": "Carlos Yus",
+            "id": "29872c97-c4b3-460b-84b3-2085eb8dd9a2"
+          }
+        ]
+      },
+      {
+        "id": "34a53bd6-a720-4bb2-8443-a78139b68514",
+        "name": "140 des Ribines",
+        "averageSpeed": 23.0,
+        "map": {
+          "id": "76293037-ebcd-4173-a202-197c0c298926",
+          "teamId": "n-peloton",
+          "permalink": "140_des_Ribines_2025",
+          "name": "140 des Ribines 2025",
+          "length": 142.85,
+          "type": "GRAVEL",
+          "positiveElevation": 1035.0,
+          "negativeElevation": -1033.5,
+          "postedAt": "2025-01-14",
+          "tags": [
+            "Sortie Hebdo"
+          ],
+          "crossing": true
+        },
+        "meetingTime": "08:15:00",
+        "participants": []
+      },
+      {
+        "id": "c45f8dcb-21b2-450d-ab01-4b71e5bfd701",
+        "name": "200 des Ribines G1",
+        "averageSpeed": 26.0,
+        "map": {
+          "id": "9675f16b-3d35-4956-9ec5-e4d7afa91e91",
+          "teamId": "n-peloton",
+          "permalink": "200_des_Ribines_2025",
+          "name": "200 des Ribines 2025",
+          "length": 197.43,
+          "type": "GRAVEL",
+          "positiveElevation": 1781.3,
+          "negativeElevation": -1779.7,
+          "postedAt": "2025-01-14",
+          "tags": [
+            "Sortie Hebdo"
+          ],
+          "crossing": true
+        },
+        "meetingTime": "08:15:00",
+        "participants": [
+          {
+            "identity": "Yann Haffner",
+            "id": "a57cbce1-926d-4291-a4d4-3d37d5d752b0"
+          },
+          {
+            "identity": "Antoine Blondeau \uD83C\uDD8E",
+            "id": "2aa44c80-207a-4034-82c0-1fc4af61d06d"
+          },
+          {
+            "identity": "Lucas Bckr",
+            "id": "4846065f-f5c3-47fd-b63a-cf395a599292"
+          }
+        ]
+      },
+      {
+        "id": "c64d2599-fbe8-4e4a-84b4-901b6d05c030",
+        "name": "60 des Ribines",
+        "averageSpeed": 20.0,
+        "map": {
+          "id": "7496c968-f309-4d22-a7d5-21b9369ee216",
+          "teamId": "n-peloton",
+          "permalink": "60_des_Ribines_2025",
+          "name": "60 des Ribines 2025",
+          "length": 65.87,
+          "type": "GRAVEL",
+          "positiveElevation": 476.1,
+          "negativeElevation": -473.2,
+          "postedAt": "2025-01-15",
+          "tags": [
+            "Sortie Hebdo"
+          ],
+          "crossing": true
+        },
+        "meetingTime": "08:15:00",
+        "participants": [
+          {
+            "identity": "Celine Duchet",
+            "id": "5daaef7c-c3bd-4900-bd82-7321c792069b"
+          },
+          {
+            "identity": "brieuc LE COZ",
+            "id": "fd327ca1-28f2-4290-b82d-99cde3f26a41"
+          }
+        ]
+      }
+    ]
+  }
+]

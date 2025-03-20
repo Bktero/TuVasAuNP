@@ -1,9 +1,11 @@
-package data
+package biketeam.data
 
 import org.json.JSONObject
 import java.time.LocalTime
 
-// data.Group class (representing a ride group)
+/**
+ * A dataclass to represent the groups of a [Ride].
+ */
 data class Group(
     val id: String,
     val name: String,
