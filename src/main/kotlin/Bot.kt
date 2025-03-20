@@ -1,5 +1,4 @@
-import biketeam.MapDownloader
-import biketeam.RideDownloader
+import biketeam.Client
 import biketeam.WednesdayGroups
 import biketeam.data.Ride
 import org.telegram.telegrambots.longpolling.util.LongPollingSingleThreadUpdateConsumer
@@ -51,7 +50,7 @@ class Bot(private val telegramClient: TelegramClient, private val adminId: Strin
     LongPollingSingleThreadUpdateConsumer {
 
     private val downloadDirectory = File("working/downloads")
-    private val mapDownloader = MapDownloader(downloadDirectory)
+    private val biketeamClient = Client(downloadDirectory)
 
     init {
         // Delete all files downloaded during a previous execution
@@ -203,7 +202,7 @@ class Bot(private val telegramClient: TelegramClient, private val adminId: Strin
     }
 
     private fun processDate(date: LocalDate, userId: String) {
-        val rides = RideDownloader().day(date)
+        val rides = biketeamClient.requestRides(date)
 
         when (rides.size) {
             0 -> {
@@ -228,7 +227,7 @@ class Bot(private val telegramClient: TelegramClient, private val adminId: Strin
         for (group in ride.groups) {
             val guessedGroup = WednesdayGroups.guess(group.name)
             if (guessedGroup in desiredGroups) {
-                val file = mapDownloader.download(group.map)
+                val file = biketeamClient.requestMapFile(group.map)
                 println("Map for group ${group.name} is here: $file")
                 val caption = "Voici la la map pour ${group.name}. RDV à ${group.meetingTime}"
                 sendFile(file, caption, userId)
