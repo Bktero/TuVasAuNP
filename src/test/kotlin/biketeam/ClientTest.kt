@@ -26,7 +26,9 @@ class ClientTest {
         assertEquals(1, rides.size)
 
         assert(rides[0].groups.isNotEmpty());
-        val file = client.requestMapFile(rides[0].groups[0].map)
+        val group = rides[0].groups[0]
+
+        val file = client.requestMapFile(group.map!!) // We now that each group had a map on this day
         assert(file.exists())
         assert(!file.isDirectory)
     }

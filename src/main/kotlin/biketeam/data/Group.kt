@@ -11,7 +11,7 @@ data class Group(
     val name: String,
     val meetingTime: LocalTime,
     val averageSpeed: UInt,
-    val map: Map,
+    val map: Map?,
     val participants: List<Participant>
 ) {
     companion object {
@@ -25,12 +25,20 @@ data class Group(
                 )
             }
 
+            // Sometimes, a ride is created, groups are added, but some of them don't have maps.
+            // It happened for instance on March 25th 2025 (it was then fixed in the afternoon).
+            val map = if (json.isNull("map")) {
+                null
+            } else {
+                json.optJSONObject("map")?.let { Map.from(it) }
+            }
+
             return Group(
                 id = json.getString("id"),
                 name = json.getString("name"),
                 meetingTime = LocalTime.parse(json.getString("meetingTime")),
                 averageSpeed = json.getInt("averageSpeed").toUInt(),
-                map = Map.from(json.getJSONObject("map")),
+                map = map,
                 participants = participants
             )
         }

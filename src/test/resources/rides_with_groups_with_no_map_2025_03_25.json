@@ -1,0 +1,197 @@
+[
+  {
+    "id": "ae6abf31-1f88-44a9-b074-bb292338f9a4",
+    "teamId": "n-peloton",
+    "permalink": "N-Peloton_597",
+    "publishedStatus": "PUBLISHED",
+    "type": "REGULAR",
+    "date": "2025-03-26",
+    "publishedAt": "2025-03-25T11:00:00Z",
+    "title": "N-Peloton #597",
+    "description": "ATTENTION : il est fortement conseillé de prendre la map\r\nAppli Android : https://n-peloton.fr/app-android\r\nAppli Garmin : https://n-peloton.fr/app-garmin\r\nAttention : Ride interdit aux mineur·e·s\r\n\r\nRappel sécurité : LUMIERES PUISSANTES/GILET & PERRUQUE ROSE/CASQUE/caa/outils/EAU/€/Coupe mulet conseillée\r\n\r\nRespect des bonnes pratiques nécessaire pour la sécurité\r\net le plaisir de chacun·e : https://www.prendslaroue.fr/n-peloton/faq\r\n\r\nÀ demain en pleine forme!",
+    "imaged": false,
+    "groups": [
+      {
+        "id": "2311bfd9-d473-43f1-a554-5f9b6dac2d88",
+        "name": "Chill Gravel \uD83C\uDF47",
+        "averageSpeed": 20.0,
+        "map": {
+          "id": "cc3e0364-428d-4d76-8e13-be48f442d33b",
+          "teamId": "n-peloton",
+          "permalink": "NP_597_Gravel_Chill_Gravel",
+          "name": "NP #597 Gravel / Chill Gravel",
+          "length": 54.29,
+          "type": "GRAVEL",
+          "positiveElevation": 521.4,
+          "negativeElevation": -520.2,
+          "postedAt": "2025-03-24",
+          "tags": [
+            "Gravel expert",
+            "Gravel intermédiaire",
+            "Sortie Hebdo"
+          ],
+          "crossing": true
+        },
+        "meetingTime": "19:30:00",
+        "participants": []
+      },
+      {
+        "id": "affe4b12-3b5d-48a4-8933-308c4c4806d3",
+        "name": "C1 \uD83C\uDF4B",
+        "averageSpeed": 28.0,
+        "map": null,
+        "meetingTime": "19:30:00",
+        "participants": []
+      },
+      {
+        "id": "1d389a86-140a-407c-8f6b-5c04b59e484c",
+        "name": "G1 \uD83C\uDF36️",
+        "averageSpeed": 38.0,
+        "map": null,
+        "meetingTime": "20:30:00",
+        "participants": []
+      },
+      {
+        "id": "f8491d42-abae-4382-9379-e723053ee9c3",
+        "name": "C0 Fast Pack \uD83C\uDF46",
+        "averageSpeed": 32.0,
+        "map": null,
+        "meetingTime": "19:30:00",
+        "participants": [
+          {
+            "identity": "Edouard Vigneron",
+            "id": "cc801231-bdd6-4037-abdc-0ee5368a1eab"
+          }
+        ]
+      },
+      {
+        "id": "acbda36f-8a1f-4c80-a7be-238c5d044c6e",
+        "name": "C4 Super Chill \uD83E\uDD66",
+        "averageSpeed": 20.0,
+        "map": {
+          "id": "0d3557e3-0ba0-407d-9a93-b9da4ad43a37",
+          "teamId": "n-peloton",
+          "permalink": "NP_597_C4",
+          "name": "NP #597 C4",
+          "length": 33.91,
+          "type": "ROAD",
+          "positiveElevation": 351.9,
+          "negativeElevation": -350.4,
+          "postedAt": "2025-03-24",
+          "tags": [
+            "Sortie Hebdo"
+          ],
+          "crossing": false
+        },
+        "meetingTime": "19:30:00",
+        "participants": [
+          {
+            "identity": "Nicolas Vaumourin",
+            "id": "6682cca3-1387-42ac-b89b-cc0d2dc02f17"
+          }
+        ]
+      },
+      {
+        "id": "99310e51-4215-4394-a044-13494cacc37b",
+        "name": "G3 \uD83C\uDF4C",
+        "averageSpeed": 32.0,
+        "map": null,
+        "meetingTime": "20:30:00",
+        "participants": []
+      },
+      {
+        "id": "cd32ad65-2c1c-445f-8d96-37b077fc270b",
+        "name": "Superchill Gravel \uD83E\uDED0",
+        "averageSpeed": 16.0,
+        "map": {
+          "id": "9a6e1e67-3de3-4d91-aa18-73d500eb9288",
+          "teamId": "n-peloton",
+          "permalink": "NP_597_Superchill_Gravel",
+          "name": "NP #597 Superchill Gravel",
+          "length": 36.63,
+          "type": "GRAVEL",
+          "positiveElevation": 309.0,
+          "negativeElevation": -308.1,
+          "postedAt": "2025-03-24",
+          "tags": [
+            "Gravel débutant",
+            "Sortie Hebdo"
+          ],
+          "crossing": true
+        },
+        "meetingTime": "19:30:00",
+        "participants": []
+      },
+      {
+        "id": "a9df8ffa-54fb-45b2-b915-8ae1121250cc",
+        "name": "C2 \uD83C\uDF44",
+        "averageSpeed": 25.0,
+        "map": null,
+        "meetingTime": "19:30:00",
+        "participants": []
+      },
+      {
+        "id": "bde9712e-116f-431d-9494-27f0efd08d92",
+        "name": "G2 \uD83C\uDF51",
+        "averageSpeed": 35.0,
+        "map": null,
+        "meetingTime": "20:30:00",
+        "participants": []
+      },
+      {
+        "id": "77cf5629-0603-4785-9829-0f5a62b8226a",
+        "name": "Gravel \uD83C\uDF30",
+        "averageSpeed": 24.0,
+        "map": {
+          "id": "cc3e0364-428d-4d76-8e13-be48f442d33b",
+          "teamId": "n-peloton",
+          "permalink": "NP_597_Gravel_Chill_Gravel",
+          "name": "NP #597 Gravel / Chill Gravel",
+          "length": 54.29,
+          "type": "GRAVEL",
+          "positiveElevation": 521.4,
+          "negativeElevation": -520.2,
+          "postedAt": "2025-03-24",
+          "tags": [
+            "Gravel expert",
+            "Gravel intermédiaire",
+            "Sortie Hebdo"
+          ],
+          "crossing": true
+        },
+        "meetingTime": "19:30:00",
+        "participants": []
+      },
+      {
+        "id": "c7cc5c6a-ee8a-48db-85e8-dfd55fa4377b",
+        "name": "G4 \uD83E\uDD55",
+        "averageSpeed": 30.0,
+        "map": null,
+        "meetingTime": "20:30:00",
+        "participants": []
+      },
+      {
+        "id": "efaaa989-f993-447e-a0e2-e7f6b32c7624",
+        "name": "C3 \uD83C\uDF53",
+        "averageSpeed": 22.0,
+        "map": {
+          "id": "2616768b-b37b-4711-9622-b2b0ffad129f",
+          "teamId": "n-peloton",
+          "permalink": "NP_597_C3",
+          "name": "NP #597 C3",
+          "length": 43.0,
+          "type": "ROAD",
+          "positiveElevation": 401.1,
+          "negativeElevation": -399.6,
+          "postedAt": "2025-03-24",
+          "tags": [
+            "Sortie Hebdo"
+          ],
+          "crossing": false
+        },
+        "meetingTime": "19:30:00",
+        "participants": []
+      }
+    ]
+  }
+]

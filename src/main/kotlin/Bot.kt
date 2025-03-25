@@ -231,10 +231,17 @@ class Bot(private val telegramClient: TelegramClient, private val adminId: Strin
         for (group in ride.groups) {
             val guessedGroup = WednesdayGroups.guess(group.name)
             if (guessedGroup in desiredGroups) {
-                val file = biketeamClient.requestMapFile(group.map)
-                println("Map for group ${group.name} is here: $file")
-                val caption = "Voici la la map pour ${group.name}. RDV à ${group.meetingTime}"
-                sendFile(file, caption, userId)
+                if (group.map != null) {
+                    val file = biketeamClient.requestMapFile(group.map)
+                    println("Map for group ${group.name} is here: $file")
+                    val caption = "Voici la la map pour ${group.name}. RDV à ${group.meetingTime}"
+                    sendFile(file, caption, userId)
+                } else {
+                    sendText(
+                        "Le groupe ${group.name} existe, mais il n'a pas de map \uD83D\uDE32", // Unicode = Astonished Face
+                        userId
+                    )
+                }
             }
         }
 
