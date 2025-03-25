@@ -2,3 +2,9 @@
 # They are stored in .idea/workspace.xml normally.
 # It's better to exclude the entire directory altogether from the Docker context.
 .idea
+
+# We don't need the Git repository
+.git
+
+# These is a  "temp" dir, nothing that should be in the Docker image
+working
