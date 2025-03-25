@@ -52,11 +52,12 @@ class Bot(private val telegramClient: TelegramClient, private val adminId: Strin
 
     private val downloadDirectory = File("working/downloads")
     private val biketeamClient = Client(downloadDirectory)
+    private var updateCount = 0
+    private var acceptedUpdateCount = 0
 
     init {
         // Delete all files downloaded during a previous execution
         downloadDirectory.deleteRecursively()
-
 
         // Recreate the download directory
         println("Creating directory $downloadDirectory...")
@@ -73,8 +74,11 @@ class Bot(private val telegramClient: TelegramClient, private val adminId: Strin
     override fun consume(update: Update?) {
         update!!
         println("--- ${LocalDateTime.now()} $update")
+        updateCount++
 
         if (canAccept(update)) {
+            acceptedUpdateCount++
+
             val text = update.message.text
             val userId = update.message.from.id.toString()
             when (text) {
@@ -89,7 +93,7 @@ class Bot(private val telegramClient: TelegramClient, private val adminId: Strin
 
                 "/cava" -> {
                     println("Received command /cava")
-                    sendText("Toujours debout :)", userId)
+                    cava(userId)
                 }
 
                 "/ride" -> {
@@ -128,7 +132,7 @@ class Bot(private val telegramClient: TelegramClient, private val adminId: Strin
     }
 
     private fun sendAdminText(text: String) {
-        assert(text.isNotEmpty()) { "Cannot send an empty text" }
+        assert(text.isNotEmpty()) { "Cannot send an empty text to admin" }
         sendText("ADMIN: $text", adminId)
     }
 
@@ -150,6 +154,24 @@ class Bot(private val telegramClient: TelegramClient, private val adminId: Strin
             .build()
 
         telegramClient.execute(method)
+    }
+
+    //------------------------------------------------------------------------------------------------------------------
+    // The 'cava' command
+    private fun cava(userId: String) {
+        var message = """
+            |Toujours debout :)
+            |
+            |Updates reçues = $updateCount
+            |Updates acceptées = $acceptedUpdateCount
+            """.trimMargin()
+
+        val instant = ProcessHandle.current().info().startInstant()
+        if (instant.isPresent) {
+            message += "\nDémarrage = ${instant.get()}"
+        }
+
+        sendText(message, userId)
     }
 
     //------------------------------------------------------------------------------------------------------------------
@@ -246,7 +268,7 @@ class Bot(private val telegramClient: TelegramClient, private val adminId: Strin
         }
 
         // Second, get the bar
-        val entries = biketeamClient.requestFeed();
+        val entries = biketeamClient.requestFeed()
         for (entry in entries) {
             if (entry.title == ride.title && entry.date == ride.date) {
                 // The title and the date are the same, we have normally found our entry
