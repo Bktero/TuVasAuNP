@@ -79,6 +79,7 @@ class Bot(private val telegramClient: TelegramClient, private val adminId: Strin
             val userId = update.message.from.id.toString()
             when (text) {
                 "/quand" -> {
+                    println("Received command /quand")
                     quand(userId)
                 }
 
@@ -87,10 +88,12 @@ class Bot(private val telegramClient: TelegramClient, private val adminId: Strin
                 }
 
                 "/cava" -> {
+                    println("Received command /cava")
                     sendText("Toujours debout :)", userId)
                 }
 
                 "/ride" -> {
+                    println("Received command /ride")
                     ride(userId)
                 }
 
