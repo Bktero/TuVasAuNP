@@ -18,6 +18,8 @@ class RideTest {
             output += ride.toString() + "\n"
         }
 
+        output = output.replace("\r\n", "\n")
+
         val expected = loadResourceFile("rides.txt")
         assertEquals(expected, output)
     }
@@ -32,6 +34,8 @@ class RideTest {
             val ride = Ride.from(jsonObject)
             output += ride.toString() + "\n"
         }
+
+        output = output.replace("\r\n", "\n")
 
         val expected = loadResourceFile("rides_with_groups_with_no_map.txt")
         assertEquals(expected, output)

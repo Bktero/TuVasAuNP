@@ -22,7 +22,7 @@ data class FeedEntry(
     val publishedStatus: PublishedStatus,
     val type: String, // TODO type is same as RideType?
     val date: LocalDate,
-    val startPlace: Place,
+    val startPlace: Place?,
     val endPlace: Place?,
     val meetingTime: LocalTime,
     val publishedAt: ZonedDateTime,
@@ -40,7 +40,9 @@ data class FeedEntry(
             publishedStatus = PublishedStatus.from(json.getString("publishedStatus")),
             type = json.getString("type"),
             date = LocalDate.parse(json.getString("date")),
-            startPlace = Place.from(json.getJSONObject("startPlace")),
+            startPlace = json.optJSONObject("startPlace")?.let {
+                Place.from(it)
+            },
             endPlace = json.optJSONObject("endPlace")?.let {
                 Place.from(it)
             },
