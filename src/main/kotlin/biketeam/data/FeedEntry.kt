@@ -21,10 +21,10 @@ data class FeedEntry(
     val permalink: String,
     val publishedStatus: PublishedStatus,
     val type: String, // TODO type is same as RideType?
-    val date: LocalDate,
+    val date: LocalDate?,
     val startPlace: Place?,
     val endPlace: Place?,
-    val meetingTime: LocalTime,
+    val meetingTime: LocalTime?,
     val publishedAt: ZonedDateTime,
     val title: String,
     val description: String,
@@ -36,22 +36,35 @@ data class FeedEntry(
             feedType = json.getString("feedType"),
             id = json.getString("id"),
             teamId = json.getString("teamId"),
-            permalink = json.getString("permalink"),
+            permalink = json.optString("permalink"),
             publishedStatus = PublishedStatus.from(json.getString("publishedStatus")),
-            type = json.getString("type"),
-            date = LocalDate.parse(json.getString("date")),
+            type = json.optString("type"),
+            date = json.optString("date")?.let {
+                if (it == "") {
+                    null
+                } else {
+                    LocalDate.parse(it)
+                }
+            },
             startPlace = json.optJSONObject("startPlace")?.let {
                 Place.from(it)
             },
             endPlace = json.optJSONObject("endPlace")?.let {
                 Place.from(it)
             },
-            meetingTime = LocalTime.parse(json.getString("meetingTime")),
+            meetingTime = json.optString("meetingTime").let {
+                if (it == "") {
+                    null
+                } else {
+                    LocalTime.parse(it)
+                }
+            },
             publishedAt = ZonedDateTime.parse(json.getString("publishedAt"), DateTimeFormatter.ISO_DATE_TIME),
             title = json.getString("title"),
-            description = json.getString("description"),
+            description = json.optString("description"),
             imaged = json.getBoolean("imaged"),
-            numberOfGroups = json.getInt("numberOfGroups").toUInt(),
+            numberOfGroups = json.optInt("numberOfGroups", 0).toUInt(),
         )
+
     }
 }

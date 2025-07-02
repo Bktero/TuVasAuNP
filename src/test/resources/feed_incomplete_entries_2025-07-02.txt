@@ -1,0 +1,125 @@
+FeedEntry(feedType=RIDE, id=e17e15ec-a1e5-44b5-9101-b7dc3a0296cc, teamId=n-peloton, permalink=N-Peloton_612, publishedStatus=PUBLISHED, type=REGULAR, date=2025-07-02, startPlace=Place(id=7b45bb02-8927-436d-9314-978f18799900rt, teamId=n-peloton, name=Fonderies, address=Place des Fonderies 44200 Nantes, link=, point=Point(latitude=47.20587797222379, longitude=-1.545577968361348), startPlace=true, endPlace=false), endPlace=Place(id=4882d892-1a52-4ca0-9acc-6cc93ebcb8c7, teamId=n-peloton, name=Atomics, address=6 Cours Olivier De Clisson 44000 Nantes, link=, point=Point(latitude=47.213087963775365, longitude=-1.5547220556476014), startPlace=false, endPlace=true), meetingTime=19:30, publishedAt=2025-07-01T16:00Z, title=N-Peloton #612, description=ATTENTION : il est fortement conseillé de prendre la map
+Appli Android : https://n-peloton.fr/app-android
+Appli Garmin : https://n-peloton.fr/app-garmin
+Attention : Ride interdit aux mineur·e·s
+
+Rappel sécurité : LUMIERES PUISSANTES/GILET & PERRUQUE ROSE/CASQUE/caa/outils/EAU/€/Coupe mulet conseillée
+
+Respect des bonnes pratiques nécessaire pour la sécurité
+et le plaisir de chacun·e : https://www.prendslaroue.fr/n-peloton/faq
+
+À demain en pleine forme!, imaged=true, numberOfGroups=15)
+-------------------------------------------------------
+FeedEntry(feedType=RIDE, id=d5d7ccc9-e57e-414c-afb3-34b7af183400, teamId=n-peloton, permalink=Raymond_Ride_235, publishedStatus=PUBLISHED, type=REGULAR, date=2025-06-29, startPlace=Place(id=7b45bb02-8927-436d-9314-978f18799900rt, teamId=n-peloton, name=Fonderies, address=Place des Fonderies 44200 Nantes, link=, point=Point(latitude=47.20587797222379, longitude=-1.545577968361348), startPlace=true, endPlace=false), endPlace=null, meetingTime=08:30, publishedAt=2025-06-27T10:00Z, title=Raymond Ride #235, description=ATTENTION : il est fortement conseillé de prendre la map
+
+Merci de respecter le code de la route, et de faire preuve de vigilance, notamment dans les agglomérations.
+
+Appli Android : https://n-peloton.fr/app-android
+Appli Garmin : https://n-peloton.fr/app-garmin
+Attention : Ride interdit aux mineur⋅e⋅s
+Rappel sécurité : CASQUE/CAA/OUTILS/EAU/€, imaged=true, numberOfGroups=5)
+-------------------------------------------------------
+FeedEntry(feedType=RIDE, id=e4187b5f-11bd-4054-a46f-92bd6b7e5be9, teamId=n-peloton, permalink=N-Peloton_611, publishedStatus=PUBLISHED, type=REGULAR, date=2025-06-25, startPlace=Place(id=7b45bb02-8927-436d-9314-978f18799900rt, teamId=n-peloton, name=Fonderies, address=Place des Fonderies 44200 Nantes, link=, point=Point(latitude=47.20587797222379, longitude=-1.545577968361348), startPlace=true, endPlace=false), endPlace=Place(id=f02734ec-6e62-41b5-849a-b609fb997147, teamId=n-peloton, name=Le Grabuge, address=74 Rue Maréchal Joffre 44000 Nantes, link=https://www.facebook.com/LeGrabugeBar/, point=Point(latitude=47.22054598907257, longitude=-1.548789983319342), startPlace=false, endPlace=true), meetingTime=19:30, publishedAt=2025-06-24T10:00Z, title=N-Peloton #611, description=ATTENTION : il est fortement conseillé de prendre la map
+Appli Android : https://n-peloton.fr/app-android
+Appli Garmin : https://n-peloton.fr/app-garmin
+Attention : Ride interdit aux mineur·e·s
+
+Rappel sécurité : LUMIERES PUISSANTES/GILET & PERRUQUE ROSE/CASQUE/caa/outils/EAU/€/Coupe mulet conseillée
+
+Respect des bonnes pratiques nécessaire pour la sécurité
+et le plaisir de chacun·e : https://www.prendslaroue.fr/n-peloton/faq
+
+À demain en pleine forme!, imaged=true, numberOfGroups=15)
+-------------------------------------------------------
+FeedEntry(feedType=RIDE, id=8e4542b9-a155-4fdb-bbd5-6f17bbf49037, teamId=n-peloton, permalink=Raymond_Ride_234, publishedStatus=PUBLISHED, type=REGULAR, date=2025-06-22, startPlace=Place(id=7b45bb02-8927-436d-9314-978f18799900rt, teamId=n-peloton, name=Fonderies, address=Place des Fonderies 44200 Nantes, link=, point=Point(latitude=47.20587797222379, longitude=-1.545577968361348), startPlace=true, endPlace=false), endPlace=null, meetingTime=08:30, publishedAt=2025-06-21T13:00Z, title=Raymond Ride #234, description=ATTENTION : il est fortement conseillé de prendre la map
+
+Merci de respecter le code de la route, et de faire preuve de vigilance, notamment dans les agglomérations.
+
+Appli Android : https://n-peloton.fr/app-android
+Appli Garmin : https://n-peloton.fr/app-garmin
+Attention : Ride interdit aux mineur⋅e⋅s
+Rappel sécurité : CASQUE/CAA/OUTILS/EAU/€, imaged=true, numberOfGroups=5)
+-------------------------------------------------------
+FeedEntry(feedType=RIDE, id=7f35a498-a672-4658-8c30-9ea3d7877d64, teamId=n-peloton, permalink=N-Peloton_610, publishedStatus=PUBLISHED, type=REGULAR, date=2025-06-18, startPlace=Place(id=7b45bb02-8927-436d-9314-978f18799900rt, teamId=n-peloton, name=Fonderies, address=Place des Fonderies 44200 Nantes, link=, point=Point(latitude=47.20587797222379, longitude=-1.545577968361348), startPlace=true, endPlace=false), endPlace=Place(id=d57e3dfc-356f-49c9-b58d-f1889195e8b9, teamId=n-peloton, name=BB'O Café Culturel, address=16 Rue Petite Biesse 44200 Nantes, link=https://www.facebook.com/people/BBO-Caf%C3%A9-Culturel/100090786021109/, point=Point(latitude=47.20434899964997, longitude=-1.5482779685308623), startPlace=false, endPlace=true), meetingTime=19:30, publishedAt=2025-06-17T10:00Z, title=N-Peloton #610, description=ATTENTION : il est fortement conseillé de prendre la map
+Appli Android : https://n-peloton.fr/app-android
+Appli Garmin : https://n-peloton.fr/app-garmin
+Attention : Ride interdit aux mineur·e·s
+
+Rappel sécurité : LUMIERES PUISSANTES/GILET & PERRUQUE ROSE/CASQUE/caa/outils/EAU/€/Coupe mulet conseillée
+
+Respect des bonnes pratiques nécessaire pour la sécurité
+et le plaisir de chacun·e : https://www.prendslaroue.fr/n-peloton/faq
+
+À demain en pleine forme!, imaged=true, numberOfGroups=15)
+-------------------------------------------------------
+FeedEntry(feedType=RIDE, id=cae62cfd-d687-4ac4-8cb0-bee99f32b82d, teamId=n-peloton, permalink=Raymond_Ride_233, publishedStatus=PUBLISHED, type=REGULAR, date=2025-06-15, startPlace=Place(id=7b45bb02-8927-436d-9314-978f18799900rt, teamId=n-peloton, name=Fonderies, address=Place des Fonderies 44200 Nantes, link=, point=Point(latitude=47.20587797222379, longitude=-1.545577968361348), startPlace=true, endPlace=false), endPlace=null, meetingTime=08:30, publishedAt=2025-06-13T10:00Z, title=Raymond Ride #233, description=ATTENTION : il est fortement conseillé de prendre la map
+
+Merci de respecter le code de la route, et de faire preuve de vigilance, notamment dans les agglomérations.
+
+Appli Android : https://n-peloton.fr/app-android
+Appli Garmin : https://n-peloton.fr/app-garmin
+Attention : Ride interdit aux mineur⋅e⋅s
+Rappel sécurité : CASQUE/CAA/OUTILS/EAU/€, imaged=false, numberOfGroups=5)
+-------------------------------------------------------
+FeedEntry(feedType=RIDE, id=79240d4d-5df1-44ee-9483-9da8cb2a41a7, teamId=n-peloton, permalink=N-Peloton_609, publishedStatus=PUBLISHED, type=REGULAR, date=2025-06-11, startPlace=Place(id=7b45bb02-8927-436d-9314-978f18799900rt, teamId=n-peloton, name=Fonderies, address=Place des Fonderies 44200 Nantes, link=, point=Point(latitude=47.20587797222379, longitude=-1.545577968361348), startPlace=true, endPlace=false), endPlace=Place(id=8ddef471-0709-4ce6-bd1f-bb9a6a407ebc, teamId=n-peloton, name=Laloko, address=Rue Leschaud 44400 Rezé, link=https://fr-fr.facebook.com/LalokoReze/, point=Point(latitude=47.195820013068946, longitude=-1.5696850367891613), startPlace=false, endPlace=true), meetingTime=19:30, publishedAt=2025-06-10T10:00Z, title=N-Peloton #609, description=ATTENTION : il est fortement conseillé de prendre la map
+Appli Android : https://n-peloton.fr/app-android
+Appli Garmin : https://n-peloton.fr/app-garmin
+Attention : Ride interdit aux mineur·e·s
+
+Rappel sécurité : LUMIERES PUISSANTES/GILET & PERRUQUE ROSE/CASQUE/caa/outils/EAU/€/Coupe mulet conseillée
+
+Respect des bonnes pratiques nécessaire pour la sécurité
+et le plaisir de chacun·e : https://www.prendslaroue.fr/n-peloton/faq
+
+À demain en pleine forme!, imaged=true, numberOfGroups=15)
+-------------------------------------------------------
+FeedEntry(feedType=RIDE, id=31628145-235c-4276-b07d-554dbc138396, teamId=n-peloton, permalink=Raymond_Ride_232, publishedStatus=PUBLISHED, type=REGULAR, date=2025-06-08, startPlace=Place(id=7b45bb02-8927-436d-9314-978f18799900rt, teamId=n-peloton, name=Fonderies, address=Place des Fonderies 44200 Nantes, link=, point=Point(latitude=47.20587797222379, longitude=-1.545577968361348), startPlace=true, endPlace=false), endPlace=null, meetingTime=08:30, publishedAt=2025-06-06T11:04Z, title=Raymond Ride #232, description=ATTENTION : il est fortement conseillé de prendre la map
+
+Merci de respecter le code de la route, et de faire preuve de vigilance, notamment dans les agglomérations.
+
+Appli Android : https://n-peloton.fr/app-android
+Appli Garmin : https://n-peloton.fr/app-garmin
+Attention : Ride interdit aux mineur⋅e⋅s
+Rappel sécurité : CASQUE/CAA/OUTILS/EAU/€, imaged=false, numberOfGroups=5)
+-------------------------------------------------------
+FeedEntry(feedType=RIDE, id=9a221205-3402-4639-8afe-a3005808a8ae, teamId=n-peloton, permalink=N-Peloton_608, publishedStatus=PUBLISHED, type=REGULAR, date=2025-06-04, startPlace=Place(id=7b45bb02-8927-436d-9314-978f18799900rt, teamId=n-peloton, name=Fonderies, address=Place des Fonderies 44200 Nantes, link=, point=Point(latitude=47.20587797222379, longitude=-1.545577968361348), startPlace=true, endPlace=false), endPlace=Place(id=847a4433-05c9-404f-bb47-ff063fbd9e8d, teamId=n-peloton, name=Belle de jour, address=4 Place du 51e Régiment d’Artillerie nantes, link=https://www.belledejour.org/, point=null, startPlace=true, endPlace=true), meetingTime=19:30, publishedAt=2025-06-03T10:00Z, title=N-Peloton #608, description=ATTENTION : il est fortement conseillé de prendre la map
+Appli Android : https://n-peloton.fr/app-android
+Appli Garmin : https://n-peloton.fr/app-garmin
+Attention : Ride interdit aux mineur·e·s
+
+Rappel sécurité : LUMIERES PUISSANTES/GILET & PERRUQUE ROSE/CASQUE/caa/outils/EAU/€/Coupe mulet conseillée
+
+Respect des bonnes pratiques nécessaire pour la sécurité
+et le plaisir de chacun·e : https://www.prendslaroue.fr/n-peloton/faq
+
+À demain en pleine forme!, imaged=true, numberOfGroups=15)
+-------------------------------------------------------
+FeedEntry(feedType=RIDE, id=ae907a70-254c-454c-af45-f35bc4a0cb9c, teamId=n-peloton, permalink=Raymond_Ride_2312, publishedStatus=PUBLISHED, type=REGULAR, date=2025-06-01, startPlace=Place(id=7b45bb02-8927-436d-9314-978f18799900rt, teamId=n-peloton, name=Fonderies, address=Place des Fonderies 44200 Nantes, link=, point=Point(latitude=47.20587797222379, longitude=-1.545577968361348), startPlace=true, endPlace=false), endPlace=null, meetingTime=08:30, publishedAt=2025-05-30T10:00Z, title=Raymond Ride #231, description=ATTENTION : il est fortement conseillé de prendre la map
+
+Merci de respecter le code de la route, et de faire preuve de vigilance, notamment dans les agglomérations.
+
+Appli Android : https://n-peloton.fr/app-android
+Appli Garmin : https://n-peloton.fr/app-garmin
+Attention : Ride interdit aux mineur⋅e⋅s
+Rappel sécurité : CASQUE/CAA/OUTILS/EAU/€, imaged=false, numberOfGroups=4)
+-------------------------------------------------------
+FeedEntry(feedType=PUBLICATION, id=1be9c261-efbf-42b6-8235-ff7df29fec25, teamId=n-peloton, permalink=, publishedStatus=PUBLISHED, type=, date=null, startPlace=null, endPlace=null, meetingTime=null, publishedAt=2024-05-01T11:50Z, title=NP #550, description=, imaged=true, numberOfGroups=0)
+-------------------------------------------------------
+FeedEntry(feedType=PUBLICATION, id=75e0e1fd-8c58-42f4-94fb-fce46e758126, teamId=n-peloton, permalink=, publishedStatus=PUBLISHED, type=, date=null, startPlace=null, endPlace=null, meetingTime=null, publishedAt=2023-11-21T19:40Z, title=CountryCat (Rappel) - alleycat de l'arrière-pays Nantais, description=, imaged=true, numberOfGroups=0)
+-------------------------------------------------------
+FeedEntry(feedType=PUBLICATION, id=66d6a45a-94cf-476d-a905-56de5630b633, teamId=n-peloton, permalink=, publishedStatus=PUBLISHED, type=, date=null, startPlace=null, endPlace=null, meetingTime=null, publishedAt=2023-10-21T11:00Z, title=GTPR - gravel roulant à travers le Pays de Retz, description=, imaged=true, numberOfGroups=0)
+-------------------------------------------------------
+FeedEntry(feedType=PUBLICATION, id=fe74ec88-a9c6-417c-96fc-11528593b881, teamId=n-peloton, permalink=, publishedStatus=PUBLISHED, type=, date=null, startPlace=null, endPlace=null, meetingTime=null, publishedAt=2023-10-20T13:49Z, title=CountryCat - alleycat de l'arrière-pays Nantais, description=, imaged=true, numberOfGroups=0)
+-------------------------------------------------------
+FeedEntry(feedType=PUBLICATION, id=ef9267ea-fedd-4012-b9b6-802502adb67f, teamId=n-peloton, permalink=, publishedStatus=PUBLISHED, type=, date=null, startPlace=null, endPlace=null, meetingTime=null, publishedAt=2023-06-07T07:40Z, title=Rappel inscriptions NP500, description=, imaged=true, numberOfGroups=0)
+-------------------------------------------------------
+FeedEntry(feedType=PUBLICATION, id=2bcdc513-7921-4fbb-9a22-3bd8b98c92bf, teamId=n-peloton, permalink=, publishedStatus=PUBLISHED, type=, date=null, startPlace=null, endPlace=null, meetingTime=null, publishedAt=2023-05-19T10:46Z, title=Annonce NP#500, description=, imaged=true, numberOfGroups=0)
+-------------------------------------------------------
+FeedEntry(feedType=PUBLICATION, id=a381d7da-51e9-4980-b38d-5fee5d5bf391, teamId=n-peloton, permalink=, publishedStatus=PUBLISHED, type=, date=null, startPlace=null, endPlace=null, meetingTime=null, publishedAt=2022-02-23T11:00Z, title=Techno Velo 3, description=, imaged=false, numberOfGroups=0)
+-------------------------------------------------------
+FeedEntry(feedType=PUBLICATION, id=b21f9f56-0220-483e-9839-5085cde6fb4e, teamId=n-peloton, permalink=, publishedStatus=PUBLISHED, type=, date=null, startPlace=null, endPlace=null, meetingTime=null, publishedAt=2022-02-16T17:20Z, title=S-5, description=, imaged=true, numberOfGroups=0)
+-------------------------------------------------------
+FeedEntry(feedType=PUBLICATION, id=6fd71cab-75de-4264-8b4c-69d4c1c76450, teamId=n-peloton, permalink=, publishedStatus=PUBLISHED, type=, date=null, startPlace=null, endPlace=null, meetingTime=null, publishedAt=2022-01-14T09:39Z, title=GoldSprint // NFC x La Sourcerie, description=, imaged=true, numberOfGroups=0)
+-------------------------------------------------------
+FeedEntry(feedType=PUBLICATION, id=334d1caa-0997-4bf7-b931-8557b93d6977, teamId=n-peloton, permalink=, publishedStatus=PUBLISHED, type=, date=null, startPlace=null, endPlace=null, meetingTime=null, publishedAt=2021-11-08T21:00Z, title=C'est pas ouf Challenge, description=, imaged=false, numberOfGroups=0)
+-------------------------------------------------------
