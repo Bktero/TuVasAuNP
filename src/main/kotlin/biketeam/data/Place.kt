@@ -11,7 +11,7 @@ data class Place(
     val name: String,
     val address: String,
     val link: String?,
-    val point: Point,
+    val point: Point?,
     val startPlace: Boolean,
     val endPlace: Boolean,
 ) {
@@ -23,7 +23,9 @@ data class Place(
             name = json.getString("name"),
             address = json.getString("address"),
             link = json.optString("link"),
-            point = Point.from(json.getJSONObject("point")),
+            point = json.optJSONObject("point")?.let {
+                Point.from(it)
+            },
             startPlace = json.getBoolean("startPlace"),
             endPlace = json.getBoolean("endPlace"),
         )

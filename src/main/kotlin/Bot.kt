@@ -282,13 +282,21 @@ class Bot(private val telegramClient: TelegramClient, private val adminId: Strin
                         val address = entry.endPlace.address
                         sendText("Le finish sera ici: $name => $address", userId)
 
-                        val method = SendLocation
-                            .builder()
-                            .chatId(userId)
-                            .latitude(entry.endPlace.point.latitude)
-                            .longitude(entry.endPlace.point.longitude)
-                            .build()
-                        telegramClient.execute(method)
+                        when (entry.endPlace.point) {
+                            null -> {
+                                sendText("On ne connait pas la location GPS du finish, désolé ;)", userId)
+                            }
+
+                            else -> {
+                                val method = SendLocation
+                                    .builder()
+                                    .chatId(userId)
+                                    .latitude(entry.endPlace.point.latitude)
+                                    .longitude(entry.endPlace.point.longitude)
+                                    .build()
+                                telegramClient.execute(method)
+                            }
+                        }
                     }
                 }
             }
