@@ -1,4 +1,7 @@
-import biketeam.data.Map
+package biketeam.data
+
+import loadJsonArrayFile
+import loadResourceFile
 import org.junit.jupiter.api.Test
 import kotlin.test.assertEquals
 
