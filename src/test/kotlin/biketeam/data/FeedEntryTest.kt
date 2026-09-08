@@ -37,9 +37,9 @@ class FeedEntryTest {
 
     @Test
     fun test_with_incomplete_entries() {
-        // On July 2nd, many exception were raised because some entries are very "incomplete" and lack many fields
+        // On July 2nd, many exception were raised because some entries were very "incomplete" and lack many fields
         // When we look in details at the JSON data, we see that there is an imaged entry for NP #550 (from May 2024).
-        // After it, there are many old entries that are not display on the website.
+        // After it, there are many old entries that are not displayed on the website.
         // I don't know why there are not displayed, but it's likely that the format has changed since then,
         // and that the old format had many fields less.
         compare("feed_incomplete_entries_2025-07-02.json", "feed_incomplete_entries_2025-07-02.txt")
