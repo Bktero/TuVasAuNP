@@ -41,7 +41,7 @@ class WednesdayGroupsTest {
 
         for ((name, expected) in names.zip(expectedGuesses)) {
             val actual = WednesdayGroups.guess(name)
-            assertEquals(actual, expected)
+            assertEquals(expected, actual)
         }
     }
 
