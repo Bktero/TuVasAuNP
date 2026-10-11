@@ -16,7 +16,7 @@ data class Map(
     val permalink: String,
     val type: String,
     val crossing: Boolean,
-    val tags: List<String>
+    val tags: List<String>,
 ) {
     companion object {
         fun from(json: JSONObject): Map {
@@ -37,7 +37,7 @@ data class Map(
                 permalink = json.getString("permalink"),
                 type = json.getString("type"),
                 crossing = json.getBoolean("crossing"),
-                tags = tags
+                tags = tags,
             )
         }
     }

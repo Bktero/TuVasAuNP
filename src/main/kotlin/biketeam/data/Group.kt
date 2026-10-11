@@ -12,7 +12,7 @@ data class Group(
     val meetingTime: LocalTime,
     val averageSpeed: UInt,
     val map: Map?,
-    val participants: List<Participant>
+    val participants: List<Participant>,
 ) {
     companion object {
         fun from(json: JSONObject): Group {
@@ -20,9 +20,7 @@ data class Group(
             val participants = mutableListOf<Participant>()
             for (i in 0 until participantsJson.length()) {
                 val participantJson = participantsJson.getJSONObject(i)
-                participants.add(
-                    Participant.from(participantJson)
-                )
+                participants.add(Participant.from(participantJson))
             }
 
             // Sometimes, a ride is created, groups are added, but some of them don't have maps.
@@ -39,7 +37,7 @@ data class Group(
                 meetingTime = LocalTime.parse(json.getString("meetingTime")),
                 averageSpeed = json.getInt("averageSpeed").toUInt(),
                 map = map,
-                participants = participants
+                participants = participants,
             )
         }
     }

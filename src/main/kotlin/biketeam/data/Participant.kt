@@ -7,13 +7,13 @@ import org.json.JSONObject
  */
 data class Participant(
     val id: String,
-    val identity: String
+    val identity: String,
 ) {
     companion object {
         fun from(json: JSONObject): Participant {
             return Participant(
                 id = json.getString("id"),
-                identity = json.getString("identity")
+                identity = json.getString("identity"),
             )
         }
     }

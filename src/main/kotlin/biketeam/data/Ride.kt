@@ -19,7 +19,7 @@ data class Ride(
     val imaged: Boolean,
     val publishedAt: ZonedDateTime,
     val publishedStatus: PublishedStatus,
-    val groups: List<Group>
+    val groups: List<Group>,
 ) {
     companion object {
         fun from(json: JSONObject): Ride {
@@ -42,7 +42,7 @@ data class Ride(
                 imaged = json.getBoolean("imaged"),
                 publishedAt = ZonedDateTime.parse(json.getString("publishedAt"), DateTimeFormatter.ISO_DATE_TIME),
                 publishedStatus = PublishedStatus.from(json.getString("publishedStatus")),
-                groups = groups
+                groups = groups,
             )
         }
     }

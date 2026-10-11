@@ -5,7 +5,6 @@ import loadResourceFile
 import org.junit.jupiter.api.Test
 import kotlin.test.assertEquals
 
-
 class MapTest {
     @Test
     fun test() {

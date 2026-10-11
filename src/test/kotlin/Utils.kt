@@ -9,7 +9,8 @@ private val chars: List<Char> = ('a'..'z') + ('A'..'Z') + ('0'..'9')
  *
  * @param length the length of the string
  */
-fun randomString(length: UInt) = ThreadLocalRandom.current()
+fun randomString(length: UInt) = ThreadLocalRandom
+    .current()
     .ints(length.toLong(), 0, chars.size)
     .asSequence()
     .map(chars::get)

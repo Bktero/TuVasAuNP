@@ -6,7 +6,6 @@ import java.time.LocalTime
 import java.time.ZonedDateTime
 import java.time.format.DateTimeFormatter
 
-
 /**
  * A dataclass to represent the object returned by the `/feed` API.
  *
@@ -65,6 +64,5 @@ data class FeedEntry(
             imaged = json.getBoolean("imaged"),
             numberOfGroups = json.optInt("numberOfGroups", 0).toUInt(),
         )
-
     }
 }

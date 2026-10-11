@@ -7,7 +7,7 @@ enum class RideType {
     REGULAR,
     SPECIAL,
     RACE,
-    UNKNOWN // A special value to help compatibility if Biketeam changes and avoid null objects
+    UNKNOWN, // A special value to help compatibility if Biketeam changes and avoid null objects
     ;
 
     companion object {

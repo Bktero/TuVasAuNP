@@ -1,0 +1,20 @@
+<configuration>
+    <!-- The polling can be very noisy -->
+    <logger name="org.telegram.telegrambots.longpolling.BotSession" level="INFO"/>
+
+    <!-- Details from netty are not needed -->
+    <logger name="io.netty" level="INFO"/>
+
+    <!-- Define where logs go and how they are formatted -->
+    <appender name="CONSOLE_COLOR" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>%d{yyyy-MM-dd HH:mm:ss} %green([%thread]) %highlight(%-5level) %cyan(%logger{36}) - %msg%n
+            </pattern>
+        </encoder>
+    </appender>
+
+    <!-- Attach the appender to the root logger -->
+    <root level="DEBUG">
+        <appender-ref ref="CONSOLE_COLOR"/>
+    </root>
+</configuration>

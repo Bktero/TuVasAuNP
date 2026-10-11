@@ -1,0 +1,37 @@
+body {
+    font-family: system-ui, sans-serif;
+    padding: 2rem;
+    background: #f4f4f9;
+    text-align: center;
+}
+
+.card {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+button a,
+button a:hover {
+    color: #fff;
+    text-decoration: none;
+}
+
+button {
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    border: 1px solid transparent;
+    margin-top: 1em;
+    padding: 0.5rem 2.5rem;
+    font-size: 1.1rem;
+    line-height: 1.5;
+    border-radius: 0.5rem;
+    background-color: #343a40;
+}
+
+button:hover {
+    background-color: #23272b;
+    text-decoration: underline white;
+}
