@@ -1,5 +1,6 @@
 set -e
 set -x
 
-docker build -t bktero/tuvasaunp .
-docker push bktero/tuvasaunp
+./gradlew check
+docker compose build
+docker compose push
