@@ -8,6 +8,7 @@ import java.io.IOException
 import java.nio.file.Path
 import java.time.DayOfWeek
 import java.time.LocalDate
+import java.time.LocalDateTime
 import kotlin.io.path.ExperimentalPathApi
 import kotlin.io.path.absolute
 import kotlin.io.path.createDirectories
@@ -127,7 +128,7 @@ class SuperchillGravelFinder(val downloadDirectory: Path) {
                 it.title == ride.title && it.date == ride.date
             }?.endPlace
 
-        return SuperchillGravel(ride, group, map, bar)
+        return SuperchillGravel(ride, group, map, bar, LocalDateTime.now())
     }
 
     private fun findSuperchillGravelRideAndGroup(rides: List<Ride>): Pair<Ride, Group>? {

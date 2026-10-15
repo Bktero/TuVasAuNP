@@ -52,10 +52,11 @@ class WebServer(
                     val html = renderIndex(
                         spg.ride.title,
                         spg.group.name,
-                        spg.ride.date,
+                        spg.ride.date.toString(),
                         spg.finish?.name ?: "On ne sait pas",
                         spg.finish?.address ?: "",
                         spg.mapFile?.fileName.toString(),
+                        spg.retrievedAt.toString()
                     )
                     call.respondText(html, ContentType.Text.Html)
                 }
@@ -104,20 +105,23 @@ class WebServer(
     private fun renderIndex(
         ride: String,
         group: String,
-        date: LocalDate,
+        date: String,
         finish: String,
         address: String,
         filename: String,
+        retrievedAt: String,
     ): String {
         return readTextResource("index.html")
             .replace("{{baseUrl}}", baseUrl)
             .replace("{{ride}}", ride.escapeHTML())
             .replace("{{group}}", group.escapeHTML())
-            .replace("{{date}}", date.toString())
+            .replace("{{date}}", date.escapeHTML())
             .replace("{{finish}}", finish.escapeHTML())
             .replace("{{address}}", address.escapeHTML())
             .replace("{{urlFilename}}", filename.encodeURLPath())
             .replace("{{filename}}", filename.escapeHTML())
+            .replace("{{urlRide}}", ride.replace(' ', '_').replace("#", "").encodeURLPath())
+            .replace("{{retrievedAt}}", retrievedAt.escapeHTML())
     }
 
     private fun synchronize() {
