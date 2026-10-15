@@ -11,3 +11,8 @@
 
 # These is a  "temp" dir, nothing that should be in the Docker image
 working
+
+# Build outputs and caches are rebuilt inside the image
+build
+.gradle
+.kotlin
