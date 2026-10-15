@@ -1,4 +1,2 @@
 [*.{kt,kts}]
-ktlint_code_style = intellij_idea
-ktlint_standard_function-expression-body = disabled
-standard:trailing-comma-on-declaration-site = enabled
+ktlint_code_style = ktlint_official

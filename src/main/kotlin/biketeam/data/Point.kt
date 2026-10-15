@@ -12,9 +12,10 @@ data class Point(
     val longitude: Double,
 ) {
     companion object {
-        fun from(json: JSONObject) = Point(
-            latitude = json.getDouble("lat"),
-            longitude = json.getDouble("lng"),
-        )
+        fun from(json: JSONObject) =
+            Point(
+                latitude = json.getDouble("lat"),
+                longitude = json.getDouble("lng"),
+            )
     }
 }

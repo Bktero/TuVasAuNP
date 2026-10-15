@@ -31,38 +31,43 @@ data class FeedEntry(
     val numberOfGroups: UInt,
 ) {
     companion object {
-        fun from(json: JSONObject) = FeedEntry(
-            feedType = json.getString("feedType"),
-            id = json.getString("id"),
-            teamId = json.getString("teamId"),
-            permalink = json.optString("permalink"),
-            publishedStatus = PublishedStatus.from(json.getString("publishedStatus")),
-            type = json.optString("type"),
-            date = json.optString("date")?.let {
-                if (it == "") {
-                    null
-                } else {
-                    LocalDate.parse(it)
-                }
-            },
-            startPlace = json.optJSONObject("startPlace")?.let {
-                Place.from(it)
-            },
-            endPlace = json.optJSONObject("endPlace")?.let {
-                Place.from(it)
-            },
-            meetingTime = json.optString("meetingTime").let {
-                if (it == "") {
-                    null
-                } else {
-                    LocalTime.parse(it)
-                }
-            },
-            publishedAt = ZonedDateTime.parse(json.getString("publishedAt"), DateTimeFormatter.ISO_DATE_TIME),
-            title = json.getString("title"),
-            description = json.optString("description"),
-            imaged = json.getBoolean("imaged"),
-            numberOfGroups = json.optInt("numberOfGroups", 0).toUInt(),
-        )
+        fun from(json: JSONObject) =
+            FeedEntry(
+                feedType = json.getString("feedType"),
+                id = json.getString("id"),
+                teamId = json.getString("teamId"),
+                permalink = json.optString("permalink"),
+                publishedStatus = PublishedStatus.from(json.getString("publishedStatus")),
+                type = json.optString("type"),
+                date =
+                    json.optString("date")?.let {
+                        if (it == "") {
+                            null
+                        } else {
+                            LocalDate.parse(it)
+                        }
+                    },
+                startPlace =
+                    json.optJSONObject("startPlace")?.let {
+                        Place.from(it)
+                    },
+                endPlace =
+                    json.optJSONObject("endPlace")?.let {
+                        Place.from(it)
+                    },
+                meetingTime =
+                    json.optString("meetingTime").let {
+                        if (it == "") {
+                            null
+                        } else {
+                            LocalTime.parse(it)
+                        }
+                    },
+                publishedAt = ZonedDateTime.parse(json.getString("publishedAt"), DateTimeFormatter.ISO_DATE_TIME),
+                title = json.getString("title"),
+                description = json.optString("description"),
+                imaged = json.getBoolean("imaged"),
+                numberOfGroups = json.optInt("numberOfGroups", 0).toUInt(),
+            )
     }
 }
