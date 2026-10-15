@@ -21,6 +21,7 @@ import kotlin.io.path.extension
 class WebServer(
     private val finder: SuperchillGravelFinder,
     private val port: Int,
+    private val baseUrl: String,
 ) {
     @Volatile
     private var superchillGravel: SuperchillGravel? = null
@@ -92,10 +93,12 @@ class WebServer(
     }
 
     private fun readTextResource(name: String): String =
-        Application::class.java.getResource("/$name")?.readText() ?: throw NotFoundException("Cannot load $name")
+        Application::class.java.getResource("/$name")
+            ?.readText() ?: throw NotFoundException("Cannot load $name")
 
     private fun readBinResource(name: String): ByteArray =
-        Application::class.java.getResource("/$name")?.readBytes() ?: throw NotFoundException("Cannot load $name")
+        Application::class.java.getResource("/$name")
+            ?.readBytes() ?: throw NotFoundException("Cannot load $name")
 
     // Read the template from the classpath and fill the {{placeholders}} in memory
     private fun renderIndex(
@@ -104,9 +107,10 @@ class WebServer(
         date: LocalDate,
         finish: String,
         address: String,
-        filename: String
+        filename: String,
     ): String {
         return readTextResource("index.html")
+            .replace("{{baseUrl}}", baseUrl)
             .replace("{{ride}}", ride.escapeHTML())
             .replace("{{group}}", group.escapeHTML())
             .replace("{{date}}", date.toString())
