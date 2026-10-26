@@ -41,6 +41,11 @@ button:hover {
     text-decoration: underline white;
 }
 
+footer {
+    color: grey;
+    font-size: 0.8rem;
+}
+
 /*--------------------------------------------------------------------------------------------------------*/
 /* For the map with the GPX */
 
