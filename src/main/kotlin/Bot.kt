@@ -65,7 +65,9 @@ class Bot(
             acceptedUpdateCount++
 
             val text = update.message.text
-            val userId = update.message.from.id.toString()
+            val userId =
+                update.message.from.id
+                    .toString()
             when (text) {
                 "/quand" -> {
                     logger.info { "Received command /quand" }
@@ -101,11 +103,15 @@ class Bot(
     private fun canAccept(update: Update): Boolean {
         if (update.hasMessage()) {
             if (update.message.isUserMessage) {
-                if (update.message.from.id.toString() == adminId) {
+                if (update.message.from.id
+                        .toString() == adminId
+                ) {
                     // Don't ask me why all APIs expect strings but internally, ID for Chat and User are longs
                     // This is why there is a toString() here
                     return true
-                } else if (update.message.from.id.toString() in userIds) {
+                } else if (update.message.from.id
+                        .toString() in userIds
+                ) {
                     sendAdminText("User ${update.message.from.id} is using the bot. Message='${update.message.text}'")
                     return true
                 } else {
@@ -126,24 +132,33 @@ class Bot(
         sendText("ADMIN: $text", adminId)
     }
 
-    private fun sendText(text: String, userID: String) {
+    private fun sendText(
+        text: String,
+        userID: String,
+    ) {
         assert(text.isNotEmpty()) { "Cannot send an empty text" }
-        val method = SendMessage
-            .builder()
-            .chatId(userID)
-            .text(text)
-            .build()
+        val method =
+            SendMessage
+                .builder()
+                .chatId(userID)
+                .text(text)
+                .build()
 
         telegramClient.execute(method)
     }
 
-    private fun sendFile(file: Path, caption: String, userID: String) {
-        val method = SendDocument
-            .builder()
-            .chatId(userID)
-            .document(InputFile(file.toFile()))
-            .caption(caption)
-            .build()
+    private fun sendFile(
+        file: Path,
+        caption: String,
+        userID: String,
+    ) {
+        val method =
+            SendDocument
+                .builder()
+                .chatId(userID)
+                .document(InputFile(file.toFile()))
+                .caption(caption)
+                .build()
 
         telegramClient.execute(method)
     }
@@ -151,12 +166,13 @@ class Bot(
     // -----------------------------------------------------------------------------------------------------------------
     // The 'cava' command
     private fun cava(userId: String) {
-        var message = """
+        var message =
+            """
             Toujours debout :)
 
             Updates reçues = $updateCount
             Updates acceptées = $acceptedUpdateCount
-        """.trimIndent()
+            """.trimIndent()
 
         val instant = ProcessHandle.current().info().startInstant()
         if (instant.isPresent) {
@@ -230,7 +246,10 @@ class Bot(
         }
     }
 
-    private fun processDate(date: LocalDate, userId: String) {
+    private fun processDate(
+        date: LocalDate,
+        userId: String,
+    ) {
         val superChillGravel = superchillGravelFinder.find(date)
 
         if (superChillGravel == null) {
@@ -241,7 +260,10 @@ class Bot(
         process(superChillGravel, userId)
     }
 
-    private fun process(superChillGravel: SuperchillGravel, userId: String) {
+    private fun process(
+        superChillGravel: SuperchillGravel,
+        userId: String,
+    ) {
         if (superChillGravel.mapFile == null) {
             sendText(
                 "Le groupe Superchill Gravel existe, mais il n'a pas de map $FACE",
@@ -260,10 +282,13 @@ class Bot(
             if (bar.point == null) {
                 sendText("Malheureusement, on ne connait pas la location GPS du finish $FACE", userId)
             } else {
-                val method = SendLocation
-                    .builder()
-                    .chatId(userId).latitude(bar.point.latitude)
-                    .longitude(bar.point.longitude).build()
+                val method =
+                    SendLocation
+                        .builder()
+                        .chatId(userId)
+                        .latitude(bar.point.latitude)
+                        .longitude(bar.point.longitude)
+                        .build()
                 telegramClient.execute(method)
             }
         }

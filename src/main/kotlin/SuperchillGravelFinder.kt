@@ -17,7 +17,9 @@ import kotlin.io.path.div
 import kotlin.io.path.moveTo
 
 @OptIn(ExperimentalPathApi::class)
-class SuperchillGravelFinder(val downloadDirectory: Path) {
+class SuperchillGravelFinder(
+    val downloadDirectory: Path,
+) {
     private val client = Client()
     private val cache = HashMap<LocalDate, SuperchillGravel>()
     private val logger = KotlinLogging.logger {}
@@ -41,15 +43,16 @@ class SuperchillGravelFinder(val downloadDirectory: Path) {
         }
 
         logger.debug { "No cache entry for $date, downloading..." }
-        val downloaded = try {
-            download(date)
-        } catch (e: IOException) {
-            logger.error(e) { "Cannot reach the NP server for $date: ${e.message}" }
-            null
-        } catch (e: JSONException) {
-            logger.error(e) { "Unexpected answer from the NP server for $date: ${e.message}" }
-            null
-        }
+        val downloaded =
+            try {
+                download(date)
+            } catch (e: IOException) {
+                logger.error(e) { "Cannot reach the NP server for $date: ${e.message}" }
+                null
+            } catch (e: JSONException) {
+                logger.error(e) { "Unexpected answer from the NP server for $date: ${e.message}" }
+                null
+            }
 
         if (downloaded == null) {
             logger.warn { "Cannot find something to download for $date" }
@@ -68,7 +71,8 @@ class SuperchillGravelFinder(val downloadDirectory: Path) {
     fun findPrevious(): SuperchillGravel? {
         var date = dateOfNextWednesday()
 
-        repeat(10) { // max 10 weeks, or max 10 tries if NP server is down or unresponsive
+        repeat(10) {
+            // max 10 weeks, or max 10 tries if NP server is down or unresponsive
             date = date.minusWeeks(1) // travel back in time
             val spg = find(date)
             if (spg != null) {
@@ -92,41 +96,44 @@ class SuperchillGravelFinder(val downloadDirectory: Path) {
         val (ride, group) = findSuperchillGravelRideAndGroup(rides) ?: return null
 
         // Find the map
-        val map = if (group.map != null) {
-            // Download the file
-            val temp = client.requestMapFile(group.map)
-            val shortRideTitle = ride.title.replace("N-Peloton", "NP")
-            val name = "$shortRideTitle Superchill Gravel"
-            val target = downloadDirectory / "$name.gpx"
-            temp.moveTo(target)
-            logger.debug { "Map is now available here: ${target.absolute()}" }
+        val map =
+            if (group.map != null) {
+                // Download the file
+                val temp = client.requestMapFile(group.map)
+                val shortRideTitle = ride.title.replace("N-Peloton", "NP")
+                val name = "$shortRideTitle Superchill Gravel"
+                val target = downloadDirectory / "$name.gpx"
+                temp.moveTo(target)
+                logger.debug { "Map is now available here: ${target.absolute()}" }
 
-            // Change the metadata and track name
-            val gpx = GPX.read(target)
+                // Change the metadata and track name
+                val gpx = GPX.read(target)
 
-            val updatedGpx = gpx
-                .toBuilder()
-                .metadata { metadataBuilder -> metadataBuilder.name(name) }
-                .trackFilter()
-                .map { track -> track.toBuilder().name(name).build() }
-                .build()
-                .build()
+                val updatedGpx =
+                    gpx
+                        .toBuilder()
+                        .metadata { metadataBuilder -> metadataBuilder.name(name) }
+                        .trackFilter()
+                        .map { track -> track.toBuilder().name(name).build() }
+                        .build()
+                        .build()
 
-            GPX.write(updatedGpx, target)
+                GPX.write(updatedGpx, target)
 
-            // Return the file
-            target
-        } else {
-            null
-        }
+                // Return the file
+                target
+            } else {
+                null
+            }
 
         // Find the bar
         val entries = client.requestFeed()
-        val bar = entries
-            .find {
-                // The title and the date are the same, we have normally found our entry
-                it.title == ride.title && it.date == ride.date
-            }?.endPlace
+        val bar =
+            entries
+                .find {
+                    // The title and the date are the same, we have normally found our entry
+                    it.title == ride.title && it.date == ride.date
+                }?.endPlace
 
         return SuperchillGravel(ride, group, map, bar, LocalDateTime.now())
     }

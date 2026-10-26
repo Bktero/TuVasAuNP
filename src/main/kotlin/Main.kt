@@ -59,7 +59,8 @@ private fun runTelegramBot(
     } catch (e: TelegramApiException) {
         e.printStackTrace()
         logger.error {
-            """"
+            """
+            "
             Cannot start telegram bot: ${e.message}
             Are you connected to the Internet?
             """.trimIndent()

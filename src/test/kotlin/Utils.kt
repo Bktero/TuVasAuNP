@@ -9,12 +9,13 @@ private val chars: List<Char> = ('a'..'z') + ('A'..'Z') + ('0'..'9')
  *
  * @param length the length of the string
  */
-fun randomString(length: UInt) = ThreadLocalRandom
-    .current()
-    .ints(length.toLong(), 0, chars.size)
-    .asSequence()
-    .map(chars::get)
-    .joinToString("")
+fun randomString(length: UInt) =
+    ThreadLocalRandom
+        .current()
+        .ints(length.toLong(), 0, chars.size)
+        .asSequence()
+        .map(chars::get)
+        .joinToString("")
 
 /**
  * Load a file from `src/test/resources`.
@@ -24,10 +25,9 @@ fun randomString(length: UInt) = ThreadLocalRandom
  * @param name the name of the file
  * @return its content
  */
-fun loadResourceFile(name: String): String {
-    return ClassLoader.getSystemClassLoader().getResource(name)?.readText()
+fun loadResourceFile(name: String): String =
+    ClassLoader.getSystemClassLoader().getResource(name)?.readText()
         ?: throw IllegalStateException("Could not find resource: $name")
-}
 
 /**
  * Load a file from `src/test/resources` as a JSON array.

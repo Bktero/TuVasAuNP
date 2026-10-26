@@ -18,12 +18,11 @@ enum class PublishedStatus {
          * @param string a string (probably coming for a Biketeam API)
          * @return the corresponding status
          */
-        fun from(string: String): PublishedStatus {
-            return try {
+        fun from(string: String): PublishedStatus =
+            try {
                 PublishedStatus.valueOf(string)
             } catch (_: IllegalArgumentException) {
                 UNKNOWN
             }
-        }
     }
 }

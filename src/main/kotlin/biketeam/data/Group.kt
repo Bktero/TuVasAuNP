@@ -25,11 +25,12 @@ data class Group(
 
             // Sometimes, a ride is created, groups are added, but some of them don't have maps.
             // It happened for instance on March 25th 2025 (it was then fixed in the afternoon).
-            val map = if (json.isNull("map")) {
-                null
-            } else {
-                json.optJSONObject("map")?.let { Map.from(it) }
-            }
+            val map =
+                if (json.isNull("map")) {
+                    null
+                } else {
+                    json.optJSONObject("map")?.let { Map.from(it) }
+                }
 
             return Group(
                 id = json.getString("id"),

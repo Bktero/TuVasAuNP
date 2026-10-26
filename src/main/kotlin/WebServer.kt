@@ -41,7 +41,6 @@ class WebServer(
 
     private fun Application.module() {
         routing {
-
             get("/") {
                 synchronize()
                 val spg = superchillGravel
@@ -49,15 +48,16 @@ class WebServer(
                 if (spg == null) {
                     call.respondText { "No superchill gravel trace found..." }
                 } else {
-                    val html = renderIndex(
-                        spg.ride.title,
-                        spg.group.name,
-                        spg.ride.date.toString(),
-                        spg.finish?.name ?: "On ne sait pas",
-                        spg.finish?.address ?: "",
-                        spg.mapFile?.fileName.toString(),
-                        spg.retrievedAt.toString()
-                    )
+                    val html =
+                        renderIndex(
+                            spg.ride.title,
+                            spg.group.name,
+                            spg.ride.date.toString(),
+                            spg.finish?.name ?: "On ne sait pas",
+                            spg.finish?.address ?: "",
+                            spg.mapFile?.fileName.toString(),
+                            spg.retrievedAt.toString(),
+                        )
                     call.respondText(html, ContentType.Text.Html)
                 }
             }
@@ -94,11 +94,13 @@ class WebServer(
     }
 
     private fun readTextResource(name: String): String =
-        Application::class.java.getResource("/$name")
+        Application::class.java
+            .getResource("/$name")
             ?.readText() ?: throw NotFoundException("Cannot load $name")
 
     private fun readBinResource(name: String): ByteArray =
-        Application::class.java.getResource("/$name")
+        Application::class.java
+            .getResource("/$name")
             ?.readBytes() ?: throw NotFoundException("Cannot load $name")
 
     // Read the template from the classpath and fill the {{placeholders}} in memory
@@ -110,8 +112,8 @@ class WebServer(
         address: String,
         filename: String,
         retrievedAt: String,
-    ): String {
-        return readTextResource("index.html")
+    ): String =
+        readTextResource("index.html")
             .replace("{{baseUrl}}", baseUrl)
             .replace("{{ride}}", ride.escapeHTML())
             .replace("{{group}}", group.escapeHTML())
@@ -122,7 +124,6 @@ class WebServer(
             .replace("{{filename}}", filename.escapeHTML())
             .replace("{{urlRide}}", ride.replace(' ', '_').replace("#", "").encodeURLPath())
             .replace("{{retrievedAt}}", retrievedAt.escapeHTML())
-    }
 
     private fun synchronize() {
         val today = LocalDate.now()

@@ -14,6 +14,8 @@ To check the code: `./gradlew ktlintCheck`. It's automatically added to `check`.
 
 To autocorrect the code: `./gradlew ktlintFormat`
 
+In IntelliJ, install the [klint plugin](https://plugins.jetbrains.com/plugin/15057-ktlint).
+
 ## Raspberry
 
 ```zsh

@@ -17,12 +17,11 @@ enum class RideType {
          * @param string a string (probably coming for a Biketeam API)
          * @return the corresponding ride type
          */
-        fun from(string: String): RideType {
-            return try {
+        fun from(string: String): RideType =
+            try {
                 RideType.valueOf(string)
             } catch (_: IllegalArgumentException) {
                 UNKNOWN
             }
-        }
     }
 }

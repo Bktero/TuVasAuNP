@@ -10,11 +10,10 @@ data class Participant(
     val identity: String,
 ) {
     companion object {
-        fun from(json: JSONObject): Participant {
-            return Participant(
+        fun from(json: JSONObject): Participant =
+            Participant(
                 id = json.getString("id"),
                 identity = json.getString("identity"),
             )
-        }
     }
 }

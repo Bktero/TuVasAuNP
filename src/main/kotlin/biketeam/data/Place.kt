@@ -16,17 +16,19 @@ data class Place(
     val endPlace: Boolean,
 ) {
     companion object {
-        fun from(json: JSONObject) = Place(
-            id = json.getString("id"),
-            teamId = json.getString("teamId"),
-            name = json.getString("name"),
-            address = json.getString("address"),
-            link = json.optString("link"),
-            point = json.optJSONObject("point")?.let {
-                Point.from(it)
-            },
-            startPlace = json.getBoolean("startPlace"),
-            endPlace = json.getBoolean("endPlace"),
-        )
+        fun from(json: JSONObject) =
+            Place(
+                id = json.getString("id"),
+                teamId = json.getString("teamId"),
+                name = json.getString("name"),
+                address = json.getString("address"),
+                link = json.optString("link"),
+                point =
+                    json.optJSONObject("point")?.let {
+                        Point.from(it)
+                    },
+                startPlace = json.getBoolean("startPlace"),
+                endPlace = json.getBoolean("endPlace"),
+            )
     }
 }
