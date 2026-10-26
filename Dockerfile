@@ -1,11 +1,11 @@
 # Stage 1: Build the application
-FROM gradle:jdk23 AS builder
+FROM gradle:jdk25 AS builder
 WORKDIR /home/gradle/
 COPY --chown=gradle:gradle . .
 RUN gradle installDist --no-daemon
 
 # Stage 2: Run the application
-FROM openjdk:23-jdk-slim
+FROM openjdk:25-jdk-slim
 
 # Install tools to ease debugging and administration
 RUN apt-get update && apt-get install -y --no-install-recommends tree vim
