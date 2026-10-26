@@ -1,15 +1,20 @@
 body {
     font-family: system-ui, sans-serif;
-    padding: 2rem;
     background: #f4f4f9;
     text-align: center;
 }
 
 .card {
     background: white;
-    padding: 1.5rem;
+    padding: 1.5rem 0 1.5rem 0;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* The card has no side padding, so the map can use the full width. The texts get their own side padding. */
+.card > h1,
+.card > p {
+    padding: 0 1rem;
 }
 
 button a,
@@ -34,4 +39,52 @@ button {
 button:hover {
     background-color: #23272b;
     text-decoration: underline white;
+}
+
+/*--------------------------------------------------------------------------------------------------------*/
+/* For the map with the GPX */
+
+/* Square map: it fills the width of its container and keeps a 1:1 ratio. */
+.mapBlock {
+    margin: 2em auto;
+    width: 100%;
+    max-width: 500px;
+}
+
+/* Distance and elevation gain in the bottom left corner of the map. Leaflet is the one that places this
+   control in the corner. Leaflet's CSS file is loaded before this one, so these rules win when the
+   specificity is equal. The class is added by L.DomUtil.create in index.html, so a CSS linter may say it is never used. */
+.leaflet-container .leaflet-control.mapStats {
+    margin: 0; /* in the corner itself, without the 10 px margin of the other controls */
+    padding: 2px 8px;
+    background: rgba(255, 255, 255, 0.85);
+    font-weight: 600;
+    font-size: 0.7rem; /* rem, not em: Leaflet sets its own font size on the map, and em would be relative to it */
+    pointer-events: none; /* the map stays draggable under the box */
+}
+
+#map {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+}
+
+/* The panel below the map has the same width as the map. It holds the Chart.js canvas,
+   and Chart.js needs a container with its own height and "position: relative" to size the chart. */
+#elevationProfileChart {
+    position: relative;
+    box-sizing: border-box;
+    height: 100px;
+    padding: 4px 8px;
+    border: 1px solid #ddd;
+    border-top: none;
+    border-radius: 0 0 4px 4px;
+}
+
+/* Leaflet's ".leaflet-bar a" rule sets display: block, so this selector must be at least as specific. */
+/* Button is dynamically added so CSS linter may say the next rule is never used */
+.leaflet-bar a.home-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #333;
 }

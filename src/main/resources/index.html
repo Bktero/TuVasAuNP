@@ -2,8 +2,12 @@
 <html>
 
 <head>
+    <meta charset="utf-8">
     <title>Tu vas au NP ?</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Leaflet's CSS comes first, so the rules of index.css win when the specificity is equal -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+          integrity="sha384-sHL9NAb7lN7rfvG5lfHpm643Xkcjzp4jFvuavGOndn6pjVqS6ny56CAt3nsEVT4H" crossorigin="anonymous">
     <link rel="stylesheet" href="/index.css" type="text/css">
 
     <link rel="icon" type="image/png" href="/favicon/favicon-96x96.png" sizes="96x96">
@@ -20,11 +24,213 @@
     <p>{{ride}}</p>
     <p>{{group}}</p>
     <p>{{date}}</p>
-    <p>Finish : {{finish}}</p>
-    <p>{{address}}</p>
+    <p>
+        Finish : {{finish}}
+        <br>
+        {{address}}</p>
     <button>
-        <a href="{{urlFilename}}" download="{{filename}}">T&eacute;l&eacute;charger<br>le fichier GPX</a>
+        <a href="{{urlFilename}}" download="{{filename}}">Télécharger<br>le fichier GPX</a>
     </button>
+    <div class="mapBlock">
+        <!-- The URL is in an attribute (not in the script) so the template engine escapes it for HTML, which is right here -->
+        <div id="map" data-gpx-url="{{urlFilename}}"></div>
+        <div id="elevationProfileChart">
+            <canvas id="profileChart"></canvas>
+        </div>
+    </div>
 </div>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+        integrity="sha384-cxOPjt7s7Iz04uaHJceBmS+qpjv2JkIHNVcuOrM+YHwZOmJGBXI00mdUXEq65HTH"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-gpx/1.7.0/gpx.min.js"
+        integrity="sha384-FlFKgUqOEwuywgVc0+0QrDWcRsIzuyedLe+yUpC1jG4WgtdhJGvWf9mKm6GShpJv"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.5.1/dist/chart.umd.min.js"
+        integrity="sha384-jb8JQMbMoBUzgWatfe6COACi2ljcDdZQ2OxczGA3bGNeWe+6DChMTBJemed7ZnvJ"
+        crossorigin="anonymous"></script>
+<script>
+    // ---- Settings ----
+
+    // URL of the GPX file to display, read from the data-gpx-url attribute of the #map element.
+    // If the file is on another host, that server must allow cross-origin requests (CORS),
+    // or the browser blocks the download.
+    const GPX_URL = document.getElementById('map').dataset.gpxUrl;
+
+    // The cdnjs package does not ship the pin images, so load them from the plugin repository.
+    const ICON_BASE_URL = 'https://cdn.jsdelivr.net/gh/mpetazzoni/leaflet-gpx@1.7.0/';
+
+    // ---- Map ----
+
+    // Leaflet map in the #map element. It has no position or zoom yet: they are set when the GPX file is loaded.
+    const map = L.map('map');
+
+    // Background tiles from OpenStreetMap. The license of the tiles requires the attribution text.
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        maxZoom: 19,
+        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+    }).addTo(map);
+
+    // Same blue as the tracks of the Biketeam site.
+    const TRACK_COLOR = 'hsl(210, 86%, 62%)';
+
+    // ---- Statistics and elevation profile ----
+
+    // Box in the bottom left corner of the map. It shows the distance and the elevation gain.
+    // A Leaflet control is an element that Leaflet places in a corner of the map. It is empty until the GPX file is loaded.
+    const mapStats = L.control({position: 'bottomleft'});
+    mapStats.onAdd = () => L.DomUtil.create('div', 'mapStats');
+    mapStats.addTo(map);
+
+    // Font size of all the texts of the charts (axis labels and tooltips)
+    Chart.defaults.font.size = 10;
+
+    // Fills the box over the map. It is called once, when the GPX file is loaded.
+    // The plugin calculated the distance and the elevation gain while it read the file.
+    const showStats = (gpx) => {
+        // Distance in km (the plugin gives meters) and elevation gain in meters
+        const km = (gpx.get_distance() / 1000).toFixed(1);
+        // A GPX file without elevation has no gain to show, so "+0 m" would be misleading
+        const hasElevation = gpx.get_elevation_data().length > 0;
+        const gain = Math.round(gpx.get_elevation_gain());
+        mapStats.getContainer().textContent = hasElevation ? `${km} km · +${gain} m` : `${km} km`;
+    };
+
+    // Draws the elevation profile in the panel below the map (so the profile never hides the track).
+    // It is called once, when the GPX file is loaded.
+    const showProfile = (gpx) => {
+        // Chart data: get_elevation_data() returns [distance in km, elevation in m, tooltip text] for each point.
+        // Chart.js needs objects with the keys x and y.
+        const points = gpx.get_elevation_data().map(([distance, elevation]) => ({x: distance, y: elevation}));
+        // A GPX file without elevation (or with one point) gives nothing to draw
+        if (points.length < 2) return;
+
+        // Line chart in the canvas #profileChart
+        new Chart(document.getElementById('profileChart'), {
+            type: 'line',
+            data: {
+                datasets: [{
+                    data: points,
+                    fill: true, // fills the area under the line, with backgroundColor
+                    borderColor: TRACK_COLOR,
+                    backgroundColor: TRACK_COLOR,
+                    borderWidth: 1,
+                    pointRadius: 0,
+                    pointHoverRadius: 0
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false, // the height comes from the #elevationProfileChart panel
+                animation: false,
+                parsing: false, // the points already are {x, y}, as the decimation plugin needs
+                normalized: true, // the points are sorted by distance
+                // The tooltip shows the point nearest to the mouse on the x axis, even if the mouse is not on the line
+                interaction: {intersect: false, axis: 'x', mode: 'nearest'},
+                scales: {
+                    // Distance axis in km, from the start to the end of the track
+                    x: {
+                        type: 'linear',
+                        min: 0,
+                        max: points[points.length - 1].x,
+                        ticks: {
+                            includeBounds: false, // no extra tick at the end of the track, so the ticks are equally spaced
+                            maxRotation: 0,
+                            // Shows 10 instead of 10.0, and one decimal for the other values
+                            callback: (value) => Number.isInteger(value) ? value : value.toFixed(1)
+                        }
+                    },
+                    // Elevation axis in m
+                    y: {
+                        // Maximum number of ticks: the chart is only 100 px high. Chart.js keeps round values (20, 50, 100...)
+                        ticks: {maxTicksLimit: 5}
+                    }
+                },
+                plugins: {
+                    legend: {display: false}, // there is only one line, so no legend is needed
+                    // Reduces the number of points to about 500, which is enough for the width of the chart.
+                    // The lttb algorithm keeps the shape of the curve, with its peaks.
+                    decimation: {enabled: true, algorithm: 'lttb', samples: 500},
+                    // Tooltip on hover: "12.3 km" as the title and "85 m" as the text
+                    tooltip: {
+                        callbacks: {
+                            title: (items) => `${items[0].parsed.x.toFixed(1)} km`,
+                            label: (item) => `${Math.round(item.parsed.y)} m`
+                        }
+                    }
+                }
+            }
+        });
+    };
+
+    // ---- Home button ----
+
+    // Area of the whole track. It is set when the GPX file is loaded, and the home button goes back to it.
+    let homeBounds = null;
+
+    // Home button below the zoom buttons: it restores the initial view of the track.
+    // A Leaflet control is an element that Leaflet places over the map. onAdd builds it.
+    const home = L.control({position: 'topleft'});
+    home.onAdd = () => {
+        // The "leaflet-bar" class gives the same frame as the zoom buttons
+        const bar = L.DomUtil.create('div', 'leaflet-bar');
+        const link = L.DomUtil.create('a', 'home-button', bar);
+        link.href = '#';
+        link.title = 'Revenir à la vue d\'ensemble';
+        link.setAttribute('role', 'button');
+        link.setAttribute('aria-label', 'Revenir à la vue d\'ensemble');
+        // "house" icon from Lucide (ISC license), inline so the page needs no icon library
+        link.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" ' +
+            'stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">' +
+            '<path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8"/>' +
+            '<path d="M3 10a2 2 0 0 1 .709-1.528l7-5.999a2 2 0 0 1 2.582 0l7 5.999A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>' +
+            '</svg>';
+        // A click on the button must not also move the map under it
+        L.DomEvent.disableClickPropagation(bar);
+        L.DomEvent.on(link, 'click', (e) => {
+            L.DomEvent.preventDefault(e); // the link has href="#", so do not jump to the top of the page
+            // Before the GPX file is loaded, there is nothing to go back to
+            if (homeBounds) map.fitBounds(homeBounds);
+        });
+        return bar;
+    };
+    home.addTo(map);
+
+    // ---- GPX file ----
+
+    // Downloads the GPX file and draws it on the map (the track and the start and end markers)
+    new L.GPX(GPX_URL, {
+        async: true, // do not block the page while the file downloads
+        polyline_options: {color: TRACK_COLOR, weight: 4, opacity: 0.85}, // style of the track line
+        // Style of the markers (start, end and waypoints)
+        marker_options: {
+            startIconUrl: ICON_BASE_URL + 'pin-icon-start.png',
+            endIconUrl: ICON_BASE_URL + 'pin-icon-end.png',
+            shadowUrl: ICON_BASE_URL + 'pin-shadow.png',
+            wptIconUrls: {'': ICON_BASE_URL + 'pin-icon-wpt.png'},
+            // The plugin defaults are 33 x 45 px for the pin and 50 x 50 px for the shadow, about 55% here.
+            // The anchor is the tip of the pin, at the bottom center.
+            iconSize: [18, 25],
+            iconAnchor: [9, 25],
+            shadowSize: [28, 28],
+            shadowAnchor: [9, 26]
+        }
+    })
+        // The file is downloaded and read: zoom to the track, remember its area for the home button,
+        // and fill the statistics box and the elevation profile
+        .on('loaded', (e) => {
+            const gpx = e.target;
+            homeBounds = gpx.getBounds();
+            map.fitBounds(homeBounds);
+            showStats(gpx);
+            showProfile(gpx);
+        })
+        // The download or the reading failed: show a general view of France, so the map is not empty
+        .on('error', (e) => {
+            console.error('Cannot load GPX file:', e);
+            map.setView([46.6, 2.4], 6);
+        })
+        .addTo(map);
+</script>
 </body>
 </html>
