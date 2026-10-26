@@ -15,7 +15,6 @@ data class Place(
     val startPlace: Boolean,
     val endPlace: Boolean,
 ) {
-
     companion object {
         fun from(json: JSONObject) = Place(
             id = json.getString("id"),

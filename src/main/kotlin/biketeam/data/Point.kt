@@ -14,7 +14,7 @@ data class Point(
     companion object {
         fun from(json: JSONObject) = Point(
             latitude = json.getDouble("lat"),
-            longitude = json.getDouble("lng")
+            longitude = json.getDouble("lng"),
         )
     }
 }

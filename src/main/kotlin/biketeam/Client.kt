@@ -3,13 +3,17 @@ package biketeam
 import biketeam.data.FeedEntry
 import biketeam.data.Map
 import biketeam.data.Ride
+import io.github.oshai.kotlinlogging.KotlinLogging
 import org.json.JSONArray
-import java.io.File
 import java.net.URI
+import java.nio.file.Path
 import java.time.LocalDate
+import kotlin.io.path.createTempFile
+import kotlin.io.path.writeBytes
 
-class Client(private val downloadDirectory: File) {
+class Client {
     private val baseUrl = "https://www.prendslaroue.fr/api/teams/n-peloton"
+    private val logger = KotlinLogging.logger {}
 
     fun requestRides(date: LocalDate): List<Ride> {
         val array = readArray("$baseUrl/rides?from=$date&to=$date")
@@ -29,17 +33,17 @@ class Client(private val downloadDirectory: File) {
         return entries
     }
 
-    fun requestMapFile(map: Map): File {
+    fun requestMapFile(map: Map): Path {
         val url = URI("https://www.prendslaroue.fr/n-peloton/maps/${map.id}/gpx").toURL()
-        val file = File.createTempFile("${map.name}-", ".gpx", downloadDirectory)
-        println("Downloading $url to $file...")
+        val file = createTempFile("${map.name}-", ".gpx")
+        logger.info { "Downloading $url to $file..." }
         val bytes = url.readBytes()
         file.writeBytes(bytes)
         return file
     }
 
     private fun readArray(url: String): JSONArray {
-        println("Reading array $url...")
+        logger.info { "Reading array $url..." }
         val text = URI(url).toURL().readText()
         return JSONArray(text)
     }

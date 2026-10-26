@@ -12,5 +12,5 @@ RUN apt-get update && apt-get install -y --no-install-recommends tree vim
 
 # Import and run the Kotlin app
 WORKDIR /app
-COPY --from=builder /home/gradle/build/install/TuVasAuNpBot .
-ENTRYPOINT ["/app/bin/TuVasAuNpBot" ]
+COPY --from=builder /home/gradle/build/install/TuVasAuNp .
+ENTRYPOINT ["/app/bin/TuVasAuNp" ]

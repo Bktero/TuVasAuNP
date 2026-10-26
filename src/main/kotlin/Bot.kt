@@ -1,19 +1,18 @@
-import biketeam.Client
-import biketeam.WednesdayGroups
-import biketeam.data.Ride
-import org.telegram.telegrambots.longpolling.util.LongPollingSingleThreadUpdateConsumer
+import io.github.oshai.kotlinlogging.KotlinLogging
+import org.telegram.telegrambots.longpolling.util.DefaultLongPollingUpdateConsumer
 import org.telegram.telegrambots.meta.api.methods.send.SendDocument
 import org.telegram.telegrambots.meta.api.methods.send.SendLocation
 import org.telegram.telegrambots.meta.api.methods.send.SendMessage
 import org.telegram.telegrambots.meta.api.objects.InputFile
 import org.telegram.telegrambots.meta.api.objects.Update
 import org.telegram.telegrambots.meta.generics.TelegramClient
-import java.io.File
+import java.nio.file.Path
 import java.time.DayOfWeek
 import java.time.LocalDate
 import java.time.LocalDateTime
 import java.time.Period
-import kotlin.system.exitProcess
+
+private const val FACE = "\uD83D\uDE32" // Unicode = Astonished Face
 
 private fun DayOfWeek.toFrench(): String {
     when (this) {
@@ -47,33 +46,19 @@ private fun DayOfWeek.toFrench(): String {
     }
 }
 
-class Bot(private val telegramClient: TelegramClient, private val adminId: String, private val userIds: List<String>) :
-    LongPollingSingleThreadUpdateConsumer {
-
-    private val downloadDirectory = File("working/downloads")
-    private val biketeamClient = Client(downloadDirectory)
+class Bot(
+    private val telegramClient: TelegramClient,
+    private val adminId: String,
+    private val userIds: List<String>,
+    private val superchillGravelFinder: SuperchillGravelFinder,
+) : DefaultLongPollingUpdateConsumer() {
     private var updateCount = 0
     private var acceptedUpdateCount = 0
-
-    init {
-        // Delete all files downloaded during a previous execution
-        downloadDirectory.deleteRecursively()
-
-        // Recreate the download directory
-        println("Creating directory $downloadDirectory...")
-        val created = downloadDirectory.mkdirs()
-
-        if (created) {
-            println("OK")
-        } else {
-            println("Failure")
-            exitProcess(1)
-        }
-    }
+    private val logger = KotlinLogging.logger {}
 
     override fun consume(update: Update?) {
         update!!
-        println("--- ${LocalDateTime.now()} $update")
+        logger.debug { "--- Consuming update: ${LocalDateTime.now()} $update" }
         updateCount++
 
         if (canAccept(update)) {
@@ -83,7 +68,7 @@ class Bot(private val telegramClient: TelegramClient, private val adminId: Strin
             val userId = update.message.from.id.toString()
             when (text) {
                 "/quand" -> {
-                    println("Received command /quand")
+                    logger.info { "Received command /quand" }
                     quand(userId)
                 }
 
@@ -92,12 +77,17 @@ class Bot(private val telegramClient: TelegramClient, private val adminId: Strin
                 }
 
                 "/cava" -> {
-                    println("Received command /cava")
+                    logger.info { "Received command /cava" }
                     cava(userId)
                 }
 
+                "/rattrapage" -> {
+                    logger.info { "Received command /rattrapage" }
+                    rattrapage(userId)
+                }
+
                 "/ride" -> {
-                    println("Received command /ride")
+                    logger.info { "Received command /ride" }
                     ride(userId)
                 }
 
@@ -138,7 +128,8 @@ class Bot(private val telegramClient: TelegramClient, private val adminId: Strin
 
     private fun sendText(text: String, userID: String) {
         assert(text.isNotEmpty()) { "Cannot send an empty text" }
-        val method = SendMessage.builder()
+        val method = SendMessage
+            .builder()
             .chatId(userID)
             .text(text)
             .build()
@@ -146,25 +137,26 @@ class Bot(private val telegramClient: TelegramClient, private val adminId: Strin
         telegramClient.execute(method)
     }
 
-    private fun sendFile(file: File, caption: String, userID: String) {
-        val method = SendDocument.builder()
+    private fun sendFile(file: Path, caption: String, userID: String) {
+        val method = SendDocument
+            .builder()
             .chatId(userID)
-            .document(InputFile(file))
+            .document(InputFile(file.toFile()))
             .caption(caption)
             .build()
 
         telegramClient.execute(method)
     }
 
-    //------------------------------------------------------------------------------------------------------------------
+    // -----------------------------------------------------------------------------------------------------------------
     // The 'cava' command
     private fun cava(userId: String) {
         var message = """
-            |Toujours debout :)
-            |
-            |Updates reçues = $updateCount
-            |Updates acceptées = $acceptedUpdateCount
-            """.trimMargin()
+            Toujours debout :)
+
+            Updates reçues = $updateCount
+            Updates acceptées = $acceptedUpdateCount
+        """.trimIndent()
 
         val instant = ProcessHandle.current().info().startInstant()
         if (instant.isPresent) {
@@ -174,7 +166,7 @@ class Bot(private val telegramClient: TelegramClient, private val adminId: Strin
         sendText(message, userId)
     }
 
-    //------------------------------------------------------------------------------------------------------------------
+    // -----------------------------------------------------------------------------------------------------------------
     // The 'quand' command
     private fun quand(userId: String) {
         val today = LocalDate.now()
@@ -191,14 +183,25 @@ class Bot(private val telegramClient: TelegramClient, private val adminId: Strin
                 sendText("Demain :)", userId)
             } else {
                 sendText(
-                    "On est ${today.dayOfWeek.toFrench()}. La prochaine sortie devrait être dans ${delta} jours, le $nextRideDay.",
-                    userId
+                    "On est ${today.dayOfWeek.toFrench()}. La prochaine sortie devrait être dans $delta jours, le $nextRideDay.",
+                    userId,
                 )
             }
         }
     }
 
-    //------------------------------------------------------------------------------------------------------------------
+    // -----------------------------------------------------------------------------------------------------------------
+    // The 'rattrapage' command
+    private fun rattrapage(userId: String) {
+        val superChillGravel = superchillGravelFinder.findPrevious()
+        if (superChillGravel == null) {
+            sendText("Désolé, impossible de trouver une session de rattrapage $FACE", userId)
+            return
+        }
+        process(superChillGravel, userId)
+    }
+
+    // -----------------------------------------------------------------------------------------------------------------
     // The 'ride' command
     private fun ride(userId: String) {
         val today = LocalDate.now()
@@ -207,7 +210,7 @@ class Bot(private val telegramClient: TelegramClient, private val adminId: Strin
             DayOfWeek.TUESDAY -> {
                 sendText(
                     "On est mardi : le prochain ride, c'est demain. Peut-être que les maps sont déjà en ligne, je vais regarder...",
-                    userId
+                    userId,
                 )
                 val tomorrow = today.plusDays(1)
                 processDate(tomorrow, userId)
@@ -221,84 +224,47 @@ class Bot(private val telegramClient: TelegramClient, private val adminId: Strin
             else -> {
                 sendText(
                     "Désolé, on est encore que ${today.dayOfWeek.toFrench()}... Il faut attendre un peu pour la prochaine sortie !",
-                    userId
+                    userId,
                 )
             }
         }
     }
 
     private fun processDate(date: LocalDate, userId: String) {
-        val rides = biketeamClient.requestRides(date)
+        val superChillGravel = superchillGravelFinder.find(date)
 
-        when (rides.size) {
-            0 -> {
-                sendText("Désolé, aucune sortie prévue le ${date}.", userId)
-            }
-
-            1 -> {
-                processRide(rides[0], userId)
-            }
-
-            else -> {
-                sendText("Il y a plusieurs sorties (${rides.size}) le ${date}, je ne sais pas quoi faire.", userId)
-            }
+        if (superChillGravel == null) {
+            sendText("Désolé, impossible de trouver le groupe Superchill Gravel pour le $date $FACE", userId)
+            return
         }
+
+        process(superChillGravel, userId)
     }
 
-    private fun processRide(ride: Ride, userId: String) {
-        // First, get the map
-        val desiredGroups = setOf(WednesdayGroups.C3, WednesdayGroups.SuperChillGravel)
-        sendText("Récupération des maps pour les groupes $desiredGroups pour la sortie ${ride.title}", userId)
-
-        for (group in ride.groups) {
-            val guessedGroup = WednesdayGroups.guess(group.name)
-            if (guessedGroup in desiredGroups) {
-                if (group.map != null) {
-                    val file = biketeamClient.requestMapFile(group.map)
-                    println("Map for group ${group.name} is here: $file")
-                    val caption = "Voici la la map pour ${group.name}. RDV à ${group.meetingTime}"
-                    sendFile(file, caption, userId)
-                } else {
-                    sendText(
-                        "Le groupe ${group.name} existe, mais il n'a pas de map \uD83D\uDE32", // Unicode = Astonished Face
-                        userId
-                    )
-                }
-            }
+    private fun process(superChillGravel: SuperchillGravel, userId: String) {
+        if (superChillGravel.mapFile == null) {
+            sendText(
+                "Le groupe Superchill Gravel existe, mais il n'a pas de map $FACE",
+                userId,
+            )
+        } else {
+            sendFile(superChillGravel.mapFile, "Voici la map. RDV à ${superChillGravel.group.meetingTime}", userId)
         }
 
-        // Second, get the bar
-        val entries = biketeamClient.requestFeed()
-        for (entry in entries) {
-            if (entry.title == ride.title && entry.date == ride.date) {
-                // The title and the date are the same, we have normally found our entry
-                when (entry.endPlace) {
-                    null -> {
-                        sendText("Oh ben... On ne sait pas où est le finish :(", userId)
-                    }
+        if (superChillGravel.finish == null) {
+            sendText("Oh ben... On ne sait pas où est le finish $FACE", userId)
+        } else {
+            val bar = superChillGravel.finish
+            sendText("Le finish sera ici: ${bar.name} => ${bar.address}", userId)
 
-                    else -> {
-                        val name = entry.endPlace.name
-                        val address = entry.endPlace.address
-                        sendText("Le finish sera ici: $name => $address", userId)
-
-                        when (entry.endPlace.point) {
-                            null -> {
-                                sendText("On ne connait pas la location GPS du finish, désolé ;)", userId)
-                            }
-
-                            else -> {
-                                val method = SendLocation
-                                    .builder()
-                                    .chatId(userId)
-                                    .latitude(entry.endPlace.point.latitude)
-                                    .longitude(entry.endPlace.point.longitude)
-                                    .build()
-                                telegramClient.execute(method)
-                            }
-                        }
-                    }
-                }
+            if (bar.point == null) {
+                sendText("Malheureusement, on ne connait pas la location GPS du finish $FACE", userId)
+            } else {
+                val method = SendLocation
+                    .builder()
+                    .chatId(userId).latitude(bar.point.latitude)
+                    .longitude(bar.point.longitude).build()
+                telegramClient.execute(method)
             }
         }
     }

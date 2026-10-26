@@ -6,7 +6,10 @@ import org.junit.jupiter.api.Test
 import kotlin.test.assertEquals
 
 class FeedEntryTest {
-    fun compare(input: String, expected: String) {
+    fun compare(
+        input: String,
+        expected: String,
+    ) {
         val input = loadJsonArrayFile(input)
 
         var output = ""
