@@ -23,7 +23,7 @@ fun main() {
     finder.findNext()
 
     // Run the webserver
-    val server = WebServer(finder, port = 8080)
+    val server = WebServer(finder, port = 8080, baseUrl = configuration.baseUrl)
     server.start()
 
     // Run the bot

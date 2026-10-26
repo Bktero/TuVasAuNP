@@ -15,6 +15,7 @@ data class Configuration(
     val token: String,
     val adminId: String,
     val userIds: List<String>,
+    val baseUrl: String,
 ) {
     companion object {
         private val logger = KotlinLogging.logger {}
@@ -29,12 +30,14 @@ data class Configuration(
                     dotenv["TU_VAS_AU_NP_BOT_TOKEN"],
                     dotenv["TU_VAS_AU_NP_BOT_ADMIN_ID"],
                     dotenv["TU_VAS_AU_NP_BOT_USER_IDS"].split(';').toList(),
+                    dotenv["TU_VAS_AU_NP_BASE_URL"],
                 )
             } else {
                 return Configuration(
                     getEnv("TU_VAS_AU_NP_BOT_TOKEN"),
                     getEnv("TU_VAS_AU_NP_BOT_ADMIN_ID"),
                     getEnv("TU_VAS_AU_NP_BOT_USER_IDS").split(';').toList(),
+                    getEnv("TU_VAS_AU_NP_BASE_URL"),
                 )
             }
         }
